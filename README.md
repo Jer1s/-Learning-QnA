@@ -459,13 +459,173 @@
 </details>
 
 <details>
-<summary>class란? (4)</summary>
+<summary>CSS에서 색상 단위는 어떤 것이 있나요? (7)</summary>
 <br>
 
-- HTML 여러 요소에 대한 스타일을 그룹으로 지정할 수 있게 해주는 식별자입니다.
-- ID와 달리 여러 요소에 적용될 수 있습니다.
-- ID와 달리 각 요소에 대해 다른 클래스를 지정할 수 있습니다.
-- class name 앞에 `.` 기호를 붙여 선택자로 사용됩니다.
+- 키워드 (Keyword): red, blue, green, black, white 등과 같은 색상 이름을 사용할 수 있습니다.
+- 16진수 (Hexadecimal): #을 사용하여 색상을 표현합니다. 예를 들어, #000000은 검정색이며, #FFFFFF은 흰색입니다.
+- RGB: red, green, blue의 값으로 색상을 지정합니다. 예를 들어, rgb(255, 0, 0)은 빨간색입니다.
+- RGBA: RGB와 같지만, alpha 값을 추가하여 투명도를 지정할 수 있습니다. 예를 들어, rgba(255, 0, 0, 0.5)는 반투명한 빨간색입니다.
+- HSL: hue(색상), saturation(채도), lightness(명도)의 값으로 색상을 지정합니다. 예를 들어, hsl(0, 100%, 50%)은 빨간색입니다.
+- HSLA: HSL과 같지만, alpha 값을 추가하여 투명도를 지정할 수 있습니다. 예를 들어, hsla(0, 100%, 50%, 0.5)는 반투명한 빨간색입니다.
+- var(--color)같이 var()을 통해 사용자가 정의한 변수 이름을 사용할 수 있습니다.
+</details>
+
+<details>
+<summary>CSS에서 크기 단위는 어떤 것이 있나요? (8)</summary>
+<br>
+
+- 픽셀(px) : 절대 크기 단위로, 고정된 크기 값을 지정할 때 사용됩니다.
+- 백분율(%) : 상대 크기 단위로, 부모 요소의 크기에 대한 백분율 값을 사용하여 크기를 지정할 때 사용됩니다.
+- em : 상대 크기 단위로, 현재 요소에 지정된 font-size 값에 대한 배수 값을 사용하여 크기를 지정할 때 사용됩니다.
+- rem : 상대 크기 단위로, 루트 요소(html)에 지정된 font-size 값에 대한 배수 값을 사용하여 크기를 지정할 때 사용됩니다.
+- vw, vh : 뷰포트의 너비와 높이를 기준으로 크기를 지정할 때 사용됩니다.
+- vmin, vmax : 뷰포트의 너비와 높이 중 작은 값 또는 큰 값에 대한 비율 값을 사용하여 크기를 지정할 때 사용됩니다.
+</details>
+
+<details>
+<summary>line-height는 어떤 속성인가요? (4)</summary>
+<br>
+
+- 텍스트 요소의 줄 간격을 조정하는 데 사용됩니다.
+- 기본값은 normal로, 이 경우 브라우저는 글꼴 크기에 따라 줄 간격을 자동으로 조정합니다.
+- 다른 값으로는 길이 값(px, em 등), 상대 값(%, unitless number), 그리고 숫자 값이 있습니다. 숫자 값은 글꼴 크기에 대한 배수를 나타냅니다.
+</details>
+
+<details>
+<summary>요소의 배경 이미지는 어떻게 다루나요? (4)</summary>
+<br>
+
+- `background-image`
+  - 요소의 배경 이미지를 설정합니다.
+  - 이미지는 URL 또는 linear-gradient()와 같은 CSS gradient 함수로 지정할 수 있습니다.
+  - 여러 개의 이미지를 사용할 경우 쉼표(,)로 구분하여 지정할 수 있습니다.
+- `background-repeat`
+  - 배경 이미지가 반복되는 방식을 지정합니다.
+  - repeat(기본값), repeat-x, repeat-y, no-repeat 등의 값으로 설정할 수 있습니다.
+- `background-position`
+  - 배경 이미지가 위치하는 위치를 지정합니다.
+  - top, bottom, left, right, center 등의 값으로 설정하거나, x y 형식으로 좌표값을 직접 지정할 수 있습니다.
+- `background-size`
+  - 배경 이미지의 크기를 지정합니다.
+  - auto(기본값), contain, cover, 50% 50%와 같은 값으로 설정할 수 있으며, width height 형식으로 크기를 직접 지정할 수도 있습니다.
+</details>
+
+<details>
+<summary>linear-gradient()란? (6)</summary>
+<br>
+
+- 배경 그라데이션(gradient)을 생성하기 위한 함수 중 하나로, 시작 색상과 끝 색상을 지정하여 그 사이에 일정한 색상 변화를 만들어냅니다.
+- `linear-gradient([<angle> | to <side-or-corner>], <color-stop-list>)`
+- `<angle>`은 그라데이션의 각도를 지정합니다.
+- `<side-or-corner>`은 그라데이션의 방향을 지정하는 키워드입니다. to right 또는 to left top과 같은 방향도 지정할 수 있습니다.
+- `<color-stop-list>`는 그라데이션의 색상과 위치를 지정하는 리스트입니다. 각각의 색상은 CSS 색상값으로 지정하며, 위치는 0~100% 사이의 값을 가집니다. 여러 개의 색상과 위치를 지정할 경우 쉼표(,)로 구분하여 지정할 수 있습니다.
+- 예시
+  - `background: linear-gradient(to bottom, red, yellow, green);`
+  - 위의 코드에서, linear-gradient() 함수는 to bottom 방향으로 그라데이션을 설정하고 있습니다. red, yellow, green 순서로 색상을 지정하였고, 위치는 각각 0%, 50%, 100%로 지정되었습니다. 따라서 .box 요소의 배경은 빨간색에서 노란색으로, 그리고 초록색으로 일정한 색상 변화를 보일 것입니다.
+</details>
+
+<details>
+<summary>box-shadow란? (3)</summary>
+<br>
+
+- 요소의 그림자 효과를 지정할 때 사용됩니다.
+- box-shadow 속성의 값은 다음과 같이 지정됩니다.
+  - `box-shadow: h-shadow v-shadow blur spread color inset;`
+  - `h-shadow` 그림자의 가로 위치
+  - `v-shadow` 세로 위치
+  - `blur` 흐림 정도
+  - `spread` 그림자의 크기
+  - `color` 그림자 색상
+  - `inset` 그림자가 요소 안쪽에 위치하는지 외부에 위치하는지 여부
+- 예시
+  - `box-shadow: 2px 2px 4px #888888;`
+  - 위 코드에서 요소에 왼쪽으로 2px, 아래쪽으로 2px 이동한 위치에 흐린 정도가 4px이고, 색상이 #888888인 그림자 효과를 추가한다는 뜻입니다.
+</details>
+
+<details>
+<summary>opacity란? (2)</summary>
+<br>
+
+- CSS 속성 중 하나로, 해당 요소의 투명도를 지정하는 데 사용됩니다.
+- opacity 속성은 0부터 1 사이의 값을 가지며, 값이 작을수록 요소가 불투명해지고, 값이 클수록 요소가 투명해집니다.
+</details>
+
+<details>
+<summary>박스 모델(Box model)이란? ()</summary>
+<br>
+
+- CSS에서 요소가 차지하는 공간을 나타내는 모델입니다.
+- 각각의 요소는 콘텐츠 영역, 패딩 영역, 테두리 영역, 그리고 마진 영역으로 구성되며, 이러한 영역들이 모두 합쳐져서 요소가 차지하는 전체 공간을 형성합니다.
+- Box-model을 구성하는 영역들과 관련된 용어
+  - 콘텐츠 영역 (Content area): 텍스트, 이미지 등 요소가 실제로 표시되는 부분입니다.
+  - 패딩 영역 (Padding area): 콘텐츠 영역 주위의 여백을 말하며, 패딩 값이 있을 경우 해당 요소의 내부 여백을 설정합니다.
+  - 테두리 영역 (Border area): 콘텐츠 영역과 패딩 영역 사이의 경계선을 말하며, 테두리 스타일, 두께, 색상 등을 설정할 수 있습니다.
+  - 마진 영역 (Margin area): 테두리 영역 주위의 여백을 말하며, 마진 값이 있을 경우 해당 요소의 외부 여백을 설정합니다.
+</details>
+
+<details>
+<summary>padding과 margin 표기법을 설명해주세요 (5)</summary>
+<br>
+
+- `margin: [size]` 상하좌우
+- `margin: [size] [size]` 상하/좌우
+- `margin: [size] [size] [size]` 상/좌우/하
+- `margin: [size] [size] [size] [size]` 상/우/하/좌
+- `width: [size]; margin: [size] auto` 자동으로 채우기
+  - 너비가 정해져 있어야 자동으로 채울 수 있다.
+</details>
+
+<details>
+<summary>padding과 margin 표기법을 설명해주세요 (5)</summary>
+<br>
+
+- `margin: [size]` 상하좌우
+- `margin: [size] [size]` 상하/좌우
+- `margin: [size] [size] [size]` 상/좌우/하
+- `margin: [size] [size] [size] [size]` 상/우/하/좌
+- `width: [size]; margin: [size] auto` 자동으로 채우기
+  - 너비가 정해져 있어야 자동으로 채울 수 있다.
+</details>
+
+<details>
+<summary>border와 border-radius 표기법을 설명해주세요 ()</summary>
+<br>
+
+```css
+/* 모든 속성 값 지정 */
+border: border-width border-style border-color;
+
+/* 속성 값 미지정 */
+border: none;
+```
+```css
+/* 모든 모서리를 동일한 값으로 지정 */
+border-radius: 10px;
+
+/* 상단 모서리와 하단 모서리를 다르게 지정 */
+border-radius: 10px 20px;
+
+/* 상단 왼쪽 모서리, 상단 오른쪽 모서리, 하단 오른쪽 모서리, 하단 왼쪽 모서리를 각각 다르게 지정 */
+border-radius: 10px 20px 30px 40px;
+
+/* 모든 모서리에 각각 다른 값을 지정 */
+border-radius: 10px 20px 30px 40px / 50px 60px 70px 80px;
+
+/* 요소를 원형으로 만드는 방법 */
+border-radius: 50%;
+```
+</details>
+
+<details>
+<summary>box-sizing 속성이란? (3)</summary>
+<br>
+
+- CSS 속성 중 하나로, 요소의 크기를 계산하는 방법을 지정합니다.
+- `box-sizing` 속성은 다음과 같은 값들을 사용할 수 있습니다.
+  - `content-box` 기본값으로, 요소의 크기는 콘텐츠 영역의 크기만을 포함합니다. 패딩과 테두리(border)는 요소의 크기에 포함되지 않습니다.
+  - `border-box` : 요소의 크기는 콘텐츠 영역, 패딩, 테두리의 크기를 모두 포함합니다. 이 때, 콘텐츠 영역의 크기가 여백과 테두리의 크기를 감소시키는 효과가 있습니다.
+- 전체 요소에 대해 `* {box-sizing: border-box;}`를 설정하는 것은 일반적으로 CSS 작성 시 유용하며, 웹 사이트 전체적인 디자인에 일관성을 부여할 수 있습니다.
 </details>
 
 
@@ -493,4 +653,9 @@
 
 ## etc
 
+<details>
+<summary>()</summary>
+<br>
 
+- 
+/</details>
