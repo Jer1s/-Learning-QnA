@@ -105,7 +105,7 @@
 </details>
 
 <details>
-<summary>HTML 파일의 기본 구조 (1)</summary>
+<summary>HTML 파일의 기본 구조를 설명하시오 (1)</summary>
 <br>
 
 ```html
@@ -156,23 +156,79 @@
 </details>
 
 <details>
-<summary>태그 속성(attribute)란? (4)</summary>
+<summary>태그 속성(attribute)란? (6)</summary>
 <br>
 
-- HTML 태그에 추가 정보를 제공하는 데  사용되며, 속성은 일반적으로 "속성명(attribute name)=속성값(attribute value)"의 형식으로 작성됩니다.
-    - 속성은 대소문자를 구분하지 않으며, 보통 소문자로 작성됩니다.
-    - 예시
-      - `class` 요소에 대한 CSS 클래스 이름을 지정합니다.
-      - `id` 요소의 고유한 식별자를 지정합니다.
-      - `style` 요소에 대한 인라인 CSS 스타일을 지정합니다.
-      - `title` 요소에 대한 추가 정보(툴팁)를 제공합니다.
-    - 일부 속성은 Boolean 속성으로, 해당 속성의 존재 여부만으로 참/거짓을 판단합니다.
-      - `checked` 체크박스나 라디오 버튼이 선택되어 있는지 여부를 나타냅니다.
-      - `disabled` 입력  필드나 버튼 등이 비활성화되어 있는지 여부를 나타냅니다.
-      - `readonly` 입력 필드가 읽기 전용인지 여부를 나타냅니다.
-      - `required` 입력 필드가 필수 입력 필드인지 여부를 나타냅니다.
-      - `hidden` 요소가 숨겨져 있는지 여부를 나타냅니다.
-      - `muted` 미디어 요소가 자동으로 음소거되도록 지정합니다.
+- HTML 태그에 추가 정보를 제공하는 데 사용됩니다.
+- 속성은 일반적으로 "속성명(attribute name)=속성값(attribute value)"의 형식으로 작성됩니다.
+- 속성은 대소문자를 구분하지 않으며, 보통 소문자로 작성됩니다.
+- 예시
+  - `class` 요소에 대한 CSS 클래스 이름을 지정합니다.
+  - `id` 요소의 고유한 식별자를 지정합니다.
+  - `style` 요소에 대한 인라인 CSS 스타일을 지정합니다.
+  - `title` 요소에 대한 추가 정보(툴팁)를 제공합니다.
+- 일부 속성은 Boolean 속성으로, 해당 속성의 존재 여부만으로 참/거짓을 판단합니다.
+- Boolean 속성 예시
+  - `checked` 체크박스나 라디오 버튼이 선택되어 있는지 여부를 나타냅니다.
+  - `disabled` 입력 필드나 버튼 등이 비활성화되어 있는지 여부를 나타냅니다.
+  - `readonly` 입력 필드가 읽기 전용인지 여부를 나타냅니다.
+  - `required` 입력 필드가 필수 입력 필드인지 여부를 나타냅니다.
+  - `hidden` 요소가 숨겨져 있는지 여부를 나타냅니다.
+  - `muted` 미디어 요소가 자동으로 음소거되도록 지정합니다.
+</details>
+
+
+<details>
+<summary>사용자 정의 속성(Custom attribute)이란? (5)</summary>
+<br>
+
+- 사용자 정의 속성은 HTML 요소에 사용자가 원하는 속성을 추가할 수 있는 방법입니다.
+- 사용자 정의 속성은 `data-*` 형식으로 정의됩니다. 여기서 `*` 부분은 사용자가 원하는 이름을 사용할 수 있습니다.
+- `data-`를 붙이지 않아도 작동하지만, 사용자 정의 속성이 표준 속성으로 편입될 경우 예기치 못한 오류를 발생시킬 수 있기 때문에 data-를 붙이는 것이 좋습니다.
+- W3C에서 규정한 HTML 규약에 따라 작성되어야 합니다.
+- 모든 브라우저가 사용자 정의 속성을 지원하는 것은 아니므로, 브라우저 호환성에 주의해야 합니다.
+</details>
+
+<details>
+<summary>HTML tags는 어떤 것들이 있나요?</summary>
+<br>
+
+- [HTML elements reference - HTML: HyperText Markup Language | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) 참조
+</details>
+
+<details>
+<summary>&ltmeta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"&gt가 의미하는 바는 무엇인가요? (5)</summary>
+<br>
+
+- 웹 페이지를 렌더링하는 데 사용되는 인터넷 익스플로러(IE) 버전을 지정하는 데 사용됩니다.
+- `http-equiv` 사용할 HTTP 응답 헤더를 지정합니다.
+- `content` IE 버전을 지정합니다. 
+  - `edge` 브라우저가 사용자의 컴퓨터에 설치된 최신 IE 버전을 사용하도록 지시합니다.
+  - `chrome=1` Google Chrome Frame이 설치된 경우 해당 플러그인을 사용하여 웹 페이지를 렌더링하도록 합니다.
+</details>
+
+<details>
+<summary>&ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt가 의미하는 바는 무엇인가요? (5)</summary>
+<br>
+
+- 이 메타 태그는 웹 페이지의 뷰포트(viewport)를 정의하여 다른 기기에서 웹 페이지가 어떻게 표시되는지 제어합니다.
+- 모바일 기기에서 웹 페이지가 다른 화면 크기에서 올바르게 표시되도록 하는 데 특히 중요합니다.
+- `name` 메타데이터 유형을 지정합니다.
+- `content` 해당 메타데이터의 값을 지정합니다.
+  - `width=device-width` 뷰포트의 너비를 기기의 너비로 설정합니다.
+  - `initial-scale=1.0` 초기 줌 레벨을 1.0으로 설정합니다.
+</details>
+
+<details>
+<summary>메타 태그(Meta tag)란? (4)</summary>
+<br>
+
+- 메타 태그(meta tag)는 HTML 문서의 `<head>` 태그 내에 작성되는 태그로, 웹 페이지의 메타데이터(meta data)를 정의하는 데 사용됩니다.
+- 메타데이터는 문서에 대한 부가 정보를 제공하는 데이터를 의미합니다. 예를 들어, 웹 페이지의 제목(title), 설명(description), 작성자(author), 키워드(keywords), 문자 인코딩(charset) 등이 메타데이터에 해당합니다.
+- 메타 태그는 검색 엔진 최적화(SEO)를 위해 사용될 수도 있습니다. 검색 엔진은 메타 태그를 분석하여 웹 페이지의 내용과 일치하는 검색어를 찾아 검색 결과에 반영합니다.
+- 예시
+  - `<meta name="description" content="웹 페이지 설명">` 웹 페이지의 설명을 나타내는 메타 태그입니다.
+  - `<meta http-equiv="refresh" content="5;url=https://example.com">` 5초 후에 `https://example.com`로 이동하는 메타 태그입니다.
 </details>
 
 
