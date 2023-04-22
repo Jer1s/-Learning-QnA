@@ -429,6 +429,45 @@
   - **주의**: 부모 객체가 height: auto일 경우 top, bottom 속성을 이용할 수 없고, transform을 이용하여 세로 방향으로 움직여야합니다.
 </details>
 
+<details>
+<summary>CSS 선언(CSS declaration)이란? (2)</summary>
+<br>
+  
+- CSS 문서에서 사용되는 구문입니다.
+- 각 선언은 선택자(selector)와 선언부(declaration block)로 구성됩니다.
+  - `selector {property: value;}`
+</details>
+
+<details>
+<summary>id란? (4)</summary>
+<br>
+
+- HTML 요소에 대한 고유한 식별자입니다.
+- 문서 내에서 단 하나의 요소에만 지정할 수 있습니다.
+- 한 요소에 두 개 이상의 id를 지정할 수 없습니다.
+- id 앞에 `#` 기호를 붙여 선택자로 사용됩니다.
+</details>
+
+<details>
+<summary>class란? (4)</summary>
+<br>
+
+- HTML 여러 요소에 대한 스타일을 그룹으로 지정할 수 있게 해주는 식별자입니다.
+- ID와 달리 여러 요소에 적용될 수 있습니다.
+- ID와 달리 각 요소에 대해 다른 클래스를 지정할 수 있습니다.
+- class name 앞에 `.` 기호를 붙여 선택자로 사용됩니다.
+</details>
+
+<details>
+<summary>class란? (4)</summary>
+<br>
+
+- HTML 여러 요소에 대한 스타일을 그룹으로 지정할 수 있게 해주는 식별자입니다.
+- ID와 달리 여러 요소에 적용될 수 있습니다.
+- ID와 달리 각 요소에 대해 다른 클래스를 지정할 수 있습니다.
+- class name 앞에 `.` 기호를 붙여 선택자로 사용됩니다.
+</details>
+
 
 
 
