@@ -231,10 +231,203 @@
   - `<meta http-equiv="refresh" content="5;url=https://example.com">` 5초 후에 `https://example.com`로 이동하는 메타 태그입니다.
 </details>
 
+<details>
+<summary>오픈그래프(Open Graph)란? (4)</summary>
+<br>
+
+- 웹 사이트가 소셜 미디어에서 공유될 때 정보를 제공하는 메타데이터 프로토콜입니다.
+- 웹 사이트의 메타데이터를 Open Graph 프로토콜로 구성하면, 해당 웹 사이트의 콘텐츠가 소셜 미디어에서 공유될 때 해당 페이지의 제목, 설명, 이미지 등이 더욱 깔끔하게 보여질 수 있습니다.
+- 예시
+  ```html
+  <html>
+  <head>
+    <meta property="og:title" content="페이지 제목">
+    <meat property="og:url" content="페이지 주소">
+    <meta property="og:image" content="이미지 URL">
+    <meta propery="og:type" content="페이지 타입(ex. website)">
+    <meta property="og:description" content="페이지 설명">
+  </head>
+  </html>
+  ```
+- Facebook Object Debugger로 디버깅할 수 있습니다.
+  - [Facebook Object Debugger](https://developers.facebook.com/tools/debug/)
+  - [Open Graph protocol](https://ogp.me/)
+</details>
+
+
+<details>
+<summary>Twitter cards란? (4)</summary>
+<br>
+
+- 웹 사이트가 Twitter에서 공유될 때 노출되는 정보를 제공하는 메타데이터 프로토콜입니다.
+- 웹 사이트의 메타데이터를 Twitter Cards 프로토콜로 구성하면, 해당 웹 사이트의 콘텐츠가 twitter에서 공유될 때 해당 페이지의 제목, 설명, 이미지 등이 더욱 깔끔하게 보여질 수 있습니다.
+- 예시
+  ```html
+  <html>
+  <head>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@사이트명">
+    <meta name="twitter:title" content="제목">
+    <meta name="twitter:description" content="설명">
+    <meta name="twitter:image" content="이미지 URL">
+  </head>
+  </html>
+  ```
+- Twitter cards validator로 디버깅할 수 있습니다.
+  - **[Twitter cards validator](https://cards-dev.twitter.com/validator/)**
+</details>
+
+<details>
+<summary>구글 애널리틱스(Google Analytics란? (4)</summary>
+<br>
+
+- 구글이 제공하는 웹 분석 도구로, 웹 사이트 방문자들의 행동 및 트래픽을 추적하고 분석하여 웹 사이트의 성과를 파악할 수 있도록 도와줍니다.
+- Google Analytics를 사용하면 웹 사이트 방문자들의 정보를 수집하고, 이를 분석하여 사용자가 웹 사이트에서 어떤 행동을 하는지, 어디서 왔는지, 어떤 장치나 브라우저를 사용하는지 등을 파악할 수 있습니다. 이를 통해 웹 사이트의 성과를 평가하고, 사용자 경험을 개선하거나 마케팅 전략을 수립할 수 있습니다.
+</details>
+
 
 
 
 ## CSS
+<details>
+<summary>CSS란? (9)</summary>
+<br>
+
+- CSS(Cascading Style Sheets)는 HTML 및 XML과 같은 마크업 언어로 작성된 문서의 표현 방법을 정의하는 스타일 시트 언어입니다.
+- CSS는 웹 사이트 및 웹 응용 프로그램의 디자인 및 레이아웃을 제어하며, HTML과 함께 웹 페이지의 모양과 느낌을 결정하는 데 중요한 역할을 합니다.
+- CSS는 문서의 콘텐츠와 디자인을 분리하는 데 중요한 역할을 합니다.
+- 이러한 분리는 문서 구조를 더욱 명확하게 하며, 콘텐츠와 디자인 간의 변경을 쉽게 만듭니다.
+- CSS를 사용하면 웹 페이지의 색상, 글꼴, 레이아웃 및 다양한 기타 속성을 변경할 수 있습니다.
+- CSS는 HTML 요소에 적용되며, 스타일 시트는 HTML 문서 내에 포함됩니다.
+- CSS는 다양한 브라우저에서 사용할 수 있습니다.
+- CSS는 웹 표준 기술이며, W3C(World Wide Web Consortium)에서 정의하고 유지 관리됩니다.
+- 이것은 브라우저 제조사들이 웹 표준을 준수하고 CSS를 지원함으로써 일관된 웹 페이지 디자인과 레이아웃을 보장할 수 있게 해줍니다.
+</details>
+
+<details>
+<summary>CSS 버전의 역사 (6)</summary>
+<br>
+
+- CSS Level 1(1996)
+	- 이 버전은 웹 표준화 기구인 W3C(World Wide Web Consortium)에 의해 발표된 CSS의 첫 번째 공식 표준입니다.
+- CSS Level 2(1998)
+	- 이 버전에서는 위치, 배경, 텍스트, 폰트, 색상 및 레이아웃과 같은 속성에 대한 새로운 기능과 선택자를 도입했습니다.
+- CSS Level 2.1(2004)
+	- 이 버전은 CSS Level 2를 개정하고 변경 사항을 통합했습니다.
+- CSS Level 3(2011)
+	- 이 버전에서는 새로운 모듈과 선택자, 애니메이션, 플렉스박스, 그리드 레이아웃 및 그림자와 같은 새로운 기능을 도입했습니다.
+	- 대부분의 웹 사이트는 CSS Level 3을 사용하고 있습니다.
+</details>
+
+<details>
+<summary>CSS 코드를 작성하는 방법 3가지 (3)</summary>
+<br>
+
+1. 내부 스타일 시트 (Internal Style Sheet)
+  - HTML 문서 애부에 `<style>` 태그를 사용하여 CSS 코드를 작성하는 방법입니다.
+  - 이 방법은 한 페이지 내에서만 스타일을 적용할 수 있습니다.
+  - 예시
+    ```html
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>내부 스타일 시트 예제</title>
+        <style>
+            body {
+                background-color: #f0f0f0;
+                font-family: Arial, sans-serif;
+                font-size: 16px;
+            }
+
+            h1 {
+                color: #333;
+                font-size: 24px;
+                text-align: center;
+                margin-top: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>내부 스타일 시트 예제</h1>
+        <p>내부 스타일 시트를 사용하여 스타일을 적용한 예제입니다.</p>
+    </body>
+    </html>
+    ```
+2. 외부 스타일 시트 (External Style Sheet)
+	- CSS 코드를 별도의 파일로 분리하여 HTML 문서에서 불러오는 방법입니다.
+  - 이 방법은 여러 페이지에서 동일한 스타일을 적용할 수 있으며, 유지보수와 코드 관리를 용이하게 할 수 있습니다.
+  - 예시
+    ```html
+      <!DOCTYPE html>
+      <html>
+      <head>
+          <title>외부 스타일 시트 예제</title>
+          <link rel="stylesheet" type="text/css" href="style.css">
+      </head>
+      <body>
+          <h1>외부 스타일 시트 예제</h1>
+          <p>외부 스타일 시트를 사용하여 스타일을 적용한 예제입니다.</p>
+      </body>
+      </html>
+      ```
+3. 인라인 스타일 (Inline Style)
+	- HTML 태그 내부에서 style 속성을 사용하여 CSS 스타일을 적용하는 방법입니다.
+  - 이 방법은 특정 요소에 대해서만 스타일을 적용하고, 다른 방법에 비해 코드가 지저분해질 수 있다는 단점이 있습니다.
+  - 예시
+    ```html
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>인라인 스타일 예제</title>
+    </head>
+    <body>
+        <h1 style="color: #333; font-size: 24px; text-align: center; margin-top: 50px;">인라인 스타일 예제</h1>
+        <p style="font-family: Arial, sans-serif; font-size: 16px;">인라인 스타일을 사용하여 스타일을 적용한 예제입니다.</p>
+    </body>
+    </html>
+    ```
+</details>
+
+<details>
+<summary>CSS 속성(CSS Property)은 어떤 것들이 있나요?</summary>
+<br>
+
+- [CSS reference - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) 참조
+</details>
+
+<details>
+<summary>CSS에서 사용하는 percentage(%)는 어떤 의미인가요? (5)</summary>
+<br>
+
+- 백분율 값을 나타내는 CSS 자료형입니다.
+- 보통 부모 객체의 width와의 상대적 크기를 지정합니다.
+- width, height, margin, padding, font-size처럼 다양한 속성에서 쓸 수 있습니다.
+- 예시
+  ```html
+  <div style="background-color:navy;">
+    <div style="width:50%; background-color: black;">
+      <div style="width:50%; margin-left:20%; background-color:chartreuse;">
+        Width: 25%, Left margin: 10%
+      </div>
+      <div style="width:30%; margin-right:60%; background-color:pink;">
+        Width: 15%, Left margin: 30%
+      </div>
+    </div>
+  </div>
+  ```
+- margin-left(right) 값에 백분율을 쓰더라도 부모 객체의 width를 기준으로 한다는 것을 알 수 있습니다.
+</details>
+
+<details>
+<summary>CSS에서 사용하는 auto는 어떤 의미인가요? (5)</summary>
+<br>
+  
+- 해당 요소의 크기나 위치를 자동으로 설정하도록 지정합니다. 이는 일반적으로 브라우저가 자동으로 계산하도록 하거나, 다른 속성 값에 따라 크기나 위치를 결정할 때 사용됩니다.
+- `margin: auto;` 해당 요소의 마진을 자동으로 설정하며, 브라우저는 해당 요소의 위치를 계산하여 수평 방향으로만 중앙에 위치시키도록 합니다.
+- `width: auto; height: auto;` 내용물(자식 요소)의 크기에 맞춰 해당 요소의 너비나 높이를 자동으로 조절합니다.
+  - **예외**: block 요소의 `width: auto`는 `width: 100%`에서 좌우 마진을 뺀 값이 됩니다.
+  - **주의**: 부모 객체가 height: auto일 경우 top, bottom 속성을 이용할 수 없고, transform을 이용하여 세로 방향으로 움직여야합니다.
+</details>
 
 
 
