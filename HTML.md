@@ -273,3 +273,291 @@
 - 구글이 제공하는 웹 분석 도구로, 웹 사이트 방문자들의 행동 및 트래픽을 추적하고 분석하여 웹 사이트의 성과를 파악할 수 있도록 도와줍니다.
 - Google Analytics를 사용하면 웹 사이트 방문자들의 정보를 수집하고, 이를 분석하여 사용자가 웹 사이트에서 어떤 행동을 하는지, 어디서 왔는지, 어떤 장치나 브라우저를 사용하는지 등을 파악할 수 있습니다. 이를 통해 웹 사이트의 성과를 평가하고, 사용자 경험을 개선하거나 마케팅 전략을 수립할 수 있습니다.
 </details>
+
+<details>
+<summary>하이퍼링크(Hyperlink)란? (4)</summary>
+<br>
+
+- 웹 페이지에서 클릭 가능한 링크를 의미합니다.
+- 이 링크는 클릭하면 해당 웹 페이지나 문서, 이미지, 비디오, 음악 파일 등 다른 컨텐츠로 이동할 수 있습니다.
+- HTML에서 클릭 가능한 텍스트를 만들기 위해서는 `<a>` 태그를 사용합니다. 
+- 예시
+  - `<a href="path">`
+  - 절대 경로(absolute path) 또는 상대 경로(relative path)로 경로를 표시한다.
+</details>
+
+<details>
+<summary>&lta&gt 태그의 타겟 속성(target attribute)이란? (6)</summary>
+<br>
+
+- target 속성은 링크된 페이지를 어떻게 열지 지정하는 데 사용됩니다.
+- `_self` 링크된 페이지를 현재 창 또는 탭에서 엽니다(기본값).
+- `_blank` 링크된 페이지를 새 창이나 탭에서 엽니다.
+- `_parent` 현재 프레임의 상위 프레임에서 링크된 페이지를 엽니다.
+- `_top` 현재 모든 프레임을 새로운 창 또는 탭으로 대체하고, 링크된 페이지를 엽니다.
+- `framename` 링크된 페이지가 지정된 이름을 가진 프레임 또는 iframe에 로드됩니다.
+  - frame은 검색 엔진 최적화(SEO)에 좋지 않은 영향을 미칠 수 있고, 일부 브라우저에서는 더 이상 지원되지 않을 수 있습니다.
+</details>
+
+<details>
+<summary>URL이란? (2)</summary>
+<br>
+
+- URL(Uniform Resource Locator)은 URI의 한 형태로, 인터넷에서 리소스의 위치를 나타냅니다.
+- URL은 scheme, 프로토콜, 호스트명, 포트 번호, 경로, 쿼리를 포함할 수 있습니다.
+</details>
+
+<details>
+<summary>URI란? (1)</summary>
+<br>
+
+- URI(Uniform Resource Identifier)는 인터넷에서 특정한 리소스를 나타내는 유일한 식별자입니다.
+</details>
+
+<details>
+<summary>URI의 구조는 어떻게 되나요? (6)</summary>
+<br>
+
+- `scheme:[//[user:password@]host[:port]][/]path[?query][#fragment]`
+  - `URI Scheme`
+    - URI를 구분하는 스키마(프로토콜)를 나타냅니다.
+    - 예를 들어, `http`, `https`, `ftp`, `mailto`, `tel` 등이 있습니다.
+    - IANA의 [URI Scheme list](https://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml) 참조
+  - `user:password@`
+    - 선택적으로 사용되며, 인증 정보를 나타냅니다.
+  - `host`
+    - 리소스를 호스팅하는 호스트 이름을 나타냅니다.
+    - 예를 들어, `www.example.com`과 같은 도메인 이름을 사용할 수 있습니다.
+  - `port`
+    - 선택적으로 사용되며, 리소스에 액세스하는 데 사용되는 포트 번호를 나타냅니다.
+    - 예를 들어, "80"이나 "443"과 같은 포트 번호를 사용할 수 있습니다.
+  - `path`
+    - 리소스의 경로를 나타냅니다.
+    - 예를 들어, "/index.html"과 같은 경로를 사용할 수 있습니다.
+  - `query`
+    - 선택적으로 사용되며, 리소스에 대한 추가적인 정보를 전달하는 데 사용됩니다.
+    - 예를 들어, "key=value"와 같은 쿼리 문자열을 사용할 수 있습니다.
+  - `fragment`
+    - 선택적으로 사용되며, 리소스의 특정 부분을 나타내는 앵커를 나타냅니다.
+    - 예를 들어, "section1"과 같은 앵커를 사용할 수 있습니다.
+</details>
+
+<details>
+<summary>Text tag는 어떤 것이 있나요? (11)</summary>
+<br>
+
+- `<h1>~<h6>` 제목 태그
+- `<p>` 본문
+- `<br>` 줄바꿈
+- `<strong>` 중요(bold)
+- `<em>` 강조(italics)
+- `<s>` 취소 선
+- `<blockquote>/<q>` 긴/짧은 인용(quote)
+- `<sub>/<sup>` 아래/위 첨자
+- `<hr>` 주제 전환(Horizontal Line)
+- `<pre>` Preformatted Text
+- `<code>` 짧은 코드
+</details>
+
+<details>
+<summary>List tag에 대해 설명해주세요. (6)</summary>
+<br>
+
+- `<ol>` 순서 있는 리스트(Ordered List)를 나타냅니다.
+- `<ul>` 순서 없는 리스트(Unordered List)를 나타냅니다.
+- `<li>` 리스트 항목(List Item)을 나타냅니다.
+- `<ol>` type attribute
+   - `1`, `a`, `A`, `i`, `I` 등
+- `<ul>` type attribute
+   - `disc`, `circle`, `square` 등
+- `<ol>`, `<ul>`에 `list-style` property를 활용할 수 있다.
+  - `list-style: list-style-type list-style-position list-style-image`
+</details>
+
+<details>
+<summary>table tag에 대해 설멍해주세요. (9)</summary>
+<br>
+
+- `<table>` 표를 만드는 데 사용되는 태그입니다.
+- `<caption>` 표의 캡션을 정의합니다.
+- `<thead>` 표의 헤더 역할을 하는 부분을 정의합니다.
+- `<tbody>` 표의 주요 내용을 나타내는 부분을 정의합니다.
+- `<tfoot>` 표의 요약 부분을 정의합니다. 
+- `<tr>` 각 표의 행(row)을 나타냅니다.
+- `<td>` 각 행의 셀(cell)을 나타냅니다.
+- `<th>` 각 열의 제목 셀을 나타냅니다. 브라우저에 따라 bold, center align으로 처리됩니다.
+- 예시
+  ```html
+  <table>
+    <caption>이번 달 지출 내역</caption>
+    <thead>
+      <tr>
+        <th>날짜</th>
+        <th>지출 내용</th>
+        <th>금액</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>4/1</td>
+        <td>점심</td>
+        <td>10,000원</td>
+      </tr>
+      <tr>
+        <td>4/3</td>
+        <td>지하철 요금</td>
+        <td>1,250원</td>
+      </tr>
+      <tr>
+        <td>4/6</td>
+        <td>생필품 구입</td>
+        <td>30,000원</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="2">총 지출</td>
+        <td>41,250원</td>
+      </tr>
+    </tfoot>
+  </table>
+  ```
+</details>
+
+<details>
+<summary>&lttable&gt에 사용할 수 있는 border 관련 속성(property) 두 가지는 무엇인가요? (2)</summary>
+<br>
+
+- `border-collapse` 인접한 셀의 경계선을 병합할 것인지 여부를 결정합니다. 
+  - `collapse` 인접한 셀의 경계선을 병합합니다. 이때 인접한 셀들의 경계선이 중복되지 않습니다. (기본값)
+  - `separate` 인접한 셀의 경계선을 병합하지 않습니다. 이때 인접한 셀들의 경계선이 중복됩니다.
+- `border-spacing` 인접한 셀 간의 간격을 설정합니다.
+  - border-collapse 속성의 값이 separate인 경우에만 적용됩니다.
+  - 이 속성의 값은 길이 또는 백분율로 지정할 수 있습니다.
+</details>
+
+<details>
+<summary>img 태그란? (6)</summary>
+<br>
+
+- 이미지를 삽입하는 태그입니다.
+- 닫는 태그가 없으며, 이미지의 소스를 지정하는 src 속성이 필수적으로 필요합니다.
+- `src` 이미지 파일의 경로를 지정합니다. 경로는 상대 경로나 절대 경로 모두 사용할 수 있습니다.
+- `alt` 이미지가 로드되지 못했을 때 대신 표시할 텍스트를 지정합니다. 스크린 리더와 같은 보조 기술을 사용하는 사용자들에게 이미지에 대한 정보를 제공하기 위해 사용됩니다.
+- `<img>` 태그는 기본적으로 가로폭과 세로폭이 이미지의 크기에 따라 자동으로 설정됩니다. 그러나 width와 height 속성을 사용하여 이미지의 크기를 수동으로 조정할 수도 있습니다.
+- 예시
+  ```html
+  <img src="이미지 경로" alt="대체 텍스트" width="100" height="100">
+  ```
+</details>
+
+<details>
+<summary>video 태그란? (9)</summary>
+<br>
+
+- HTML5에서 도입된 태그로, 동영상 콘텐츠를 삽입하는 데 사용됩니다.
+- 닫는 태그가 필요하며, 비디오의 소스를 지정하는 src 속성이 필수적으로 필요합니다.
+- `src` 비디오 파일의 경로를 지정합니다. 여러 개의 비디오 포맷을 지원하는 브라우저를 대비해, 두 개 이상의 소스를 지정할 수도 있습니다.
+- `width`, `height` 비디오의 가로폭과 세로폭을 지정합니다.
+- `controls` 비디오 플레이어에 컨트롤러를 표시합니다. 이 속성을 생략하면 컨트롤러가 표시되지 않습니다.
+- `autoplay` 비디오가 로드되자마자 자동으로 재생됩니다. 브라우저에 따라 muted 속성이 있어야 autoplay 속성을 사용할 수 있습니다. (Chrome)
+- `muted` 비디오가 음소거 상태로 재생됩니다. 
+- `<video>` 태그는 다른 요소와 함께 사용하여 비디오를 더욱 풍부하게 표현할 수 있습니다. 예를 들어, `<source>` 요소를 사용하여 동영상 파일의 다양한 포맷을 지정할 수 있습니다. 또한, `<track>` 요소를 사용하여 자막이나 캡션을 추가할 수도 있습니다.
+- 예시
+  ```html
+  <video width="640" height="360" controls muted autoplay>
+    <source src="비디오 파일 경로.mp4" type="video/mp4">
+    <source src="비디오 파일 경로.webm" type="video/webm">
+    <track label="한국어 자막" kind="subtitles" srclang="ko" src="자막 파일 경로.vtt">
+    <track label="영어 자막" kind="subtitles" srclang="en" src="자막 파일 경로.vtt">
+  </video>
+  ```
+</details>
+
+<details>
+<summary>audio 태그란? (8)</summary>
+<br>
+
+- HTML5에서 도입된 태그 중 하나로, 웹 페이지에서 오디오 콘텐츠를 재생하는 데 사용됩니다.
+- `src` 오디오 파일의 경로를 지정합니다. 여러 개의 비디오 포맷을 지원하는 브라우저를 대비해, 두 개 이상의 소스를 지정할 수도 있습니다.
+- `controls` 오디오 플레이어에 컨트롤러를 표시합니다. 이 속성을 생략하면 컨트롤러가 표시되지 않습니다.
+- `autoplay` 오디오가 로드되자마자 자동으로 재생됩니다. 브라우저에 따라 muted 속성이 있어야 autoplay 속성을 사용할 수 있습니다. (Chrome)
+- `muted` 오디오가 음소거 상태로 재생됩니다.
+- `loop` 반복 재생을 설정합니다.
+- `width`, `height` 속성이 없습니다.
+- 예시
+  ```html
+  <audio controls muted autoplay loop>
+    <source src="audio.mp3" type="audio/mpeg">
+    <source src="audio.ogg" type="audio/ogg">
+    <source src="audio.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+  ```
+</details>
+
+<details>
+<summary>iframe 태그란? (7)</summary>
+<br>
+
+- 웹 페이지 내에서 다른 웹 페이지나 독립적인 HTML 문서를 삽입하는 데 사용됩니다.
+- 닫는 태그가 필요하며, 삽입할 문서의 URL을 지정하는 src 속성이 필수적으로 필요합니다.
+- `src` 삽입할 문서의 URL을 지정합니다.
+- `width`, `height` 삽입된 문서의 크기를 조절합니다.
+- `frameborder` 테두리를 표시합니다.
+- `allowfullscreen` iframe 내에서 전체 화면 재생을 허용할 수 있습니다.
+- 예시
+  ```html
+  <iframe src="https://www.example.com" width="500" height="500"></iframe>
+  ```
+</details>
+
+<details>
+<summary> ()</summary>
+<br>
+
+- 
+</details>
+
+
+<details>
+<summary> ()</summary>
+<br>
+
+- 
+</details>
+
+
+<details>
+<summary> ()</summary>
+<br>
+
+- 
+</details>
+
+
+<details>
+<summary> ()</summary>
+<br>
+
+- 
+</details>
+
+
+<details>
+<summary> ()</summary>
+<br>
+
+- 
+</details>
+
+
+<details>
+<summary> ()</summary>
+<br>
+
+- 
+</details>
+
+
+
