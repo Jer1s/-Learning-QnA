@@ -552,7 +552,7 @@
 </details>
 
 <details>
-<summary>박스 모델(Box model)이란? ()</summary>
+<summary>박스 모델(Box model)이란? (3)</summary>
 <br>
 
 - CSS에서 요소가 차지하는 공간을 나타내는 모델입니다.
@@ -589,7 +589,7 @@
 </details>
 
 <details>
-<summary>border와 border-radius 표기법을 설명해주세요 ()</summary>
+<summary>border와 border-radius 표기법을 설명해주세요 (7)</summary>
 <br>
 
 ```css
@@ -903,7 +903,6 @@ border-radius: 50%;
 
 
 ## etc
-
 <details>
 <summary>()</summary>
 <br>
