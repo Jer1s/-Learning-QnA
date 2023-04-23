@@ -748,11 +748,137 @@ border-radius: 50%;
 </details>
 
 <details>
-<summary>()</summary>
+<summary>display: inline-block이란? (5)</summary>
 <br>
 
-- 
+- 요소를 문장 내에서 표시하고, 요소의 너비와 높이를 직접 설정 가능하게 해주는 속성입니다.
+- 인라인처럼 줄바꿈이 일어나지 않습니다.
+- 인라인처럼 컨텐츠의 너비만큼 너비를 차지합니다.
+- 블록처럼 세로 여백을 쓸 수 있습니다.
+- 블록처럼 너비나 높이를 지정할 수 있습니다.
 </details>
+
+<details>
+<summary>display: table, talbe-row, table-cell이란? (3)</summary>
+<br>
+
+- `table` 테이블 요소를 표시하며, 요소의 너비를 테이블의 전체 너비에 맞게 설정되게 해주는 속성입니다.
+- `table-row` 테이블 행 요소를 표시하며, 요소의 너비를 테이블의 전체 너비에 맞게 설정되게 해주는 속성입니다.
+- `table-cell 테이블 셀 요소를 표시하며, 요소의 너비와 높이를 직접 설정 가능하게 해주는 속성입니다.
+</details>
+
+
+<details>
+<summary>Flexbox란? (3)</summary>
+<br>
+
+- Flexbox는 CSS3에서 새롭게 도입된 레이아웃 방식 중 하나로, 요소들을 유연하게 배치할 수 있는 기능을 제공합니다.
+- Flexbox는 부모 요소(flex container)와 자식 요소(flex item)로 구성되며, display: flex 속성을 부모 요소에 적용하여 활성화합니다.
+- `flex-direction`, `justify-content`, `align-items`, `align-content` 등의 속성을 사용하여 자식 요소들의 배치를 지정합니다.
+  - `flex-direction` 요소의 배치 방향을 지정합니다.
+  - `justify-content` 요소를 수평 방향으로 정렬합니다.
+  - `align-items` 요소를 수직 방향으로 정렬합니다.
+  - `align-content` 여러 줄로 된 요소들의 수직 정렬 방법을 지정합니다.
+</details>
+
+<details>
+<summary>grid란? (2)</summary>
+<br>
+
+- 자식 요소를 행(row)과 열(column)로 구성된 그리드 안에 배치할 수 있습니다.
+- `grid-template-columns`과 `grid-template-rows` 속성을 사용하여 행과 열의 크기를 정의하고, `grid-template-areas` 속성을 사용하여 각 영역을 이름으로 정의합니다.
+</details>
+
+<details>
+<summary>선택자 목록(Selector list)란? (1)</summary>
+<br>
+
+- CSS에서 하나 이상의 선택자를 콤마로 구분하여 연결한 것
+</details>
+
+<details>
+<summary>선택자를 붙여쓰면 어떻게 되나요? (1)</summary>
+<br>
+
+- 해당하는 모든 선택자를 가진 요소들을 선택한다
+</details>
+
+<details>
+<summary>자식, 자손 요소를 선택하는 방법은? (2)</summary>
+<br>
+
+- 자식 요소: `parent-selector > child-selector`
+- 자손 요소: `parent-selector descendant-selector`
+</details>
+
+<details>
+<summary>가상 클래스(Pseudo class)란? (1)</summary>
+<br>
+
+- 선택자의 특정 상태를 정의하는 데 사용되는 클래스
+</details>
+
+<details>
+<summary>가상 클래스에 어떤 것들이 있나요? (18)</summary>
+<br>
+
+- `:link` 링크에 연결된 페이지를 방문하지 않은 상태
+- `:visited` 링크에 연결된 페이지를 방문한 상태
+- `:hover` 마우스 커서가 링크 위에 올라가 있는 상태
+- `:active` 마우스로 링크를 클릭하고 있는 상태
+- `:focus` input 요소에 초점이 맞춰진 상태
+- `:checked` input 요소가 체크된 상태
+- `:enabled` input 요소가 사용할 수 있는 상태
+- `:disabled` input 요소가 사용할 수 없는 상태
+- `:required` required 속성을 가진 상태
+- `:optional` required 속성을 가지지 않는 상태
+- `:first-child` 자식 요소 중 첫 번째 요소
+- `:last-child` 자식 요소 중 마지막 요소
+- `:nth-child(n)` 자식 요소 중 앞에서부터 n번째에 위치하는 요소
+- `:nth-last-child(n)` 자식 요소 중 뒤에서부터 n번째에 위치하는 요소
+- `:empty` 아무런 자식 요소도 가지지 않는 상태
+- `:root` 문서의 root 요소
+- `:not(선택자)` 해당 선택자를 제외한 요소
+- `:lang(언어)` 유저의 언어 설정 상태
+</details>
+
+<details>
+<summary>CSS의 Cascading이란? (2)</summary>
+<br>
+
+- 여러 개의 스타일 규칙이 있을 때, 캐스케이드 우선순위에 따라 최종 스타일을 결정하는 과정을 의미합니다.
+- 여기서 "cascading"은 "폭포처럼 순서대로 내려가는"이라는 의미로 사용됩니다.
+</details>
+
+<details>
+<summary>캐스케이드 우선순위(Cascade precedence)를 설명하시오 (4)</summary>
+<br>
+
+1. Origin and importance
+  - `1-1` CSS transitions
+  - `1-2` user-agent (browser) !important
+  - `1-3` user !important
+  - `1-4` author(developer) !important
+  - `1-5` CSS @keyframe animations
+  - `1-6` inline style definition(developer)
+  - `1-7` author(developer)
+  - `1-8` user
+  - `1-9` user-agent (browser)
+  - `!important`와 `inline style definition`은 스타일 디버깅을 어렵게 만든다.
+2. 명시도(Specificity)
+  - `2-1` 아이디(IDs)
+  - `2-2` 클래스(Classes), 속성(attributes), 가상클래스(pseudo-classes)
+  - `2-3` 요소(Elements), 가상요소(pseudo-elements)
+3. 상속된 스타일(Inherited style)
+  - 부모 태그에 적용된 CSS 규칙은 자손에게도 상속됩니다.
+    - 모든 속성이 상속되는 건 아니고, 상속되는 속성(`color`, `font-family`, `font-size`, `font-weight`, `line-height`, `text-align`, ... 등)들이 정해져 있습니다.
+    - **[Full property table](https://www.w3.org/TR/CSS21/propidx.html)**,
+    **[inheritance - Which CSS properties are inherited? - Stack Overflow](https://stackoverflow.com/questions/5612302/which-css-properties-are-inherited)** 참조
+    - 가까운 조상에게 물려받은 속성일수록 우선순위가 높습니다.
+4. 코드 상의 순서
+  - 동일한 가중치를 갖는 규칙이 두 개 이상인 경우, 코드에서 아래 쪽에 쓴 코드일수록 우선순위가 높습니다.
+</details>
+
 
 
 
