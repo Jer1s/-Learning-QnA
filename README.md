@@ -628,6 +628,101 @@ border-radius: 50%;
 - 전체 요소에 대해 `* {box-sizing: border-box;}`를 설정하는 것은 일반적으로 CSS 작성 시 유용하며, 웹 사이트 전체적인 디자인에 일관성을 부여할 수 있습니다.
 </details>
 
+<details>
+<summary>overflow란? (2)</summary>
+<br>
+
+- 요소의 내용이 지정된 크기를 초과할 때 처리 방법을 지정하는 속성입니다.
+- 다음과 같은 값 중 하나를 가질 수 있습니다.
+  - `visible` 기본값으로, 초과한 부분을 그대로 표시합니다.
+  - `hidden` 초과한 부분을 잘라내고, 표시하지 않습니다.
+  - `scroll` 초과한 부분에 스크롤바를 표시하여, 스크롤을 이용해서 보여줍니다.
+  - `auto` 필요한 경우에만 스크롤바를 표시합니다.
+</details>
+
+<details>
+<summary>가로 스크롤을 만드는 방법은? (3)</summary>
+<br>
+
+- `overflow-x` 속성을 auto로 하여 가로 스크롤바를 표시합니다. 이때, `overflow-y` 속성은 `hidden` 값을 지정하여 세로 스크롤바를 표시하지 않도록 설정해야 합니다.
+- `white-space` 속성을 `nowrap` 값으로 설정하여 요소 내의 텍스트가 줄바꿈 없이 한 줄에 표시되도록 합니다. 이때, 요소의 너비를 초과하는 경우 자동으로 가로 스크롤이 생성됩니다.
+- 예시
+  ```css
+  .container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  }
+  ```
+</details>
+
+<details>
+<summary>마진 상쇄(margin collapse)란? (4)</summary>
+<br>
+
+- 인접한 블록 요소의 마진 값이 병합되는 현상을 말합니다.
+- 이 현상은 다음과 같은 상황에서 발생합니다.
+  - 인접한 블록 요소의 상/하단 마진 값이 모두 존재할 경우
+  - 부모 요소와 첫 번째 자식 요소 또는 마지막 자식 요소 사이의 마진 값이 존재할 경우
+- 마진 병합은 다음과 같은 규칙에 따라 처리됩니다.
+  - 인접한 블록 요소의 마진 값 중 더 큰 값을 사용합니다.
+  - 부모 요소와 첫 번째 자식 요소, 마지막 자식 요소 사이의 마진 값 중 더 큰 값을 사용합니다.
+  - 부모 요소와 첫 번째 자식 요소, 마지막 자식 요소 사이에 다른 요소가 존재한다면, 이러한 마진 병합 현상이 발생하지 않습니다.
+- 마진 병합은 다음과 같이 해결합니다.
+  - 인접한 블록 요소의 상/하단 마진 값을 각각 0으로 설정합니다.
+  - 부모 요소와 첫 번째 자식 요소, 마지막 자식 요소 사이에 빈 요소를 추가합니다.
+</details>
+
+<details>
+<summary>display 속성값은 어떤 것이 있나요? (11)</summary>
+<br>
+
+- none
+- block
+- inline
+- inline-block
+- table
+- table-row
+- table-cell
+- flex
+- grid
+- inline-flex
+- inline-grid
+</details>
+
+<details>
+<summary>display: none이란? (2)</summary>
+<br>
+
+- 해당 요소는 HTML 문서의 구조에서는 존재하지만, 실제 화면에는 표시되지 않습니다.
+- 요소가 차지하는 공간도 없어지므로, 주로 불필요한 요소를 감추거나, JavaScript를 사용하여 동적으로 요소를 추가/제거할 때 유용합니다.
+</details>
+
+<details>
+<summary>display: block이란? (3)</</summary>
+<br>
+
+- 해당 요소를 새로운 줄에서 표시하고, 요소의 너비를 부모 요소의 전체 너비로 설정하는 속성입니다.
+- 위에서 아래로 배치됩니다.
+- 너비와 높이를 지정할 수 있습니다.
+</details>
+
+
+<details>
+<summary>display: block인 HTML 태그는 어떤 것이 있나요? (8)</summary>
+<br>
+
+- 블록 레벨 컨테이너 요소: `<div>`
+- 문단 요소: `<p>`
+- 제목 요소: `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`
+- 목록 요소: `<ul>`, `<ol>`
+- 목록 항목 요소: `<li>`
+- 테이블 요소: `<table>`, `<thead>`, `<tbody>`, `<tfoot>`, `<tr>`, `<th>`, `<td>`,
+- 폼 요소: `<form>`, `<fieldset>`, `<legend>`, `<input>`, `<label>`, `<select>`, `<option>`, `<textarea>`, `<button>`, `<optgroup>`, `<datalist>`, `<output>`, `<header>`
+- HTML5에서 추가된 요소: `<footer>`, `<nav>`, `<aside>`, `<article>`
+</details>
+
+
 
 
 
@@ -658,4 +753,4 @@ border-radius: 50%;
 <br>
 
 - 
-/</details>
+</details>
