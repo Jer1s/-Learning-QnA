@@ -513,51 +513,207 @@
 </details>
 
 <details>
-<summary> ()</summary>
+<summary>form 태그란? (3)</summary>
 <br>
 
-- 
+- 웹 페이지에서 사용자로부터 데이터를 수집하기 위한 양식을 정의하는 데 사용됩니다.
+- `<form>` 태그는 다른 HTML 요소들을 포함할 수 있으며, 이러한 요소들은 사용자가 입력할 수 있는 입력 필드, 제출 버튼, 선택 상자, 라디오 버튼 등입니다.
+- 사용자가 `<form>` 태그에 데이터를 입력하면, 이러한 데이터는 보통 웹 서버로 전송되어 처리됩니다.
+</details>
+
+<details>
+<summary>form 태그의 attribute는 어떤 것이 있나요? (5)</summary>
+<br>
+
+- `action` 폼 데이터를 전송할 URL을 지정합니다.
+- `method` HTTP 요청 방법을 지정합니다. 일반적으로 GET 또는 POST 값을 갖습니다.
+- `target` 폼 데이터를 전송한 후 결과를 표시할 위치를 지정합니다.
+- `enctype` 폼 데이터를 서버로 전송할 때 사용되는 인코딩 유형을 지정합니다. 기본값은 application/x-www-form-urlencoded 입니다.
+- `autocomplete` 자동 완성을 사용할지 여부를 지정합니다. on 또는 off 값을 갖습니다.
+</details>
+
+<details>
+<summary>input 태그란? (2)</summary>
+<br>
+
+- 사용자가 데이터를 입력할 수 있는 입력 필드를 만드는 데 사용됩니다.
+- `<input>` 태그는 다양한 종류의 입력 필드를 만들 수 있습니다. 예를 들어, 텍스트 입력 필드, 비밀번호 입력 필드, 라디오 버튼, 체크박스, 파일 업로드 필드 등이 있습니다.
+</details>
+
+<details>
+<summary>input 태그와 label 태그를 연결하는 방법은? (2)</summary>
+<br>
+
+- input 태그의 id를 label 태그의 for 속성값으로 주면 됩니다.
+- input 태그를 label 태그 내부에 넣으면 됩니다.
+</details>
+
+<details>
+<summary>input 태그의 attribute는 어떤 것이 있나요? (7)</summary>
+<br>
+
+- `type` 입력받을 데이터의 유형을 지정합니다. 
+- `name` 입력받은 데이터의 이름을 지정합니다. 서버로 전송될 때 데이터를 식별하는 데 사용됩니다.
+- `value` 입력받은 데이터의 값입니다. `type` 속성값에 따라 다르게 사용됩니다.
+- `placeholder` 입력 필드 내부에 힌트 또는 예시를 제공합니다.
+- `required` 입력 필드가 반드시 채워져야 하는지 여부를 나타냅니다.
+- `readonly` 입력 필드를 읽기 전용으로 만듭니다. 즉, 사용자가 값을 변경할 수 없습니다.
+- `disabled` 입력 필드를 비활성화합니다. 사용자가 값을 입력할 수 없습니다.
+</details>
+
+<details>
+<summary>input type에는 어떤 것이 있나요? (10)</summary>
+<br>
+
+
+- `text` 텍스트 입력
+- `email` 이메일 입력
+- `password` 비밀번호 입력
+- `date` 날짜 입력
+- `number` 숫자 입력
+  - `min`, `max`, `step` attribute를 사용하여 입력 가능한 값의 범위와 증가 단위를 지정할 수 있습니다.
+- `range` 슬라이더 형태의 입력
+- `checkbox` 체크박스
+  - `name`의 값이 `on`, `off`라는 문자열로 지정됩니다.
+  - `value` 속성을 써서 `name`의 값을 `value` 속성값(문자열)로 지정할 수 있습니다.
+- `radio` 라디오 버튼
+  - checkbox와 비슷하지만 여러 항목 중 하나의 항목만 선택할 수 있습니다.
+- `file` 파일 업로드
+  - `accept` attribute를 써서 허용할 파일 확장자들을 정할 수 있습니다.
+  - `multiple` attribute를 써서 여러 개의 파일을 선택할 수 있게 할 수 있습니다.
+- `submit` 서버로 폼 데이터 전송
+</details>
+
+<details>
+<summary>&ltbutton&gt 태그의 type 속성값은 어떤 것이 있나요? (3)</summary>
+<br>
+
+- `submit` 폼 데이터를 서버로 제출합니다. 이 버튼이 클릭되면 `<form>` 요소에서 action 속성에 지정된 URL로 데이터가 전송됩니다.
+  - default event로 url에 qurey string으로 input의 name=value 값을 전달합니다.
+- `reset` 폼 데이터를 초기화합니다. 이 버튼이 클릭되면 모든 폼 필드의 값을 초기 값으로 되돌립니다.
+- `button` 일반 버튼을 생성합니다. 이 버튼을 클릭해도 아무 일도 발생하지 않습니다. 이 속성을 사용하여 자바스크립트 이벤트 핸들러를 버튼에 연결할 수 있습니다.
+</details>
+
+<details>
+<summary>다른 form element는 어떤 것이 있나요? (2)</summary>
+<br>
+
+- `<select>`
+  - 옵션 목록을 제공하며, 사용자가 목록에서 값을 선택할 수 있도록 합니다.
+  - 이 요소는 다음과 같은 속성을 가질 수 있습니다
+    - `name` 요소의 이름(Name)을 지정합니다. 폼 데이터의 이름으로 사용됩니다.
+	- `multiple` 여러 옵션을 선택할 수 있도록 합니다.
+	- `size` 목록에서 표시되는 옵션의 수를 지정합니다.
+  - 내부에 `value` 속성을 갖는 `<option>` 태그를 넣어서 구현합니다.
+  - 예시
+    ```html
+	<select name="fruit">
+      <option value="apple">사과</option>
+      <option value="banana">바나나</option>
+      <option value="orange">오렌지</option>
+    </select>
+	```
+- `<textarea>`
+  - 여러 줄의 텍스트를 입력할 수 있는 텍스트 영역을 제공합니다.
+  - 이 요소는 다음과 같은 속성을 가질 수 있습니다
+    - `name` 요소의 이름(Name)을 지정합니다. 폼 데이터의 이름으로 사용됩니다.
+	- `rows` 텍스트 영역에 보여지는 줄의 수를 지정합니다.
+	- `cols` 텍스트 영역에 보여지는 칸의 수를 지정합니다.
+  - 예시
+  	```html
+    <textarea name="message" rows="4" cols="40">
+    여러 줄의 텍스트를 입력할 수 있습니다.
+    </textarea>
+    ```
+</details>
+
+<details>
+<summary>link 태그란? (4)</summary>
+<br>
+
+- HTML 문서에서 다른 문서와의 연결(link)을 지정하는 데 사용됩니다.
+- 보통 스타일 시트, 아이콘, 웹 폰트 등의 외부 리소스와의 연결을 지정하는 데 사용됩니다.
+- 이 요소는 다음과 같은 속성을 가질 수 있습니다
+  - `href` 연결할 문서의 URL을 지정합니다.
+  - `rel` 현재 문서와 연결된 문서와의 관계(Relationship)를 지정합니다. 일반적으로 스타일 시트를 연결할 때는 "stylesheet" 값을 사용합니다.
+  - `type` 연결된 문서의 MIME 타입을 지정합니다. 스타일 시트를 연결할 때는 "text/css" 값을 사용합니다.
+  - `media` 연결된 문서가 적용될 미디어 타입(Media Type)을 지정합니다. 기본값은 "all" 입니다.
+- 예시
+  ```html
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="fonts.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+  </head>
+  ```
+</details>
+
+<details>
+<summary>&ltscript&gt 태그란? (2)</summary>
+<br>
+
+-  요소는 HTML 문서에 스크립트를 삽입하는 데 사용됩니다.
+- 스크립트는 보통 클라이언트 측에서 실행되며, 동적인 기능을 추가하거나 웹 페이지의 동작을 제어하는 데 사용됩니다.
+</details>
+
+<details>
+<summary>&ltscript&gt 태그의 attribute는 어떤 것이 있나요? (2)</summary>
+<br>
+
+- `src` 실행할 스크립트 파일의 URL을 지정합니다. 이 속성을 사용하면 `<script>` 요소 내부에 스크립트 코드를 작성하지 않고 외부 스크립트 파일을 불러올 수 있습니다.
+- `type` 스크립트 코드의 MIME 타입을 지정합니다. 일반적으로 "text/javascript" 값을 사용합니다. HTML5부터는 이 속성을 생략해도 기본값으로 "text/javascript"가 지정됩니다.
+</details>
+
+<details>
+<summary>&ltscript&gt 태그를 작성할 때 고려해야할 사항은 무엇인가요? (4)</summary>
+<br>
+
+- `<script>`는 종료 태그가 필요합니다.
+- `<script>` 요소를 사용하여 작성된 스크립트는 일반적으로 웹 페이지의 렌더링이 완료된 후 실행됩니다. 따라서, 스크립트에서 HTML 요소를 조작하거나 스타일을 변경하는 등의 작업을 수행하려면 HTML 문서가 모두 로드된 후에 실행되도록 해야 합니다.
+- `<script>` 요소를 사용하여 외부 스크립트 파일을 불러올 때는 파일의 URL이 유효한지, 스크립트 파일이 존재하는지 등을 확인해야 합니다.
+- 스크립트 파일의 크기가 크거나, 로딩 시간이 길어질 경우 페이지의 로딩 속도가 느려질 수 있습니다. 이러한 경우, 스크립트 파일을 압축하거나, 필요한 경우 비동기적으로 로딩하는 방법을 고려할 수 있습니다.
+</details>
+
+<details>
+<summary>&ltscript&gt를 &ltbody&gt 태그 내부 마지막에 작성하는 것이 권장되는 이유가 무엇인가요? (2)</summary>
+<br>
+
+- 웹 페이지가 로딩되는 동안 스크립트 파일을 다운로드하는 시간이 추가되어 페이지 로딩 속도가 느려질 수 있기 때문입니다.
+- 웹 페이지 내용이 전부 렌더링 되기 전에 `<script>` 내부에서 렌더링 되지 않은 DOM 요소에 접근하려 한다면 예기치 못한 오류가 발생할 수 있기 때문입니다.
+</details>
+
+<details>
+<summary>시맨틱 태그(Semantic tag)란? (3)</summary>
+<br>
+
+- HTML5에서 소개된 태그 중 하나로, 웹 페이지의 콘텐츠의 의미를 설명하는 역할을 합니다.
+- 웹 페이지의 구조와 콘텐츠의 의미를 명확하게 나타낼 수 있어 검색 엔진이나 스크린 리더 등이 웹 페이지를 더 잘 이해하고 처리할 수 있습니다.
+- `semantic tag` list
+   - `<header>` 도입부에 해당하는 콘텐츠
+   - `<nav>` HTML 문서 사이를 탐색할 수 있는 링크의 집합
+   - `<main>` HTML 문서 내에 한 번만 사용할 수 있는 주요 콘텐츠
+   - `<footer>` 사이트의 작성자나 저작권 정보, 연락처 등이 있는 콘텐츠
+   - `<article>` 독립적인 하나의 콘텐츠
+   - `<section>` 전체적인 내용과 관련이 있는 콘텐츠
+   - `<aside>` 부가 정보나 광고 등이 있는 콘텐츠
+   - `<figure>` image와 image caption이 있는 콘텐츠로 `<figcaption>`을 자식 요소로 쓰곤 한다 
+</details>
+
+<details>
+<summary>시맨틱 태그 사용의 이점은 무엇인가요? (5)</summary>
+<br>
+
+- 의미 전달의 명확화: Semantic tag는 콘텐츠의 의미와 구조를 명확하게 전달할 수 있습니다. 이는 검색 엔진이나 스크린 리더 등이 웹 페이지를 더 잘 이해하고 처리할 수 있도록 돕습니다.
+- 검색 엔진 최적화(Search Engine Optimization, SEO): Semantic tag를 사용하면 검색 엔진이 페이지의 구조와 콘텐츠를 더 잘 인식할 수 있습니다. 따라서 검색 결과에서 상위에 노출될 가능성이 높아집니다.
+- 웹 접근성(Web Accessibility = A11y) 향상: Semantic tag를 사용하면 스크린 리더 등의 보조 기술을 사용하는 사용자들도 웹 페이지를 더 쉽게 이해하고 사용할 수 있습니다. 이는 웹 접근성을 높이는 데에 큰 도움이 됩니다.
+- 코드 유지 보수성 향상: Semantic tag를 사용하면 코드의 가독성과 유지 보수성이 향상됩니다. 의미 있는 태그를 사용하면 다른 개발자들도 코드를 더 쉽게 이해하고 수정할 수 있습니다.
+- 미래 호환성 보장: Semantic tag를 사용하면 새로운 웹 기술이 등장해도 이전에 작성한 코드가 더욱 유연하게 대처할 수 있습니다. Semantic tag를 사용하면 콘텐츠와 구조를 명확하게 전달할 수 있기 때문에, 새로운 기술이 등장해도 이전 코드를 수정하지 않고도 호환성을 유지할 수 있습니다.
 </details>
 
 
 <details>
-<summary> ()</summary>
+<summary></summary>
 <br>
 
 - 
 </details>
-
-
-<details>
-<summary> ()</summary>
-<br>
-
-- 
-</details>
-
-
-<details>
-<summary> ()</summary>
-<br>
-
-- 
-</details>
-
-
-<details>
-<summary> ()</summary>
-<br>
-
-- 
-</details>
-
-
-<details>
-<summary> ()</summary>
-<br>
-
-- 
-</details>
-
-
-
