@@ -699,14 +699,13 @@ border-radius: 50%;
 </details>
 
 <details>
-<summary>display: block이란? (3)</</summary>
+<summary>display: block이란? (3)</summary>
 <br>
 
 - 해당 요소를 새로운 줄에서 표시하고, 요소의 너비를 부모 요소의 전체 너비로 설정하는 속성입니다.
 - 위에서 아래로 배치됩니다.
 - 너비와 높이를 지정할 수 있습니다.
 </details>
-
 
 <details>
 <summary>display: block인 HTML 태그는 어떤 것이 있나요? (8)</summary>
@@ -718,11 +717,42 @@ border-radius: 50%;
 - 목록 요소: `<ul>`, `<ol>`
 - 목록 항목 요소: `<li>`
 - 테이블 요소: `<table>`, `<thead>`, `<tbody>`, `<tfoot>`, `<tr>`, `<th>`, `<td>`,
-- 폼 요소: `<form>`, `<fieldset>`, `<legend>`, `<input>`, `<label>`, `<select>`, `<option>`, `<textarea>`, `<button>`, `<optgroup>`, `<datalist>`, `<output>`, `<header>`
+- 폼 요소: `<form>`, `<fieldset>`, `<legend>`, `<input>`, `<select>`, `<option>`, `<textarea>`, `<button>`, `<optgroup>`, `<datalist>`, `<output>`, `<header>`
 - HTML5에서 추가된 요소: `<footer>`, `<nav>`, `<aside>`, `<article>`
 </details>
 
+<details>
+<summary>display: inline이란? (2)</summary>
+<br>
 
+- 해당 요소를 새로운 줄이 아닌, 텍스트 흐름 내에서 표시하는 속성입니다.
+- 제약 사항
+  - 너비와 높이: 요소는 내용물에 맞게 자동으로 너비와 높이가 결정됩니다. 따라서, 너비와 높이를 직접 설정할 수 없습니다.
+  - 패딩과 마진: 요소는 수평 방향의 패딩과 마진은 설정할 수 있지만, 수직 방향의 패딩과 마진은 설정할 수 없습니다.
+  - 줄바꿈: 요소는 자동으로 줄바꿈이 되지 않습니다. 따라서, 요소가 너무 길어지면 부모 요소를 벗어나게 됩니다.
+</details>
+
+<details>
+<summary>display: inline인 HTML 태그는 어떤 것이 있나요? (9)</summary>
+<br>
+
+- `span` 인라인 레벨 컨테이너 태그
+- `a` 하이퍼링크를 생성하는 태그
+- `b` 굵은 글씨체로 표시하는 태그
+- `img` 이미지를 표시하는 태그(예외적으로 직접 너비와 높이를 설정할 수 있다.)
+- `input` 사용자 입력을 받는 폼 요소 태그 (type 속성에 따라 다양한 종류가 있음)
+- `label` 폼 요소의 설명을 제공하는 태그
+- `select` 드롭다운 형태의 선택 폼 요소 태그
+- `textarea` 여러 줄의 텍스트 입력 폼 요소 태그
+- `em`, `i`, `strong`, `cite`, `q`, `dfn`, `code`, `var`, `samp`, `kbd`, `sub`, `sup`, `small` 등
+</details>
+
+<details>
+<summary>()</summary>
+<br>
+
+- 
+</details>
 
 
 
