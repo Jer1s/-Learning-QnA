@@ -36,7 +36,125 @@
 </details>
 
 <details>
-<summary></summary>
+<summary>재귀 함수(Recusive function)란?</summary>
+<br>
+
+- 자기 자신을 호출하는 함수
+</details>
+
+<details>
+<summary>재귀적 문제 풀이란? (2)</summary>
+<br>
+
+- 재귀적 문제 풀이: 부분 문제(Subprorblem)의 답을 이용해서 기존 문제를 푸는 것
+  - 부분 문제(Subproblem): 같은 형태의 더 작은 문제
+</details>
+
+<details>
+<summary>재귀 함수와 반복문을 비교해주세요. (6)</summary>
+<br>
+
+- 반복문으로 풀 수 있는 문제는 재귀 함수로 풀 수 있다.
+- 재귀 함수로 풀 수 있는 문제는 반복문으로 풀 수 있다.
+- 재귀 함수 호출이 너무 많으면 콜 스택(Call Stack)이 계속해서 쌓이면서 StackOverflowError가 발생한다.
+  - 콜 스택(Call Stack): 프로그램이 현재 실행중인 서브루틴에 대한 정보를 저장하는 스택 데이터 구조
+  - 파이썬은 콜 스택을 1,000개까지만 허용한다.
+- 콜 스택 문제가 일어나지 않을 때, 반복문보다 재귀 함수로 쓰면 코드가 깔끔해지는 문제에는 재귀 함수를 쓰는 것이 좋다.
+</details>
+
+<details>
+<summary> </summary>
+<br>
+
+- 
+</details>
+
+<details>
+<summary> </summary>
+<br>
+
+- 
+</details>
+
+<details>
+<summary> </summary>
+<br>
+
+- 
+</details>
+
+<details>
+<summary> </summary>
+<br>
+
+- 
+</details>
+
+<details>
+<summary> </summary>
+<br>
+
+- 
+</details>
+
+<details>
+<summary> </summary>
+<br>
+
+- 
+</details>
+
+<details>
+<summary> </summary>
+<br>
+
+- 
+</details>
+
+<details>
+<summary> </summary>
+<br>
+
+- 
+</details>
+
+<details>
+<summary> </summary>
+<br>
+
+- 
+</details>
+
+<details>
+<summary> </summary>
+<br>
+
+- 
+</details>
+
+<details>
+<summary> </summary>
+<br>
+
+- 
+</details>
+
+<details>
+<summary> </summary>
+<br>
+
+- 
+</details>
+
+<details>
+<summary> </summary>
+<br>
+
+- 
+</details>
+
+<details>
+<summary> </summary>
 <br>
 
 - 
