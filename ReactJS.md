@@ -421,38 +421,50 @@ function my_func(props) {
 </details>
 
 <details>
-<summary> (3)</summary>
+<summary>빌드(build)란? (3)</summary>
 <br>
 
-- 
+- 빌드는 소스 코드를 처리하여 애플리케이션을 구동하기 위한 최적화된 정적 파일을 생성하는 과정을 말합니다.
+- React 애플리케이션을 배포할 때는, 빌드된 파일들을 웹 서버에 호스팅하여 사용자들이 접근할 수 있도록 합니다.
+- 빌드된 파일은 개발 환경에서 실행하는 경우에 비해 더 빠르게 로딩되며, 애플리케이션의 성능과 안정성을 향상시킬 수 있습니다.
 </details>
 
 <details>
-<summary> (3)</summary>
+<summary>빌드 과정에 대해 설명해주세요. (3)</summary>
 <br>
 
-- 
+1. 코드 번들링(code bundling): 애플리케이션에 사용된 모든 JavaScript, CSS, 이미지 등의 파일들을 번들(bundle)로 묶어줍니다. 번들링을 하면 파일 요청 수를 줄여서 초기 로딩 속도를 개선할 수 있습니다.
+2. 최적화: 코드를 최적화하여 파일 크기를 줄이고, 불필요한 코드를 제거합니다. 이를 통해 애플리케이션의 로딩 속도를 개선할 수 있습니다.
+3. 소스 맵 생성: 소스 맵(Source Map)은 빌드된 파일과 원본 소스 코드 간의 대응 관계를 정의한 맵 파일입니다. 디버깅 시 원본 소스 코드에서 오류를 확인할 수 있도록 도와줍니다.
 </details>
 
 <details>
-<summary> (3)</summary>
+<summary>클라우드 컴퓨팅(Cloud computing)이란? (3)</summary>
 <br>
 
-- 
+- 인터넷을 통해 컴퓨팅 서비스를 제공하는 기술입니다.
+- IaaS(Infrastructure as a Service), PaaS(Platform as a Service), SaaS(Software as a Service) 등의 다양한 서비스 모델을 제공합니다.
+- Amazon Web Services(AWS), Microsoft Azure, Google Cloud Platform(GCP), Heroku, IBM Cloud, Oracle Cloud, Alibaba Cloud, Naver Cloud Platform 등의 클라우드 서비스 제공업체가 있습니다.
 </details>
 
 <details>
-<summary> (3)</summary>
+<summary>트랜스파일링(Transpiling)이란? (4)</summary>
 <br>
 
-- 
+- 트랜스파일링(Transpiling)은 하나의 프로그래밍 언어로 작성된 코드를 다른 프로그래밍 언어로 변환하는 것을 말합니다.
+- 트랜스파일링은 주로 최신 문법을 지원하지 않는 브라우저에서도 실행 가능한 코드로 변환하기 위해 사용됩니다.
+- 트랜스파일링을 위해서는 대표적으로 Babel이라는 도구를 사용합니다.
+  - Babel은 ES6+ 자바스크립트 코드를 ES5 이하 버전의 자바스크립트 코드로 변환하는 기능뿐만 아니라, 다양한 플러그인을 제공하여 코드의 특정 기능을 지원하지 않는 브라우저에서도 동작할 수 있는 코드로 변환하는 작업을 수행합니다.
 </details>
 
 <details>
-<summary> (3)</summary>
+<summary>번들링(Bundling)이란? (4)</summary>
 <br>
 
-- 
+- 번들링(Bundling)은 여러 개의 파일들을 하나의 파일로 묶는 작업을 말합니다.
+- 번들링을 하면 파일 요청 수와 파일 크기가 줄어들어 웹 페이지 로딩 속도가 빨라지는 장점이 있습니다.
+- 번들링을 통해 개발자는 여러 개의 파일로 작업하는 대신 하나의 번들 파일로 작업할 수 있으며, 번들링된 파일을 웹 페이지에 삽입하여 사용할 수 있습니다.
+- 번들링 도구로는 webpack, Parcel, Rollup 등이 있으며, 이들 도구는 여러 모듈들을 하나의 번들 파일로 묶어주는 역할을 합니다.
 </details>
 
 <details>
