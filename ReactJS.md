@@ -468,24 +468,32 @@ function my_func(props) {
 </details>
 
 <details>
-<summary> (3)</summary>
+<summary>리액트에서 배열을 렌더링할 때, key를 써야 하는 이유 (4)</summary>
 <br>
 
-- 
+- key prop을 사용하는 이유는 React에서 엘리먼트를 업데이트할 때, 어떤 엘리먼트가 변경되었는지 알아내기 위함입니다.
+- React에서 엘리먼트를 업데이트할 때, 변경된 부분만을 업데이트하기 위해 Virtual DOM을 사용합니다.
+- React rendering의 재조정(reconciliation) 과정에서 각 요소에 key prop이 지정되어 있으면 React는 변경된 엘리먼트를 더욱 빠르게 찾을 수 있습니다.
+-key prop이 없으면 배열의 state가 변경될 경우 React는 모든 엘리먼트를 새로 렌더링하므로 성능이 저하될 수 있습니다.
 </details>
 
 <details>
-<summary> (3)</summary>
+<summary>Key prop이란? (3)</summary>
 <br>
 
-- 
+- React에서 key prop은 각각의 리스트 아이템을 서로 구분하는 prop입니다.
+- key prop은 전체 리스트에서 고유해야 하며(중복되지 않는 유일한 값), 해당 아이템이 변경되었을 때 React가 변경 사항을 더욱 빠르게 처리할 수 있도록 해줍니다.
+- key prop에 중복된 값을 지정하게 되면 React는 각 아이템을 구분하지 못해 오류를 발생시킬 수 있습니다.
 </details>
 
 <details>
-<summary> (3)</summary>
+<summary>key prop으로 사용할 수 있는 데이터 타입 (4)</summary>
 <br>
 
-- 
+- key prop으로 사용할 수 있는 값은 문자열(string)이나 숫자(number)입니다.
+- 다른 타입의 값이 지정되는 경우 React는 해당 값을 문자열로 변환하여 사용합니다.
+- 그러나 key prop에 객체(object)나 함수(function) 등의 값은 지정할 수 없습니다.
+- key prop의 값을 동적으로 생성하게 되면 컴포넌트의 재사용성과 성능에 영향을 미칠 수 있으므로, 가능하다면 key prop은 정적인 값을 사용하는 것이 좋습니다.
 </details>
 
 <details>
