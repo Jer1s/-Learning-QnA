@@ -151,13 +151,6 @@
 </details>
 
 <details>
-<summary> </summary>
-<br>
-
-- 
-</details>
-
-<details>
 <summary>튜플(Tuple)이란?</summary>
 <br>
 
