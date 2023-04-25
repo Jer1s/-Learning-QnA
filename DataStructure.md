@@ -19,8 +19,8 @@
 <summary>Big O notation이란? (3)</summary>
 <br>
 
-- 인수가 특정 값 또는 무한대로 향하는 경향이 있을 때 함수의 제한 동작을 설명하는 수학적 표기법입니다.
-- 어떤 함수 `f(n)`의 Big-O notation이 `O(g(n))`이라는 것은, n의 값이 일정 수준을 넘어가면 그 이상의 어떤 n을 대입하여도 `f(n) < c*g(n)`을 만족하는 상수 c가 존재한다는 뜻입니다.
+- Argument가 특정 값 또는 무한대로 향하는 경향이 있을 때 함수의 동작 범위 설명하는 수학적 표기법입니다.
+- 어떤 함수 `f(n)`의 Big-O notation이 `O(g(n))`이라는 것은, n의 값이 일정 수준을 넘어가면 그 이상의 어떤 n을 대입하여도 `|f(n)| < c*g(n)`을 만족하는 양의 실수 c가 존재한다는 뜻입니다.
 - `Best-case`, `Worst-case`, `Average(Expected)-case`로 상황별로 나누어서 계산합니다.
 </details>
 
@@ -63,38 +63,77 @@
 </details>
 
 <details>
-<summary> </summary>
+<summary>알고리즘이란? (2)</summary>
 <br>
 
-- 
+- `알고리즘(algorithm)` 유한하게 연속적인 정밀한 명령
+- 문제를 효율적이게 해결하는 것이 좋은 알고리즘이다.
 </details>
 
 <details>
-<summary> </summary>
+<summary>선형 탐색 알고리즘(linear search algorithm)이란? (2)</summary>
 <br>
 
-- 
+- 한쪽 끝에서 시작하여 원하는 요소를 찾을 때까지 목록의 각 요소를 검색하는 알고리즘
+- Performance
+  - Worst-case time complexity: O(n)
+  - Best-case time complexity: O(1)
+  - Average time complexity: O(n)
+  - Worst-case space complexity: O(1)
+  - Best-case space complexity: O(1)
+  - Average space complexity: O(1)
 </details>
 
 <details>
-<summary> </summary>
+<summary>이진 탐색 알고리즘(Binary search algorithm)이란? (3)</summary>
 <br>
 
-- 
+- 정렬된 배열에서 탐색 범위를 절반씩 줄여 나가면서 원하는 요소를 찾는 알고리즘
+- Process
+  1.  정렬된 배열에서 원하는 요소와 배열의 중간 요소를 비교합니다.
+  2. 동일하지 않으면 대상이 존재할 수 없는 배열의 절반이 제거되고 나머지 배열 절반에서 검색이 계속됩니다.
+  3. 반으로 줄어든 배열에서 대상 값을 찾을 때까지 이 작업을 반복합니다.
+- Performance
+  - Worst-case time complexity: O(log n)
+  - Best-case time complexity: O(1)
+  - Average time complexity: O(log n)
+  - Worst-case Space complexity: O(1)
+  - Best-case Space complexity: O(1)
+  - Average Space complexity: O(1)
 </details>
 
 <details>
-<summary> </summary>
+<summary>선택 정렬 알고리즘(Selection sort algorithm)이란? (2)</summary>
 <br>
 
-- 
+- Process
+  1. 주어진 배열의 요소 중 최솟값을 찾습니다.
+  2. 그 값을 맨 앞에 위치한 값과 교체합니다.
+  3. 맨 처음 위치를 제외한 나머지 배열에서 같은 방법을 반복합니다.
+- Performance
+  - Worst-case time complexity: O(n^2)
+  - Best-case time complexity: O(n^2)
+  - Average time complexity: O(n^2)
+  - Worst-case Space complexity: O(1)
+  - Best-case Space complexity: O(1)
+  - Average Space complexity: O(1)
 </details>
 
 <details>
-<summary> </summary>
+<summary>삽입 정렬 알고리즘(Insertion sort algorithm)이란? (2)</summary>
 <br>
 
-- 
+- Process
+  1. 배열의 두 번째 요소부터 시작합니다. (첫 번째 요소는 정렬이 되어있는 상태이기 때문에)
+  2. 그 요소의 왼쪽에 위치한 부분 배열과 비교하여, 그 요소를 부분 배열 속에 삽입할 위치로 이동시킵니다.
+  3. 나머지 배열에서 같은 방법을 인덱스 순서대로 반복합니다.
+- Performance
+  - Worst-case time complexity: O(n^2)
+  - Best-case time complexity: O(n)
+  - Average time complexity: O(n^2)
+  - Worst-case Space complexity: O(1)
+  - Best-case Space complexity: O(1)
+  - Average Space complexity: O(1)
 </details>
 
 <details>
