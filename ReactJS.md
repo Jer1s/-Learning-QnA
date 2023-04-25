@@ -497,59 +497,149 @@ function my_func(props) {
 </details>
 
 <details>
-<summary> (3)</summary>
+<summary>리액트로 데이터를 다루는 방법</summary>
 <br>
 
-- 
+- 일반적으로 배열을 렌더링하는 컴포넌트를 만들고, 서버에서 받은 상태(state)와 속성(props)을 사용합니다.
 </details>
 
 <details>
-<summary> (3)</summary>
+<summary>mock data란? (3)</summary>
 <br>
 
-- 
+- mock 데이터 파일은 서버 개발 없이 클라이언트 개발을 할 때 사용하는 가짜(mock) 데이터 파일입니다.
+- 보통 API를 호출할 때 서버에서 데이터를 받아오는데, 개발 중인 클라이언트에서 서버의 API가 아직 완성되지 않은 경우나, 서버 API를 모방해야 하는 경우 등에서 mock 데이터 파일을 사용하여 가짜 데이터를 제공할 수 있습니다.
+- mock 데이터 파일은 프로젝트 내에 직접 작성할 수도 있고, mock 서버를 사용하여 mock 데이터를 생성할 수도 있습니다. 대표적인 mock 서버로는 json-server나 Mirage JS 등이 있습니다.
 </details>
 
 <details>
-<summary> (3)</summary>
+<summary>map()이란? (7)</summary>
 <br>
 
-- 
+- 자바스크립트의 배열 메소드 중 하나로, 배열의 모든 요소를 반복하면서 새로운 배열을 만들어 리턴하는 함수입니다.
+- `map()` 함수의 구문은 다음과 같습니다.
+    ```jsx
+    array.map(function(currentValue, index, arr), thisValue)
+    ```
+    - `currentValue` 현재 처리 중인 요소의 값
+    - `index` 현재 처리 중인 요소의 인덱스
+    - `arr` map() 메소드를 호출한 배열
+    - `thisValue (optional)`: 메소드 내에서 this 키워드가 가리킬 값
+- `map()` 함수는 콜백 함수를 매개변수로 받아 각 요소에 대해 실행하고, 새로운 배열을 리턴합니다.
+- 다음은 `map()` 메소드를 사용하여 배열의 각 요소를 제곱한 새로운 배열을 생성하는 예시입니다.
+    ```jsx
+    const numbers = [1, 2, 3, 4, 5];
+    const squaredNumbers = numbers.map((number) => number * number);
+
+    console.log(squareNumbers); // [1, 4, 9, 16, 25]
+    ```
 </details>
 
 <details>
-<summary> (3)</summary>
+<summary>React에서 map() 메소드로 배열 렌더링하는 방법 (3)</summary>
 <br>
 
-- 
+- React에서 배열을 렌더링하는 가장 일반적인 방법 중 하나는 map() 메소드를 사용하여 배열의 각 요소를 JSX로 변환하는 것입니다.
+- Arrow callback function을 활용해서 효율적으로 JSX 코드를 작성할 수 있습니다.
+- 예시
+  ```jsx
+  function ReviewList({ items }) {
+    return (
+      <ul>
+        {items.map((item) => {
+          return (
+            <li>
+              <ReviewListItem item={item} />
+            </li>
+          );
+        })}
+      </ul>
+    );
+  }
+  ```
 </details>
 
 <details>
-<summary> (3)</summary>
+<summary>sort()란? (5)</summary>
 <br>
 
-- 
+- 자바스크립트의 배열 메소드 중 하나로, 배열의 요소를 정렬하는 데 사용하는 함수입니다.
+- `sort()` 메소드는 argument를 받지 않거나, 비교 함수(comparison function)를 인자로 받습니다.
+- 비교 함수는 인자로 전달된 두 요소를 비교하여 정렬 순서를 결정합니다. 비교 함수가 없으면, 각 요소를 문자열로 변환하고 유니코드의 코드 포인트 순서대로 정렬합니다.
+- 숫자를 내림차순으로 정렬하려면 비교 함수를 다음과 같이 작성할 수 있습니다.
+  ```jsx
+  const sortedArr = arr.sort((a, b) => b - a);
+  ```
+- 비교 함수의 반환 값이 양수이면 a를 b보다 뒤로 보내고, 음수이면 a를 b보다 앞으로 보냅니다.
 </details>
 
 <details>
-<summary> (3)</summary>
+<summary>React에서 sort() 메소드로 배열의 정렬을 바꾸는 방법 (2)</summary>
 <br>
 
-- 
+- React에서 배열을 정렬하는 가장 일반적인 방법 중 하나는 sort() 메소드의 비교 함수를 사용하는 것입니다.
+- 예시
+  ```jsx
+  import { useState } from 'react';
+  import ReviewList from './ReviewList';
+  import items from '../mock.json';
+
+  function App() {
+    const [order, setOrder] = useState('createdAt');
+    const sortedItems = items.sort((a, b) => b[order] - a[order]);
+
+    const handleNewestClick = () => setOrder('createdAt');
+
+    const handleBestClick = () => setOrder('rating');
+
+    return (
+      <div>
+        <div>
+          <button onClick={handleNewestClick}>최신순</button>
+          <button onClick={handleBestClick}>베스트순</button>
+        </div>
+        <ReviewList items={sortedItems} />
+      </div>
+    );
+  }
+
+  export default App;
+  ```
 </details>
 
 <details>
-<summary> (3)</summary>
+<summary>filter()란? (3)</summary>
 <br>
 
-- 
+- 자바스크립트의 배열 메소드 중 하나로, 주어진 콜백 함수의 테스트를 통과하는 모든 요소를 모아 새로운 배열을 리턴합니다.
+- `filter()` 메소드는 다음과 같은 구조를 가집니다.
+  ```jsx
+  arr.filter(callback(element[, index[, array]])[, thisArg])
+  ```
+  - `element`: 배열에서 현재 처리 중인 요소
+  - `index (optional)`: 배열에서 현재 처리 중인 요소의 인덱스
+  - `array (optional)`: `filter()` 메소드가 호출된 배열
+  - `thisArg (optional)` this 키워드로 참조될 객체
+- 다음은 `filter()` 메소드를 사용하여 배열에서 특정 조건을 만족하는 요소만을 추출하는 예제입니다.
+  ```jsx
+  const numbers = [1, 2, 3, 4, 5];
+  const evenNumbers = numbers.filter((num) => num % 2 === 0);
+  console.log(evenNumbers); // [2, 4]
+  ```
 </details>
 
 <details>
-<summary> (3)</summary>
+<summary>React에서 filter() 메소드로 아이템을 삭제하는 방법 (3)</summary>
 <br>
 
-- 
+- React에서 배열의 요소를 삭제하는 가장 일반적인 방법 중 하나는 filter() 메소드를 사용하여 삭제하려는 아이템의 id와 다른 id의 요소들을 리턴한 배열로 state를 바꾸는 것입니다.
+- 예시
+  ```jsx
+  const handleDelete = (id) => {
+    const nexItems = items.filter((item) => item.id !== id);
+    setItems(nexItems);
+  };
+  ```
 </details>
 
 <details>
