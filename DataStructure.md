@@ -137,10 +137,17 @@
 </details>
 
 <details>
-<summary> </summary>
+<summary>자료 구조(Data structuer)란?</summary>
 <br>
 
-- 
+- 데이터의 효율적인 접근 및 조작을 가능하게 해주는 저장 및 관리 방식
+</details>
+
+<details>
+<summary>배열(list)란?</summary>
+<br>
+
+- 메모리 상에 같은 타입의 자료가 연속적으로 저장되는 자료 구조
 </details>
 
 <details>
@@ -151,49 +158,93 @@
 </details>
 
 <details>
-<summary> </summary>
+<summary>튜플(Tuple)이란?</summary>
+<br>
+
+- 둘 이상의 자료형을 묶음으로 다루는 자료 구조
+</details>
+
+<details>
+<summary>연결 배열(Linked list)이란? (2)</summary>
+<br>
+
+- 자료와 다음 노드를 가리키는 참조값으로 구성된 노드를 단위로 하는 잘교 구조
+- 원형 연결, 이중 연결 등의 연결 리스트도 있습니다.
+</details>
+
+<details>
+<summary>해시 테이블(Hash table)이란? (4)</summary>
+<br>
+
+- 키를 값에 매핑할 수 있는 자료 구조
+- 해시 함수를 사용하여 해시 코드로 인덱싱합니다.
+- 조회 중에 키가 해시되고 결과 해시는 해당 값이 저장된 위치를 나타냅니다.
+- 해시 맵(Hash map)이라고도 부르는데, Java에서 둘의 차이점은 있습니다.
+</details>
+
+<details>
+<summary>스택(stack)이란? (4)</summary>
+<br>
+
+- Push, Pop 두 가지 주요 연산으로 구성된 선형 자료 구조
+- `Push` 컬렉션에 요소를 추가
+- `Pop` 아직 제거되지 않은 가장 최근에 추가된 요소를 제거
+- 가장 최근에 저장된 데이터를 먼저 제거해야 이전에 저장된 데이터에 접근할 수 있습니다.
+</details>
+
+<details>
+<summary>큐(Queue)란? (2)</summary>
+<br>
+
+- 먼저 저장된 데이터가 먼저 나오는 FIFO(First in First Out) 형식의 선형 자료 구조
+- 스택과 반대되는 개념입니다.
+</details>
+
+<details>
+<summary>덱(Deck)이란? (2)</summary>
+<br>
+
+- 시작과 끝에서 넣기와 빼기를 할 수 있는 형식의 선형 자료 구조
+- 큐와 스택을 합친 형태입니다.
+</details>
+
+<details>
+<summary>그래프(Graph)란? (3)</summary>
+<br>
+
+- vertex와 edge로 구성된 비선형 자료 구조
+- edge의 방향성 유무에 따라 directed graph, undirected graph로 나뉩니다.
+- weight의 유무에 따라 weighted graph, unweighted graph로 나뉩니다.
+</details>
+
+<details>
+<summary>트리(Tree)란? (4)</summary>
+<br>
+
+- 연결된 노드 집합이 있는 계층적 비선형 자료 구조
+- 자식 노드는 여러 개일 수 있지만, root node를 제외하고는 정확히 하나의 부모 노드에 연결해야 합니다.
+- 이진 트리(Binary tree)
+  - 각 노드에 최대 두 개의 자식이 있는 트리 구조
+- 이진 힙(Binary heap)
+  - 부모 노드와 자식 노드의 키 값 사이의 대소관계가 항상 일정한 이진 트리
+</details>
+
+<details>
+<summary>()</summary>
 <br>
 
 - 
 </details>
 
 <details>
-<summary> </summary>
+<summary>()</summary>
 <br>
 
 - 
 </details>
 
 <details>
-<summary> </summary>
-<br>
-
-- 
-</details>
-
-<details>
-<summary> </summary>
-<br>
-
-- 
-</details>
-
-<details>
-<summary> </summary>
-<br>
-
-- 
-</details>
-
-<details>
-<summary> </summary>
-<br>
-
-- 
-</details>
-
-<details>
-<summary> </summary>
+<summary>()</summary>
 <br>
 
 - 
