@@ -209,6 +209,15 @@
 </details>
 
 <details>
+<summary>&ltmeta name="robots" content="noindex"&gt가 의미하는 바는 무엇인가요? (3)</summary>
+<br>
+
+- 이 메타 태그는 검색 엔진 크롤러에게 해당 문서를 인덱싱하지 않도록 지시하는 역할을 합니다.
+- `content` 속성의 값으로 `noindex`를 설정하면, 검색 엔진은 해당 페이지를 검색 결과에 포함시키지 않습니다.
+- 이 메타태그는 일시적인 페이지, 개발 중인 페이지, 미완성 페이지 등에서 사용할 수 있습니다.
+</details>
+
+<details>
 <summary>메타 태그(Meta tag)란? (4)</summary>
 <br>
 
