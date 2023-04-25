@@ -286,35 +286,237 @@
 </details>
 
 <details>
-<summary>()</summary>
+<summary>Algorithmic paradigm이란?</summary>
+<br>
+
+- 알고리즘 클래스 설계의 기초가 되는 일반화된 모델
+</details>
+
+<details>
+<summary>Algorithmic paradigm의 종류 (16)</summary>
+<br>
+
+- `General`
+  - Brute-force search
+  - Divide and conquer
+  - Dynamic programming
+  - Greedy algorithm
+  - Backtracking
+  - Branch and bound
+  - Recursion
+  - Prune and search
+- `Parameterized complexity` 파라미터들과 관련된 어려운 계산 문제에 초점을 둔 알고리즘 패러다임
+  - Kernelization
+  - Iterative compression
+- `Computational geometry` 기하학 알고리즘 패러다임
+  - Sweep line algorithm
+  - Rotating calipers
+  - Randomized algorithm
+</details>
+
+<details>
+<summary>Brute-force란? (1)</summary>
+<br>
+
+- 가능한 모든 경우의 수를 시도하는 알고리즘 패러다임
+</details>
+
+<details>
+<summary>Brute-force의 장단점, 의의 (3)</summary>
+<br>
+
+- 장점: 직관적이고, 명확하고, 확실하게 답을 찾을 수 있다.
+- 단점: 비효율적이다.
+- 의의: 효율적인 알고리즘을 찾는 과정의 출발점 역할을 한다.
+</details>
+
+<details>
+<summary>Divide and Conquer란? (4)</summary>
+<br>
+
+- `Divide and Conquer` 문제를 작은 문제로 분할하여 문제를 해결하는 알고리즘 패러다임
+	- `divide` 문제를 두 개 이상의 부분 문제로 재귀적으로 분류하는 과정
+  - `conquer` 문제가 직접 해결될 수 있을 정도로 간단해진 부분 문제의 솔루션을 구하는 과정
+  - `combine` 부분 문제에 대한 솔루션을 결합하여 원래 문제의 답을 구하는 과정
+</details>
+
+<details>
+<summary>Merge Sort의 과정 (3)</summary>
+<br>
+
+- `divide` 배열을 반으로 나눈다.
+- `conquer` 왼쪽 배열과 오른쪽 배열을 각각 정렬한다.
+- `combine` 정렬된 두 배열을 하나의 정렬된 배열로 합병한다.
+</details>
+
+<details>
+<summary>Merge sort의 performance (4)</summary>
+<br>
+
+- Worst-case time complexity: O(nlog(n))
+- Best-case time complexity: O(nlog(n))
+- Average time complexity: O(nlog(n))
+- Worst-case Space complexity: O(n)
+</details>
+
+<details>
+<summary>Quick sort의 과정 (3)</summary>
+<br>
+
+- `divide` 배열 중 요소 하나를 pivot으로 정하고, pivot 앞에는 pivot보다 값이 작은 모든 요소들이 오고, pivot 뒤에는 pivot보다 값이 큰 모든 원소들이 오도록 분할(partition)합니다.
+- `conquer` pivot의 왼쪽 요소들을 모은 배열과 오른쪽 요소들을 모은 배열을 정렬합니다.
+- `combine` 없습니다.
+</details>
+
+<details>
+<summary>Quick sort의 performance (4)</summary>
+<br>
+
+- Worst-case time complexity: O(n^2)
+- Best-case time complexity: O(nlog(n))
+- Average time complexity: O(nlog(n))
+- Worst-case Space complexity: O(nN)
+</details>
+
+<details>
+<summary>Dynamic programming이란? (4)</summary>
+<br>
+
+- `Optimal Substructure`, `Overlapping Subproblems`를 가지고 있는 문제를 작은 문제로 분할하여 문제를 해결하는 알고리즘 패러다임
+- `Memorization` 또는 `Tabulation` 방법으로 구현할 수 있다.
+  - `Optimal Substructure` 부분 문제들의 최적의 답을 이용해서 기존 문제의 최적의 답을 구할 수 있는 구조
+  - `Overlapping Subproblems` 부분 문제의 답이 여러 번 재사용될 수 있는 구조
+</details>
+
+<details>
+<summary>Memorization이란?</summary>
+<br>
+
+- 함수 호출 결과를 캐시 메모리에 저장하고 함수가 동일한 입력으로 다시 호출될 경우 캐시 메모리에 저장한 값을 리턴하는 Top-down 접근 방법
+</details>
+
+<details>
+<summary>Tabulation이란?</summary>
+<br>
+
+- 부분 문제의 답을 Table에 저장하고 전체 문제를 해결할 때까지 이러한 결과를 사용하여 더 큰 부분 문제를 해결하는 bottom-up 접근 방법
+</details>
+
+<details>
+<summary>Memorization, Tabulation의 특징 (14)</summary>
+<br>
+
+- `Memorization`
+  - Top-down 접근법
+  - 부분 문제의 답을 캐싱한다.
+  - 재귀적 구현
+  - 콜 스택이 계속 쌓이기 때문에 StackOverflow가 발생할 수 있다.
+  - 상대적으로 인풋이 작은 문제에 적합하다.
+  - 부분 문제가 다른 부분 문제에 overlap될 때 사용한다.
+- `Tabulation`
+  - Bottom-up 접근법
+  - 부분 문제의 답을 Table에 저장한다.
+  - 반복문으로 구현
+  - 전체 문제에 필요 없는 부분 문제의 계산을 하게 될 수 있다.
+  - 상대적으로 인풋이 큰 문제에 적합하다.
+  - 부분 문제가 다른 부분 문제에 overlap되지 않을 때 사용한다.
+</details>
+
+<details>
+<summary>Greedy algorithm이란? (3)</summary>
+<br>
+
+- 각 단계에서 국소적으로 최적의 선택을 하는, problem-solving heuristics을 따르는 알고리즘 패러다임
+    - `heuristic` 체계적이면서 합리적인 판단을 할 수 없거나 필요하지 않을 때 빠르게 사용할 수 있는 간편추론의 방법
+</details>
+
+<details>
+<summary>Greedy algorithm으로 풀 수 있는 문제는? (2)</summary>
+<br>
+
+- `Optimal Substructure`, `Greedy Choice Property`를 가지고 있는 문제는 Greedy Algorithm으로 최적의 답을 보장할 수 있다.
+  - `Greedy Choice Property` globally optimal solution이 locally optimal choice로부터 얻어질 수 있는 특성
+</details>
+
+<details>
+<summary> (3)</summary>
 <br>
 
 - 
 </details>
 
 <details>
-<summary>()</summary>
+<summary> (3)</summary>
 <br>
 
 - 
 </details>
 
 <details>
-<summary>()</summary>
+<summary> (3)</summary>
 <br>
 
 - 
 </details>
 
 <details>
-<summary>()</summary>
+<summary> (3)</summary>
 <br>
 
 - 
 </details>
 
 <details>
-<summary>()</summary>
+<summary> (3)</summary>
+<br>
+
+- 
+</details>
+
+<details>
+<summary> (3)</summary>
+<br>
+
+- 
+</details>
+
+<details>
+<summary> (3)</summary>
+<br>
+
+- 
+</details>
+
+<details>
+<summary> (3)</summary>
+<br>
+
+- 
+</details>
+
+<details>
+<summary> (3)</summary>
+<br>
+
+- 
+</details>
+
+<details>
+<summary> (3)</summary>
+<br>
+
+- 
+</details>
+
+<details>
+<summary> (3)</summary>
+<br>
+
+- 
+</details>
+
+<details>
+<summary> (3)</summary>
 <br>
 
 - 
