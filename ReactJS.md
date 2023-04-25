@@ -643,105 +643,328 @@ function my_func(props) {
 </details>
 
 <details>
-<summary> (3)</summary>
+<summary>useEffect()란? (3)</summary>
+<br>
+
+- useEffect는 함수형 컴포넌트에서 Side Effect를 처리하기 위한 React Hook입니다.
+- useEffect를 사용하여 Side Effect를 처리할 때, 이벤트 리스너나 타이머 등의 리소스를 사용하고 있었다면, cleanup 함수를 사용하여 이러한 리소스를 해제해 주어야 합니다.
+- useEffect의 기본 문법은 다음과 같습니다.
+  ```jsx
+  useEffect(() => {
+    // side effect code
+    return () => {
+      // cleanup function
+    }
+  }, dependency list);
+  ```
+</details>
+
+<details>
+<summary>React hook이란? (2)</summary>
+<br>
+
+- React 버전 16.8부터 추가된 기능으로, 함수형 컴포넌트에서도 상태(state)나 생명주기(lifecycle) 등의 기능을 사용할 수 있도록 해줍니다.
+- 이전에는 클래스형 컴포넌트에서만 사용할 수 있었던 기능들을 함수형 컴포넌트에서도 사용할 수 있게 만들어주는 역할을 합니다.
+</details>
+
+<details>
+<summary>Side effect란? (7)</summary>
+<br>
+
+- 컴포넌트 외부와 상호 작용하여 발생하는 작업
+- Fetching data from a server
+- Manipulating the DOM
+- Subscribing to events
+- Setting timers
+- Loading and unloading libraries
+- Managing state 등
+</details>
+
+<details>
+<summary>dependency list란? (3)</summary>
+<br>
+
+- useEffect가 실행되는 조건을 설정하는 배열
+- 변경될 때만 side effect code가 실행됩니다.
+- 빈 배열인 경우, side effect code는 컴포넌트가 마운트될 때만 실행됩니다.
+</details>
+
+<details>
+<summary>cleanup function이란? (2)</summary>
+<br>
+
+- useEffect가 리턴하는 함수로, 컴포넌트가 언마운트될 때 실행됩니다.
+- `Side Effect`에서 발생한 리소스를 정리하거나 해제하는 역할을 합니다.
+</details>
+
+<details>
+<summary>서버에서 정렬한 데이터 받아오는 방법 (3)</summary>
+<br>
+
+- fetch 함수의 아규먼트로 정렬 상태를 전달하여 쿼리스트링을 설정하고 dependency list를 활용하면 서버에서 정렬한 데이터를 받을 수 있다.
+- 예시
+    ```jsx
+    // api.js
+    export async function getRevies(order = "createdAt") {
+      const query = `order=${order}`;
+      const response = await fetch(
+        `url${query}`
+      );
+      const body = await response.json();
+      return body;
+    }
+
+    // components/App.js
+    import { useEffect } from "react";
+    import { getRevies } from "../api";
+
+    function App() {
+      const [order, setOrder] = useState("createdAt");
+      const handleNewestClick = () => setOrder("createdAt");
+      const handleBestClick = () => setOrder("rating");
+
+      const handleLoad = async (orderQuery) => {
+        const { reviews } = await getRevies(orderQuery);
+        setItems(reviews);
+      };
+
+      useEffect(() => {
+        handleLoad(order);
+      }, [order]);
+    }
+    ```
+</details>
+
+<details>
+<summary>pagination이란? (2)</summary>
+<br>
+
+- 웹 사이트나 애플리케이션에서 대량의 데이터를 처리하고, 데이터를 페이지 단위로 나누어 보여주는 방법입니다.
+- 이를 통해 사용자는 한 번에 모든 데이터를 로딩하지 않고, 필요한 페이지만 로딩하여 데이터를 효율적으로 관리할 수 있습니다.
+</details>
+
+<details>
+<summary>offset pagination이란? (6)</summary>
+<br>
+
+- 오프셋 페이지네이션(Offset Pagination)은 데이터베이스에서 일정 범위의 데이터를 가져오기 위해 OFFSET과 LIMIT을 사용하는 Pagination 기법입니다.
+- 이 방법은 페이지의 시작점을 지정하고, 시작점부터 일정 개수의 아이템을 가져오는 방식으로 동작합니다.
+- 오프셋 페이지네이션은 다음과 같은 구성 요소로 구성됩니다.
+  - 페이지 번호(page number) : 사용자가 요청한 페이지 번호
+  - 페이지 크기(page size) : 한 페이지에 표시할 아이템 수
+  - 시작점(offset) : 가져올 데이터의 시작점을 나타내는 인덱스 값
+</details>
+
+<details>
+<summary>Offset pagination의 장단점 (6)</summary>
+<br>
+
+- 오프셋 페이지네이션의 장점
+  - 간단하고 직관적인 방식으로 데이터를 가져올 수 있습니다.
+- 오프셋 페이지네이션의 단점
+  - 페이지를 이동할 때마다 데이터베이스에서 데이터를 다시 가져와야 하므로, 데이터베이스 부하가 크게 증가할 수 있습니다. 
+  - 페이지 번호가 매우 커지면, 매번 오프셋 계산을 수행해야 하므로 성능이 저하될 수 있습니다.
+  - 페이지를 이동하는 사이에 데이터가 추가되거나 삭제되면, 중복으로 페이지를 불러오거나 불러오지 못한 페이지가 생길 수 있습니다.
+</details>
+
+<details>
+<summary>Cursor pagination이란? (6)</summary>
+<br>
+
+- 커서 페이지네이션(Cursor pagination)은 데이터베이스에서 일정 범위의 데이터를 가져오기 위해, 이전 페이지의 마지막 항목을 기준으로 새로운 페이지를 가져오는 Pagination 기법입니다.
+- 이 방법은 페이지의 시작점과 끝점을 지정하는 것이 아니라, 이전 페이지의 마지막 항목을 기준으로 다음 페이지를 가져오는 방식으로 동작합니다.
+- 커서 페이지네이션은 다음과 같은 구성 요소로 구성됩니다.
+  - 이전 페이지의 마지막 항목(cursor) : 이전 페이지의 마지막 항목을 기준으로 다음 페이지를 가져오기 위한 정보입니다.
+  - 페이지 크기(page size) : 한 페이지에 표시할 아이템 수
+- 커서 페이지네이션은 일반적으로 cursor와 페이지 크기를 매개변수로 받아서 다음 페이지를 가져오는 데이터베이스 쿼리를 수행합니다.
+</details>
+
+<details>
+<summary>Cursor pagination의 장점 (4)</summary>
+<br>
+
+- 매번 새로운 데이터를 가져올 때마다 데이터베이스에서 쿼리를 실행하므로, 오프셋 페이지네이션에 비해 데이터베이스 부하가 줄어듭니다.
+- 페이지를 이동할 때마다 데이터베이스에서 데이터를 다시 가져오는 것이 아니므로, 오프셋 페이지네이션보다 더 나은 성능을 보여줍니다.
+- 페이지를 이동하는 사이에 데이터가 추가되거나 삭제되도 정상적으로 페이지네이션이 동작합니다.
+- 커서 페이지네이션은 대용량 데이터 처리에 적합한 방법 중 하나입니다.
+</details>
+
+<details>
+<summary>Pagination의 마지막 페이지인 state를 활용하는 방법</summary>
+<br>
+
+- response 객체 내 paging 객체의 hasNext 프로퍼티 값을 활용할 수 있습니다.
+</details>
+
+<details>
+<summary>조건부 렌더링이란? (3)</summary>
+<br>
+
+- 조건부 렌더링(Conditional rendering)은 컴포넌트를 조건에 따라 화면에 렌더링하는 방식을 말합니다.
+- `&&`, `||` 논리 연산자, 삼항 연산자(조건 연산자)를 활용하여 조건부로 리액트 엘리먼트를 표시할 수 있습니다.
+</details>
+
+<details>
+<summary>React component에 렌더링되지 않는 값 (6)</summary>
+<br>
+
+- null
+- undefined
+- true 
+- false
+- ''
+- []
+- 숫자 0은 렌더림됩니다.
+</details>
+
+<details>
+<summary>Race condition이란? (2)</summary>
+<br>
+
+- React에서 race condition은 두 개 이상의 state 변경 작업이 동시에 실행될 때, 예측할 수 없는 결과가 발생하는 문제를 말합니다.
+- setState(), useEffect()같은 함수들은 내부적으로 비동기적으로 실행될 수 있으므로, 여러 비동기적 setter 함수들이 동시에 실행될 경우 race condition 문제가 발생할 수 있습니다.
+</details>
+
+<details>
+<summary>Race condition 문제 해결 방법</summary>
+<br>
+
+- Race condition 문제를 해결하기 위해서는, 상태(state)를 변경하는 비동기 작업들이 순차적으로 실행되도록 보장해야 합니다.
+- 비동기적 상태 변경 작업이 순서대로 처리되도록 보장하는 방법은 다음과 같습니다.
+    1. 이전 상태 값을 이용하여 상태를 변경하는 방식
+        - `setState()` 함수에 콜백 함수를 전달하여 직전 상태 값을 이용하여 새로운 상태를 계산할 수 있습니다.
+        - 이전 상태 값을 이용하면 여러 상태 변경 작업이 동시에 실행될 때 직전 상태 값을 기반으로 새로운 상태를 계산하므로 순서가 보장됩니다.
+          ```jsx
+          // count 상태를 1씩 증가시키는 예시
+          setCount((prevCount) => prevCount + 1);
+          ```
+    2. useEffect() hook의 `dependency array` 사용
+        - `dependency array`에 포함된 값이 변경될 때만 useEffect() 훅이 실행되므로, `dependency array`에 포함된 값을 순서대로 변경하면 순서가 보장됩니다.
+          ```jsx
+          useEffect(() => {
+            // 작업 1
+          }, [value1]);
+
+          useEffect(() => {
+            // 작업 2
+          }, [value2]);
+          ```
+    3. async/await 문법 사용
+      - async/await 문법을 사용하여 상태 변경 작업을 순차적으로 실행할 수 있습니다.
+          ```jsx
+          async function fetchData() {
+            const data1 = await fetchAPI1();
+            const data2 = await fetchAPI2();
+            // ...
+          }
+          ```
+</details>
+
+<details>
+<summary>Callback으로 usestate()의 초깃값을 지정하는 것의 장단점 (2)</summary>
+<br>
+
+- 콜백 형태로 초깃값을 지정해주면 처음 렌더링 할 때 한 번만 콜백을 실행해서 초깃값을 만들고, 그 이후로는 콜백을 실행하지 않기 때문에 불필요한 코드를 줄일 수 있습니다.
+- 단, 콜백 함수의 실행이 오래 걸릴 수록 초기 렌더링이 늦어진다는 점에 주의해야 합니다.
+</details>
+
+<details>
+<summary>네트워크 로딩 처리하는 법</summary>
+<br>
+
+- isLoading state를 만들고 try catch문을 활용해 데이터를 불러오는 동안 isLoading의 state를 true, 끝났을 때 false 값으로 설정해주면 loading 중일 때의 상태를 처리할 수 있습니다.
+    ```jsx
+    const [isLoading, setIsLoading] = useState(false);
+
+    let result;
+    try {
+    setIsLoading(true);
+    result = await getReviews(options);
+    } catch (error) {
+    console.error(error);
+    return;
+    } finally {
+    setIsLoading(false);
+    }
+    ```
+</details>
+
+<details>
+<summary>네트워크 에러 처리하는 법</summary>
+<br>
+- loadingError state를 만들고 catch문 안에서 loadingError의 state를 바꾸고, 리액트 엘리먼트로 optional chaining을 활용히여 에러 메세지를 출력하여 처리할 수 있습니다.
+    ```jsx
+    const [loadingError, setLoadingError] = useState(null);
+
+    const handleLoad = async (options) => {
+      let result;
+      try {
+        setIsLoading(true);
+        setLoadingError(null);
+        result = await getReviews(options);
+      } catch (error) {
+        setLoadingError(error);
+        return;
+      } finally {
+        setIsLoading(false);
+      }
+      ...
+    }
+
+    return (
+      <div>
+        ...
+      {loadingError?.message && <span>{loadingError.message}</span>}
+      </div>
+    );
+    ```
+
+</details>
+
+<details>
+<summary>(3)</summary>
 <br>
 
 - 
 </details>
 
 <details>
-<summary> (3)</summary>
+<summary>(3)</summary>
 <br>
 
 - 
 </details>
 
 <details>
-<summary> (3)</summary>
+<summary>(3)</summary>
 <br>
 
 - 
 </details>
 
 <details>
-<summary> (3)</summary>
+<summary>(3)</summary>
 <br>
 
 - 
 </details>
 
 <details>
-<summary> (3)</summary>
+<summary>(3)</summary>
 <br>
 
 - 
 </details>
 
 <details>
-<summary> (3)</summary>
+<summary>(3)</summary>
 <br>
 
 - 
 </details>
 
 <details>
-<summary> (3)</summary>
-<br>
-
-- 
-</details>
-
-<details>
-<summary> (3)</summary>
-<br>
-
-- 
-</details>
-
-<details>
-<summary> (3)</summary>
-<br>
-
-- 
-</details>
-
-<details>
-<summary> (3)</summary>
-<br>
-
-- 
-</details>
-
-<details>
-<summary> (3)</summary>
-<br>
-
-- 
-</details>
-
-<details>
-<summary> (3)</summary>
-<br>
-
-- 
-</details>
-
-<details>
-<summary> (3)</summary>
-<br>
-
-- 
-</details>
-
-<details>
-<summary> (3)</summary>
-<br>
-
-- 
-</details>
-
-<details>
-<summary> (3)</summary>
+<summary>(3)</summary>
 <br>
 
 - 
