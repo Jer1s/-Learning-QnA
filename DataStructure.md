@@ -223,6 +223,83 @@
 </details>
 
 <details>
+<summary>스토리지(Storage)란? (4)</summary>
+<br>
+
+- 데이터가 장기적으로 보존되는 곳
+- 스토리지는 컴퓨터가 꺼져도 데이터가 유지됩니다.
+- 읽기 및 쓰기 속도가 메모리에 비해 더 느립니다.
+- 하드 디스크 드라이브(HDD), 솔리드 스테이트 드라이브(SSD) 등이 대표적인 예입니다.
+</details>
+
+<details>
+<summary>메모리(Memory)란? ()</summary>
+<br>
+
+- 데이터가 임시로 저장되는 곳
+- 읽기 및 쓰기 속도가 스토리지에 비해 더 빠릅니다.
+- 자료 구조는 데이터를 메모리에서 잘 사용하도록 하는 게 목적입니다.
+- 컴퓨터 메모리는 RAM을 사용합니다.
+</details>
+
+<details>
+<summary>RAM이란? (4)</summary>
+<br>
+
+- RAM(Random Access Memory)은 컴퓨터에서 사용되는 주기억장치 중 하나로, CPU가 빠르게 접근할 수 있는 고속의 메모리입니다.
+- RAM은 컴퓨터가 작업할 때 필요한 데이터와 프로그램 코드를 저장하며, 컴퓨터가 실행 중인 프로그램이 필요로 하는 모든 데이터를 RAM에 로드하여 작업을 처리합니다.
+- RAM은 데이터를 랜덤한 위치에 저장할 수 있으므로, 컴퓨터가 데이터를 읽거나 쓰는 데 걸리는 시간이 매우 빠릅니다.
+- RAM은 휘발성 메모리(Volatile Memory)로서 컴퓨터가 꺼지거나 재부팅 될 경우에 저장된 데이터가 모두 소멸됩니다.
+</details>
+
+<details>
+<summary>RAM의 cell에 대해서 설명해주세요. (3)</summary>
+<br>
+
+- 데이터를 저장할 수 있는 일정한 cell로 나눠져 있습니다.
+- 각 cell은 자신만의 주소가 있습니다.
+- cell-size는 8-bit, 16-bit, 32-bit, 64-bit 등 다양한 크기로 존재합니다. 8-bit가 주로 사용됩니다.
+</details>
+
+<details>
+<summary>Random access란? (2)</summary>
+<br>
+
+- 저장 위치를 알면 접근할 때 항상 일정한 시간이 걸리는 것
+- 메모리에 저장한 데이터에 접근할 때의 시간 복잡도는 O(1)입니다.
+</details>
+
+<details>
+<summary>레퍼런스란? (2)</summary>
+<br>
+
+- 레퍼런스(Reference)는 데이터에 접근하게 해주는 값입니다.
+- 해당 데이터의 메모리 주소(Address) 값을 갖거나, 오프셋(offset)을 이용해 데이터를 가리키는 값을 갖을 수 있습니다.
+</details>
+
+<details>
+<summary>Aliasing이란? (2)</summary>
+<br>
+
+- 여러 변수가 같은 메모리를 가리키는 것
+- 각 변수를 다른 변수에 대한 alias라고 합니다.
+</details>
+
+<details>
+<summary>()</summary>
+<br>
+
+- 
+</details>
+
+<details>
+<summary>()</summary>
+<br>
+
+- 
+</details>
+
+<details>
 <summary>()</summary>
 <br>
 
