@@ -144,7 +144,7 @@
 </details>
 
 <details>
-<summary>배열(list)란?</summary>
+<summary>배열(array)이란?</summary>
 <br>
 
 - 메모리 상에 같은 타입의 자료가 연속적으로 저장되는 자료 구조
