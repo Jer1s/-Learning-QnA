@@ -64,37 +64,37 @@
 	```
 2. 외부 스타일 시트 (External Style Sheet)
 	- CSS 코드를 별도의 파일로 분리하여 HTML 문서에서 불러오는 방법입니다.
-  - 이 방법은 여러 페이지에서 동일한 스타일을 적용할 수 있으며, 유지보수와 코드 관리를 용이하게 할 수 있습니다.
-  - 예시
-    ```html
-      <!DOCTYPE html>
-      <html>
-      <head>
-          <title>외부 스타일 시트 예제</title>
-          <link rel="stylesheet" type="text/css" href="style.css">
-      </head>
-      <body>
-          <h1>외부 스타일 시트 예제</h1>
-          <p>외부 스타일 시트를 사용하여 스타일을 적용한 예제입니다.</p>
-      </body>
-      </html>
-      ```
+	- 이 방법은 여러 페이지에서 동일한 스타일을 적용할 수 있으며, 유지보수와 코드 관리를 용이하게 할 수 있습니다.
+	- 예시
+	```html
+	<!DOCTYPE html>
+	<html>
+	<head>
+	  <title>외부 스타일 시트 예제</title>
+	  <link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+	  <h1>외부 스타일 시트 예제</h1>
+	  <p>외부 스타일 시트를 사용하여 스타일을 적용한 예제입니다.</p>
+	</body>
+	</html>
+	```
 3. 인라인 스타일 (Inline Style)
 	- HTML 태그 내부에서 style 속성을 사용하여 CSS 스타일을 적용하는 방법입니다.
-  - 이 방법은 특정 요소에 대해서만 스타일을 적용하고, 다른 방법에 비해 코드가 지저분해질 수 있다는 단점이 있습니다.
-  - 예시
-    ```html
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <title>인라인 스타일 예제</title>
-    </head>
-    <body>
-        <h1 style="color: #333; font-size: 24px; text-align: center; margin-top: 50px;">인라인 스타일 예제</h1>
-        <p style="font-family: Arial, sans-serif; font-size: 16px;">인라인 스타일을 사용하여 스타일을 적용한 예제입니다.</p>
-    </body>
-    </html>
-    ```
+	- 이 방법은 특정 요소에 대해서만 스타일을 적용하고, 다른 방법에 비해 코드가 지저분해질 수 있다는 단점이 있습니다.
+	- 예시
+	```html
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<title>인라인 스타일 예제</title>
+	</head>
+	<body>
+	<h1 style="color: #333; font-size: 24px; text-align: center; margin-top: 50px;">인라인 스타일 예제</h1>
+	<p style="font-family: Arial, sans-serif; font-size: 16px;">인라인 스타일을 사용하여 스타일을 적용한 예제입니다.</p>
+	</body>
+	</html>
+	```
 </details>
 
 <details>
