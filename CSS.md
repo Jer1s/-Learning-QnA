@@ -33,35 +33,35 @@
 <br>
 
 1. 내부 스타일 시트 (Internal Style Sheet)
-  - HTML 문서 애부에 `<style>` 태그를 사용하여 CSS 코드를 작성하는 방법입니다.
-  - 이 방법은 한 페이지 내에서만 스타일을 적용할 수 있습니다.
-  - 예시
-    ```html
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <title>내부 스타일 시트 예제</title>
-        <style>
-            body {
-                background-color: #f0f0f0;
-                font-family: Arial, sans-serif;
-                font-size: 16px;
-            }
+	- HTML 문서 애부에 `<style>` 태그를 사용하여 CSS 코드를 작성하는 방법입니다.
+	- 이 방법은 한 페이지 내에서만 스타일을 적용할 수 있습니다.
+	- 예시
+	```html
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<title>내부 스타일 시트 예제</title>
+	<style>
+	    body {
+		background-color: #f0f0f0;
+		font-family: Arial, sans-serif;
+		font-size: 16px;
+	    }
 
-            h1 {
-                color: #333;
-                font-size: 24px;
-                text-align: center;
-                margin-top: 50px;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>내부 스타일 시트 예제</h1>
-        <p>내부 스타일 시트를 사용하여 스타일을 적용한 예제입니다.</p>
-    </body>
-    </html>
-    ```
+	    h1 {
+		color: #333;
+		font-size: 24px;
+		text-align: center;
+		margin-top: 50px;
+	    }
+	</style>
+	</head>
+	<body>
+	<h1>내부 스타일 시트 예제</h1>
+	<p>내부 스타일 시트를 사용하여 스타일을 적용한 예제입니다.</p>
+	</body>
+	</html>
+	```
 2. 외부 스타일 시트 (External Style Sheet)
 	- CSS 코드를 별도의 파일로 분리하여 HTML 문서에서 불러오는 방법입니다.
   - 이 방법은 여러 페이지에서 동일한 스타일을 적용할 수 있으며, 유지보수와 코드 관리를 용이하게 할 수 있습니다.
