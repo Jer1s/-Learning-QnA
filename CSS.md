@@ -476,7 +476,6 @@ border-radius: 50%;
 - `table-cell 테이블 셀 요소를 표시하며, 요소의 너비와 높이를 직접 설정 가능하게 해주는 속성입니다.
 </details>
 
-
 <details>
 <summary>display: inline-block이란? (5)</summary>
 <br>
@@ -488,26 +487,90 @@ border-radius: 50%;
 - 블록처럼 너비나 높이를 지정할 수 있습니다.
 </details>
 
-
 <details>
-<summary>Flexbox란? (3)</summary>
+<summary>Flexbox란? (2)</summary>
 <br>
 
 - Flexbox는 CSS3에서 새롭게 도입된 레이아웃 방식 중 하나로, 요소들을 유연하게 배치할 수 있는 기능을 제공합니다.
 - Flexbox는 부모 요소(flex container)와 자식 요소(flex item)로 구성되며, display: flex 속성을 부모 요소에 적용하여 활성화합니다.
-- `flex-direction`, `justify-content`, `align-items`, `align-content` 등의 속성을 사용하여 자식 요소들의 배치를 지정합니다.
-  - `flex-direction` 요소의 배치 방향을 지정합니다.
-  - `justify-content` 요소를 수평 방향으로 정렬합니다.
-  - `align-items` 요소를 수직 방향으로 정렬합니다.
-  - `align-content` 여러 줄로 된 요소들의 수직 정렬 방법을 지정합니다.
+</details>
+
+<details>
+<summary>Flexbox 정렬 (6)</summary>
+<br>
+
+- Main Axis: 배치 방향
+- Cross Axis: 배치 방향에 수직인 방향
+- justify-content: main axis 방향으로 콘텐츠 간의 여백 설정
+- align-content: cross axis 방향으로 콘텐츠 간의 여백 설정
+- align-items: cross axis 방향으로 모든 요소의 위치 결정
+- align-self: cross axis 방향으로 한 요소의 위치 결정
+- flex-wrap: overflow된 요소의 줄 바꿈 설정
+	- wrap
+	- no-wrap
+	- wrap-reverse
+<details>
+
+<details>
+<summary>Flexbox 간격</summary>
+<br>
+
+- `gap: {row-gap} {column-gap}`
+- gap 속성값은 flex-direction의 영향을 받지 않는다.	
+</details>
+
+<details>
+<summary>Flexbox 요소 꽉 채우기 (5)</summary>
+<br>
+
+- flex-grow
+	- default: 0
+	- 형제 요소들의 flex-grow 값의 비율에 따라 남은 여백을 분배하여 각 요소의 너비/높이를 늘려준다.
+	- 1 값을 주면 빈 공간을 채울 수 있다
+- flex-shrink
+	- default: 1
+	- 형제 요소들의 flex-shrink 값의 비율에 따라 overflow가 일어난 너비/높이를 분배하여 각 요소의 너비/높이를 줄여준다.
+	- 0 값을 주면 요소를 원하는 위치에 고정할 수 있다
+- flex-basis
+	- default: auto
+	- flex 요소의 기본 사이즈를 지정한다.
+	- width와 사용하는 단위가 같다.
+	- 기본값인 auto로 지정된 경우 컨텐츠 사이즈에 맞춰서 나타나고, 0px/0% 값을 주면 부모 컨테이너를 기준으로 크기가 정해진다.
+- `flex: {flex-grow} {flex-shrink} {flex-basis}` 형태로 쓸 수 있다
+- `display: inline-flex`를 활용해 인라인 안에서 플렉스박스를 만들 수 있다
 </details>
 
 <details>
 <summary>grid란? (2)</summary>
 <br>
 
-- 자식 요소를 행(row)과 열(column)로 구성된 그리드 안에 배치할 수 있습니다.
+- 자식 요소를 행(row)과 열(column)로 구성된 2차원 레이아웃 메소드입니다.
+</details>
+
+<details>
+<summary>grid 나누는 방법 (2)</summary>
+<br>
+
 - `grid-template-columns`과 `grid-template-rows` 속성을 사용하여 행과 열의 크기를 정의하고, `grid-template-areas` 속성을 사용하여 각 영역을 이름으로 정의합니다.
+	- `grid-template-columns: {width1} {width2} ...`
+   	- `grid-template-rows: {height1} {height2} ...`
+   	- `grid-template: {height1} {height2} ... / {width1} {width2} ...`
+</details>
+
+<details>
+<summary>grid 크기와 함수들 (7)</summary>
+<br>
+
+- grid-auto-rows/grid-auto-columns 속성으로 row/column 크기를 자동 지정할 수 있다
+- grid-row/grid-column 속성값으로 그리드라인의 번호를 입력해 요소를 원하는 셀 집합에 배치할 수 있다
+	- span n 속성값도 쓸 수 있다
+- grid item에 grid-area라는 이름을 붙이고 grid container에 grid-template-areas 속성을 이용해 이름으로 배치할 수 있다
+	- 해당 위치를 비우고 싶으면 마침표(.)를 쓰면 된다
+- size에 fr(fraction) 값을 넣으면 요소 간 상대적인 크기로 지정할 수 있다
+	- size에 minmax(min, max) 함수를 활용할 수 있다
+	- minmax에서 최댓값에만 fr 값을 쓸 수 있다
+	- size에 repeat(n, size) 함수를 활용할 수 있다
+- `gap: {row-gap} {column-gap}`
 </details>
 
 <details>
