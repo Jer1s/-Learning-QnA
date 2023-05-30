@@ -478,6 +478,18 @@ border-radius: 50%;
 
 
 <details>
+<summary>display: inline-block이란? (5)</summary>
+<br>
+
+- 요소를 문장 내에서 표시하고, 요소의 너비와 높이를 직접 설정 가능하게 해주는 속성입니다.
+- 인라인처럼 줄바꿈이 일어나지 않습니다.
+- 인라인처럼 컨텐츠의 너비만큼 너비를 차지합니다.
+- 블록처럼 세로 여백을 쓸 수 있습니다.
+- 블록처럼 너비나 높이를 지정할 수 있습니다.
+</details>
+
+
+<details>
 <summary>Flexbox란? (3)</summary>
 <br>
 
@@ -587,3 +599,85 @@ border-radius: 50%;
 4. 코드 상의 순서
   - 동일한 가중치를 갖는 규칙이 두 개 이상인 경우, 코드에서 아래 쪽에 쓴 코드일수록 우선순위가 높습니다.
 </details>
+
+
+<details>
+<summary>Position property란? (2)</summary>
+<br>
+
+- 요소의 포지션 방법을 명시하는 속성입니다.
+- top, right, bottom, left, inset 속성으로 구체적인 위치를 지정할 수 있습니다.
+</details>
+
+
+<details>
+<summary>Position property의 종류 (5)</summary>
+<br>
+
+- static(default): 일반적인 문서 흐름에 따라 배치
+  - top, right, bottom, left, z-index 속성이 아무런 영향도 주지 않는다
+- relative: 일반적인 문서 흐름에 따라 배치
+  - top, right, bottom, left의 값에 따라 오프셋을 적용한다
+  - 오프셋은 다른 요소에 영향을 주지 않는다
+  - 요소가 차지하는 공간은 static일 떄와 같다
+- sticky: 일반적인 문서 흐름에 따라 배치하고, 가장 가까운 블록 레벨 조상을 기준으로 배치
+  - static처럼 위치해 있다가 scroll이 해당 부분을 넘어가면 fixed처럼 위치한다
+- fixed: 뷰포트의 초기 컨테이닝 블록를 기준으로 배치
+  - 일반적인 문서 흐름에서 제거되어 페이지 레이아웃에 공간을 배정하지 않는다
+- absolute: 조상 요소 중 positioning(static이 아닌 값) 된 가장 가까운 요소를 기준으로 배치
+  - 일반적인 문서 흐름에서 제거되어 페이지 레이아웃에 공간을 배정하지 않는다
+</details>
+
+
+<details>
+<summary>z-index란? (2)</summary>
+<br>
+
+- z-index: positioning된 요소, 그 자손과 flex items의 z축 순서를 지정한다
+  - 정수 값을 사용한다
+  - 숫자가 클 수록 앞으로 나온다
+</details>
+
+
+<details>
+<summary>쌓임 맥락 이란? (1)</summary>
+<br>
+
+- 쌓임 맥락(stacking context)은 가상의 Z축을 사용한 HTML 요소의 3차원 개념화입니다. Z축은 사용자 기준이며, 사용자는 뷰포트 혹은 웹페이지를 바라보고 있을 것으로 가정합니다. 각각의 HTML 요소는 자신의 속성에 따른 우선순위를 사용해 3차원 공간을 차지합니다.
+</details>
+
+
+<details>
+<summary>쌓임 맥락을 생성하는 요소에는 어떤 것들이 있나요? (16)</summary>
+<br>
+
+- 문서의 루트 요소 (`<html>`)
+- `position`이 `absolute` 또는 `relative`이고, `z-index`가 `auto`가 아닌 요소
+- `position`이 `fixed` 또는 `sticky`인 요소 (`sticky`는 모든 모바일 브라우저에서는 해당하지만 구형 데스크톱 브라우저에서는 해당하지 않음)
+- 플렉스(`flexbox` (en-US)) 컨테이너의 자식 중 `z-index`가 `auto`가 아닌 요소.
+- 그리드(`grid`) 컨테이너의 자식 중 `z-index`가 `auto`가 아닌 요소.
+- `opacity`가 1보다 작은 요소
+- `mix-blend-mode`가 `normal`이 아닌 요소
+- 다음 속성 중 하나라도 `none`이 아닌 값을 가진 요소
+	- `transform`
+	- `filter`
+	- `perspective` (en-US)
+	- `clip-path`
+	- `mask` / `mask-image` (en-US) / `mask-border` (en-US)
+- `isolation`이 `isolate`인 요소
+- `-webkit-overflow-scrolling`이 `touch`인 요소
+- `will-change`의 값으로, 초깃값이 아닐 때 새로운 쌓임 맥락을 생성하는 속성을 지정한 요소
+- `contain`이 `layout`, `paint`, 또는 둘 중 하나를 포함하는 값(`strict`, `content` 등)인 요소
+</details>
+
+
+<details>
+<summary>쌓임 맥락은 어떤 특징이 있나요? (4)</summary>
+<br>
+
+- 하나의 쌓임 맥락은 부모 쌓임 맥락 안에서 통째로 하나의 단위로 간주됩니다.
+- 쌓임 맥락이 다른 쌓임 맥락을 포함할 수 있고, 함께 계층 구조를 이룹니다.
+- 쌓임 맥락은 형제 쌓임 맥락과 완전히 분리됩니다. 쌓임을 처리할 땐 자손 요소만 고려합니다.
+- 각각의 쌓임 맥락은 독립적입니다. 어느 요소의 콘텐츠를 쌓은 후에는 그 요소를 통째 부모 쌓임 맥락 안에 배치합니다.
+</details>
+	
