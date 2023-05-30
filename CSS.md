@@ -630,7 +630,7 @@ border-radius: 50%;
 
 
 <details>
-<summary>z-index란? (2)</summary>
+<summary>z-index란? (1)</summary>
 <br>
 
 - z-index: positioning된 요소, 그 자손과 flex items의 z축 순서를 지정한다
