@@ -1,130 +1,130 @@
 <details>
-<summary>CSS란? (9)</summary>
-<br>
+  <summary>CSS란? (9)</summary>
+  <br />
 
-- CSS(Cascading Style Sheets)는 HTML 및 XML과 같은 마크업 언어로 작성된 문서의 표현 방법을 정의하는 스타일 시트 언어입니다.
-- CSS는 웹 사이트 및 웹 응용 프로그램의 디자인 및 레이아웃을 제어하며, HTML과 함께 웹 페이지의 모양과 느낌을 결정하는 데 중요한 역할을 합니다.
-- CSS는 문서의 콘텐츠와 디자인을 분리하는 데 중요한 역할을 합니다.
-- 이러한 분리는 문서 구조를 더욱 명확하게 하며, 콘텐츠와 디자인 간의 변경을 쉽게 만듭니다.
-- CSS를 사용하면 웹 페이지의 색상, 글꼴, 레이아웃 및 다양한 기타 속성을 변경할 수 있습니다.
-- CSS는 HTML 요소에 적용되며, 스타일 시트는 HTML 문서 내에 포함됩니다.
-- CSS는 다양한 브라우저에서 사용할 수 있습니다.
-- CSS는 웹 표준 기술이며, W3C(World Wide Web Consortium)에서 정의하고 유지 관리됩니다.
-- 이것은 브라우저 제조사들이 웹 표준을 준수하고 CSS를 지원함으로써 일관된 웹 페이지 디자인과 레이아웃을 보장할 수 있게 해줍니다.
+	- CSS(Cascading Style Sheets)는 HTML 및 XML과 같은 마크업 언어로 작성된 문서의 표현 방법을 정의하는 스타일 시트 언어입니다.
+	- CSS는 웹 사이트 및 웹 응용 프로그램의 디자인 및 레이아웃을 제어하며, HTML과 함께 웹 페이지의 모양과 느낌을 결정하는 데 중요한 역할을 합니다.
+	- CSS는 문서의 콘텐츠와 디자인을 분리하는 데 중요한 역할을 합니다.
+	- 이러한 분리는 문서 구조를 더욱 명확하게 하며, 콘텐츠와 디자인 간의 변경을 쉽게 만듭니다.
+	- CSS를 사용하면 웹 페이지의 색상, 글꼴, 레이아웃 및 다양한 기타 속성을 변경할 수 있습니다.
+	- CSS는 HTML 요소에 적용되며, 스타일 시트는 HTML 문서 내에 포함됩니다.
+	- CSS는 다양한 브라우저에서 사용할 수 있습니다.
+	- CSS는 웹 표준 기술이며, W3C(World Wide Web Consortium)에서 정의하고 유지 관리됩니다.
+	- 이것은 브라우저 제조사들이 웹 표준을 준수하고 CSS를 지원함으로써 일관된 웹 페이지 디자인과 레이아웃을 보장할 수 있게 해줍니다.
 </details>
 
 <details>
-<summary>CSS 버전의 역사 (6)</summary>
-<br>
+	<summary>CSS 버전의 역사 (6)</summary>
+	<br />
 
-- CSS Level 1(1996)
-	- 이 버전은 웹 표준화 기구인 W3C(World Wide Web Consortium)에 의해 발표된 CSS의 첫 번째 공식 표준입니다.
-- CSS Level 2(1998)
-	- 이 버전에서는 위치, 배경, 텍스트, 폰트, 색상 및 레이아웃과 같은 속성에 대한 새로운 기능과 선택자를 도입했습니다.
-- CSS Level 2.1(2004)
-	- 이 버전은 CSS Level 2를 개정하고 변경 사항을 통합했습니다.
-- CSS Level 3(2011)
-	- 이 버전에서는 새로운 모듈과 선택자, 애니메이션, 플렉스박스, 그리드 레이아웃 및 그림자와 같은 새로운 기능을 도입했습니다.
-	- 대부분의 웹 사이트는 CSS Level 3을 사용하고 있습니다.
+	- CSS Level 1(1996)
+		- 이 버전은 웹 표준화 기구인 W3C(World Wide Web Consortium)에 의해 발표된 CSS의 첫 번째 공식 표준입니다.
+	- CSS Level 2(1998)
+		- 이 버전에서는 위치, 배경, 텍스트, 폰트, 색상 및 레이아웃과 같은 속성에 대한 새로운 기능과 선택자를 도입했습니다.
+	- CSS Level 2.1(2004)
+		- 이 버전은 CSS Level 2를 개정하고 변경 사항을 통합했습니다.
+	- CSS Level 3(2011)
+		- 이 버전에서는 새로운 모듈과 선택자, 애니메이션, 플렉스박스, 그리드 레이아웃 및 그림자와 같은 새로운 기능을 도입했습니다.
+		- 대부분의 웹 사이트는 CSS Level 3을 사용하고 있습니다.
 </details>
 
 <details>
-<summary>CSS 코드를 작성하는 방법 3가지 (3)</summary>
-<br>
+	<summary>CSS 코드를 작성하는 방법 3가지 (3)</summary>
+	<br />
 
-1. 내부 스타일 시트 (Internal Style Sheet)
-	- HTML 문서 애부에 `<style>` 태그를 사용하여 CSS 코드를 작성하는 방법입니다.
-	- 이 방법은 한 페이지 내에서만 스타일을 적용할 수 있습니다.
+	1. 내부 스타일 시트 (Internal Style Sheet)
+		- HTML 문서 애부에 `<style>` 태그를 사용하여 CSS 코드를 작성하는 방법입니다.
+		- 이 방법은 한 페이지 내에서만 스타일을 적용할 수 있습니다.
+		- 예시
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>내부 스타일 시트 예제</title>
+<style>
+		body {
+	background-color: #f0f0f0;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+		}
+
+		h1 {
+	color: #333;
+	font-size: 24px;
+	text-align: center;
+	margin-top: 50px;
+		}
+</style>
+</head>
+<body>
+<h1>내부 스타일 시트 예제</h1>
+<p>내부 스타일 시트를 사용하여 스타일을 적용한 예제입니다.</p>
+</body>
+</html>
+```
+	2. 외부 스타일 시트 (External Style Sheet)
+		- CSS 코드를 별도의 파일로 분리하여 HTML 문서에서 불러오는 방법입니다.
+		- 이 방법은 여러 페이지에서 동일한 스타일을 적용할 수 있으며, 유지보수와 코드 관리를 용이하게 할 수 있습니다.
+		- 예시
+		```html
+		<!DOCTYPE html>
+		<html>
+		<head>
+			<title>외부 스타일 시트 예제</title>
+			<link rel="stylesheet" type="text/css" href="style.css">
+		</head>
+		<body>
+			<h1>외부 스타일 시트 예제</h1>
+			<p>외부 스타일 시트를 사용하여 스타일을 적용한 예제입니다.</p>
+		</body>
+		</html>
+		```
+	3. 인라인 스타일 (Inline Style)
+		- HTML 태그 내부에서 style 속성을 사용하여 CSS 스타일을 적용하는 방법입니다.
+		- 이 방법은 특정 요소에 대해서만 스타일을 적용하고, 다른 방법에 비해 코드가 지저분해질 수 있다는 단점이 있습니다.
+		- 예시
+		```html
+		<!DOCTYPE html>
+		<html>
+		<head>
+		<title>인라인 스타일 예제</title>
+		</head>
+		<body>
+		<h1 style="color: #333; font-size: 24px; text-align: center; margin-top: 50px;">인라인 스타일 예제</h1>
+		<p style="font-family: Arial, sans-serif; font-size: 16px;">인라인 스타일을 사용하여 스타일을 적용한 예제입니다.</p>
+		</body>
+		</html>
+		```
+</details>
+
+<details>
+	<summary>CSS 속성(CSS Property)은 어떤 것들이 있나요?</summary>
+	<br />
+
+	- [CSS reference - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) 참조
+</details>
+
+<details>
+	<summary>CSS에서 사용하는 percentage(%)는 어떤 의미인가요? (5)</summary>
+	<br />
+
+	- 백분율 값을 나타내는 CSS 자료형입니다.
+	- 보통 부모 객체의 width와의 상대적 크기를 지정합니다.
+	- width, height, margin, padding, font-size처럼 다양한 속성에서 쓸 수 있습니다.
 	- 예시
-	```html
-	<!DOCTYPE html>
-	<html>
-	<head>
-	<title>내부 스타일 시트 예제</title>
-	<style>
-	    body {
-		background-color: #f0f0f0;
-		font-family: Arial, sans-serif;
-		font-size: 16px;
-	    }
-
-	    h1 {
-		color: #333;
-		font-size: 24px;
-		text-align: center;
-		margin-top: 50px;
-	    }
-	</style>
-	</head>
-	<body>
-	<h1>내부 스타일 시트 예제</h1>
-	<p>내부 스타일 시트를 사용하여 스타일을 적용한 예제입니다.</p>
-	</body>
-	</html>
-	```
-2. 외부 스타일 시트 (External Style Sheet)
-	- CSS 코드를 별도의 파일로 분리하여 HTML 문서에서 불러오는 방법입니다.
-	- 이 방법은 여러 페이지에서 동일한 스타일을 적용할 수 있으며, 유지보수와 코드 관리를 용이하게 할 수 있습니다.
-	- 예시
-	```html
-	<!DOCTYPE html>
-	<html>
-	<head>
-	  <title>외부 스타일 시트 예제</title>
-	  <link rel="stylesheet" type="text/css" href="style.css">
-	</head>
-	<body>
-	  <h1>외부 스타일 시트 예제</h1>
-	  <p>외부 스타일 시트를 사용하여 스타일을 적용한 예제입니다.</p>
-	</body>
-	</html>
-	```
-3. 인라인 스타일 (Inline Style)
-	- HTML 태그 내부에서 style 속성을 사용하여 CSS 스타일을 적용하는 방법입니다.
-	- 이 방법은 특정 요소에 대해서만 스타일을 적용하고, 다른 방법에 비해 코드가 지저분해질 수 있다는 단점이 있습니다.
-	- 예시
-	```html
-	<!DOCTYPE html>
-	<html>
-	<head>
-	<title>인라인 스타일 예제</title>
-	</head>
-	<body>
-	<h1 style="color: #333; font-size: 24px; text-align: center; margin-top: 50px;">인라인 스타일 예제</h1>
-	<p style="font-family: Arial, sans-serif; font-size: 16px;">인라인 스타일을 사용하여 스타일을 적용한 예제입니다.</p>
-	</body>
-	</html>
-	```
-</details>
-
-<details>
-<summary>CSS 속성(CSS Property)은 어떤 것들이 있나요?</summary>
-<br>
-
-- [CSS reference - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) 참조
-</details>
-
-<details>
-<summary>CSS에서 사용하는 percentage(%)는 어떤 의미인가요? (5)</summary>
-<br>
-
-- 백분율 값을 나타내는 CSS 자료형입니다.
-- 보통 부모 객체의 width와의 상대적 크기를 지정합니다.
-- width, height, margin, padding, font-size처럼 다양한 속성에서 쓸 수 있습니다.
-- 예시
-  ```html
-  <div style="background-color:navy;">
-    <div style="width:50%; background-color: black;">
-      <div style="width:50%; margin-left:20%; background-color:chartreuse;">
-        Width: 25%, Left margin: 10%
-      </div>
-      <div style="width:30%; margin-right:60%; background-color:pink;">
-        Width: 15%, Left margin: 30%
-      </div>
-    </div>
-  </div>
-  ```
-- margin-left(right) 값에 백분율을 쓰더라도 부모 객체의 width를 기준으로 한다는 것을 알 수 있습니다.
+		```html
+		<div style="background-color:navy;">
+			<div style="width:50%; background-color: black;">
+				<div style="width:50%; margin-left:20%; background-color:chartreuse;">
+					Width: 25%, Left margin: 10%
+				</div>
+				<div style="width:30%; margin-right:60%; background-color:pink;">
+					Width: 15%, Left margin: 30%
+				</div>
+			</div>
+		</div>
+		```
+	- margin-left(right) 값에 백분율을 쓰더라도 부모 객체의 width를 기준으로 한다는 것을 알 수 있습니다.
 </details>
 
 <details>
@@ -509,7 +509,7 @@ border-radius: 50%;
 	- wrap
 	- no-wrap
 	- wrap-reverse
-<details>
+</details>
 
 <details>
 <summary>Flexbox 간격</summary>
@@ -745,17 +745,214 @@ border-radius: 50%;
 </details>
 
 <details>
-<summary>CSS position property value의 종류는? (5)</summary>
-<br>
+  <summary>CSS position property value의 종류는? (5)</summary>
+  <br />
 
-- `static`
-	- position의 기본 값은 `static`이고, 이 경우 원래 있어야 할 위치인 HTML에 작성된 순서 그대로 브라우저 화면에 표시됩니다.
-- `relative`
-	- `relative` 는 요소의 원래 위치를 기준으로 상대적으로 배치합니다. 이때 요소의 원래 자리는 그대로 차지하고 있습니다. `top`, `bottom`, `left`, `right` 속성을 이용해서 요소의 원래 위치 기준 이동하도록 설정할 수 있습니다.
-- `absolute`
-	- `absolute` 는 가장 가까운 포지셔닝(`static` 이 아닌 position 속성 값)이 된 조상 요소를 기준으로 배치됩니다. 이때 글의 흐름에서 완전히 빠져서, 요소의 원래 자리는 차지하지 않습니다. 보통 상위 요소의 position 속성을 `relative` 로 지정하여 배치할 기준을 잡고 사용합니다.
-- `fixed`
-	- `fixed` 는 브라우저 전체 화면을 기준으로 고정된 배치입니다. `top`, `bottom`, `left`, `right` 속성은 브라우저의 상, 하, 좌, 우에서 해당 요소가 얼마나 떨어져 있는지를 결정합니다. 글의 흐름에서 완전히 빠져서, 요소의 원래 자리는 차지하지 않습니다. 내비게이션을 만들 때 많이 사용하는데, 요소의 원래 자리를 차지하지 않기 때문에 요소간 겹치지 않도록 마진을 넣어주기도 합니다.
-- `sticky`
-	- `sticky` 는 `static` 처럼 원래 위치에 배치해 있다가, 정해진 위치에 브라우저가 스크롤되면 그때부터 `fixed`처럼 고정되어 배치됩니다. 기본적으로는 `static` 처럼 배치하기 때문에 요소의 원래 자리를 차지합니다. `top`, `bottom`, `left`, `right` 설정이 필요하고, 가장 가까운 scroll되는 조상을 기준으로 배치 합니다.
+  - `static`
+    - position의 기본 값은 `static`이고, 이 경우 원래 있어야 할 위치인 HTML에 작성된 순서 그대로 브라우저 화면에 표시됩니다.
+  - `relative`
+    - `relative` 는 요소의 원래 위치를 기준으로 상대적으로 배치합니다. 이때 요소의 원래 자리는 그대로 차지하고 있습니다. `top`, `bottom`, `left`, `right` 속성을 이용해서 요소의 원래 위치 기준 이동하도록 설정할 수 있습니다.
+  - `absolute`
+    - `absolute` 는 가장 가까운 포지셔닝(`static` 이 아닌 position 속성 값)이 된 조상 요소를 기준으로 배치됩니다. 이때 글의 흐름에서 완전히 빠져서, 요소의 원래 자리는 차지하지 않습니다. 보통 상위 요소의 position 속성을 `relative` 로 지정하여 배치할 기준을 잡고 사용합니다.
+  - `fixed`
+    - `fixed` 는 브라우저 전체 화면을 기준으로 고정된 배치입니다. `top`, `bottom`, `left`, `right` 속성은 브라우저의 상, 하, 좌, 우에서 해당 요소가 얼마나 떨어져 있는지를 결정합니다. 글의 흐름에서 완전히 빠져서, 요소의 원래 자리는 차지하지 않습니다. 내비게이션을 만들 때 많이 사용하는데, 요소의 원래 자리를 차지하지 않기 때문에 요소간 겹치지 않도록 마진을 넣어주기도 합니다.
+  - `sticky`
+    - `sticky` 는 `static` 처럼 원래 위치에 배치해 있다가, 정해진 위치에 브라우저가 스크롤되면 그때부터 `fixed`처럼 고정되어 배치됩니다. 기본적으로는 `static` 처럼 배치하기 때문에 요소의 원래 자리를 차지합니다. `top`, `bottom`, `left`, `right` 설정이 필요하고, 가장 가까운 scroll되는 조상을 기준으로 배치 합니다.
+</details>
+
+<details>
+  <summary>BEM이란? (5)</summary>
+  <br />
+
+  - BEM(Blcok Element Modifier)란 CSS 클래스 이름을 짓는 규칙입니다.
+	- `Block` `<div>`같은 영역을 의미합니다.
+	- `Element` `<button>`, `<input>`같은 요소를 의미합니다.
+	- `Modifier` 요소의 변형을 표시하는 것을 의미합니다.
+	- 이것들을 `.block__element--modifier` 형태로 씁니다.
+</details>
+
+<details>
+  <summary>BEM의 예시를 들어주세요. (2)</summary>
+  <br />
+
+```html
+<form class="signin-form">
+	<label class="signin-form__label">
+		Email
+		<input type="text" class="signin-form__input">
+	</label>
+	<label class="signin-form__label">
+		Password
+		<input type="password" class="signin_form__input signin_form__input--pasword">
+	</label>
+	<button class="signin-form__button signin-form__button--submit">
+		Sign In
+	</button>
+</form>
+
+```
+
+```css
+.signin-form { /* 로그인 폼 */ }
+
+.signin-form__input { /* 로그인 폼의 인풋 */ }
+
+.signin-form__input.signin-form__input--password { /* 로그인 폼의 비밀번호 인풋 */ }
+
+.signin-form__button { /* 로그인 폼의 버튼 */ }
+
+.signin-form__button.signin-form__button--submit { /* 로그인 폼의 제출 버튼 */ }
+
+```
+</details>
+
+<details>
+	<summary>Sass란? (3)</summary>
+	<br />
+	
+	- CSS는 웹 표준이기 때문에 문법이 빠르게 바뀌지 않습니다. 그래서 개발자들이 사용하기 편한 여러가지 문법을 추가한 새로운 언어를 만들기 시작했는데, 그 중에 가장 많이 쓰이는 것이 바로 Sass입니다. 변수, 네스팅(Nesting) 문법, 믹스인(Mixin) 등등 다양한 기능을 제공합니다. 이 중에서 많은 사람들이 좋다고 생각한 문법(변수, 네스팅 등)은 웹 표준으로 흡수되기도 했습니다.
+  - Sass는 프리프로세서(Preprocessor) 스크립트 언어라고 하는데, 프리프로세서라는 프로그램을 통해서 Sass 코드를 CSS 코드로 변환하기 때문에 그렇습니다.
+  - Sass에는 기존 Sass와 SCSS 두 가지 문법이 있는데, 최근에는 CSS의 모든 문법 위에서 확장된 문법을 사용하는 SCSS를 많이 사용합니다.
+</details>
+
+<details>
+	<summary>네스팅(nesting)의 예시를 들어주세요 (1)</summary>
+	<br />
+	
+```css
+nav {
+  ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	li { display: inline-block; }
+
+	a {
+		display: block;
+		padding: 6px 12px;
+		text-decoration: none;
+	}
+}
+
+```
+</details>
+
+<details>
+	<summary>믹스인(mixin)의 예시를 들어주세요 (1)</summary>
+	<br />
+	
+Scss
+```scss
+@mixin theme($theme: DarkGray) {
+  background: $theme;
+  box-shadow: 0 0 1px rgba($theme, .25);
+  color: #fff;
+}
+
+.info {
+  @include theme;
+}
+
+.alert {
+  @include theme($theme: DarkRed);
+}
+
+.success {
+  @include theme($theme: DarkGreen);
+}
+
+```
+
+CSS
+```css
+.info {
+  background: DarkGray;
+  box-shadow: 0 0 1px rgba(DarkGray, .25);
+  color: #fff;
+}
+
+.alert {
+  background: DarkRed;
+  box-shadow: 0 0 1px rgba(DarkRed, .25);
+  color: #fff;
+}
+
+.success {
+  background: DarkGreen;
+  box-shadow: 0 0 1px rgba(DarkGreen, .25);
+  color: #fff;
+}
+
+```
+</details>
+
+<details>
+	<summary>CSS Modules란? (1)</summary>
+	<br />
+	
+	- CSS Modules는 CSS 스타일을 모듈화하여 웹 개발 프로젝트에서 사용하는 기술입니다. 기존의 전역 스코프를 가진 CSS 규칙을 사용하는 방식과는 달리, CSS Modules는 각각의 모듈에 대해 스코프가 지정되어 스타일이 격리되고 충돌을 방지할 수 있습니다.
+</details>
+
+<details>
+	<summary>CSS Modules의 특징을 설명해주세요. (4)</summary>
+	<br />
+	
+	- 모듈 스코핑(module scoping): 각각의 CSS 모듈은 고유한 스코프를 가지며, 스타일 규칙은 해당 모듈 내에서만 적용됩니다. 이렇게 하면 스타일 규칙이 전역으로 적용되어 생길 수 있는 충돌을 방지할 수 있습니다.
+  - 로컬 클래스 네임(local class names): CSS in Modules에서는 클래스 이름을 지정할 때 로컬 클래스 네임을 사용합니다. 이로써 클래스 이름이 충돌하지 않고 고유하게 유지됩니다. 일반적으로는 [파일이름]_[클래스이름]__randomString 형식으로 클래스 이름이 생성됩니다.
+  - 재사용 가능한 스타일(reusable styles): CSS in Modules에서는 스타일 규칙을 모듈로 정의하여 다른 모듈에서 재사용할 수 있습니다. 이를 통해 코드 중복을 줄이고 유지보수성을 향상시킬 수 있습니다.
+  - 스코프 범위 지정(scope control): CSS in Modules에서는 모듈 내에서만 스타일이 적용되는 것이 기본 동작입니다. 그러나 필요한 경우 전역 스타일을 사용할 수도 있습니다.
+</details>
+
+<details>
+	<summary>Tailwind CSS란? (1)</summary>
+	<br />
+	
+	- Tailwind CSS는 Atomic CSS와 Utility-first 접근 방식을 적용한 현대적인 CSS 프레임워크입니다. Tailwind CSS는 개발자에게 유연하고 효율적인 스타일링을 제공하기 위해 다양한 사전 정의된 클래스를 제공합니다.
+</details>
+
+<details>
+	<summary>Atomic CSS와 Utility-first란? (2)</summary>
+	<br />
+	
+	- Atomic CSS는 스타일을 작은, 독립적인 단위로 분해하여 클래스 단위로 정의하는 접근 방식입니다. 이러한 작은 단위를 `원자(Atom)`라고 부르며, 이러한 원자들을 조합하여 필요한 스타일을 생성합니다. 예를 들어, `padding-top: 10px`라는 스타일을 정의하는 대신 `pt-10`이라는 클래스를 사용하는 식으로 스타일을 적용합니다. Atomic CSS는 스타일 규칙을 재사용 가능한 단위로 만들어 코드의 효율성과 유지보수성을 높이는 데 중점을 둡니다.
+	- Utility-first는 Atomic CSS의 변형으로, 스타일을 구성하는 작은 원자들을 재사용 가능한 유틸리티 클래스로 구성하는 방식입니다. 이 방식에서는 스타일 규칙을 간결한 클래스 이름으로 표현하고 이러한 클래스를 HTML 요소에 직접 적용하여 스타일을 적용합니다. 예를 들어, "text-center"이라는 클래스를 사용하여 텍스트를 가운데 정렬하는 스타일을 적용할 수 있습니다. Utility-first는 반복되는 스타일을 간결하게 표현하고 재사용 가능한 클래스로 관리함으로써 개발자에게 빠르고 효율적인 스타일링을 제공합니다.
+</details>
+
+<details>
+	<summary>CSS 기술들의 장단점을 설명해주세요. (6)</summary>
+	<br />
+	
+	- 전통적인 CSS
+		- CSS 클래스 이름을 짓는 것이 번거롭습니다.
+		- CSS 클래스 이름이 충돌할 가능성이 있습니다.
+		- 코드의 규모가 커지면 관리가 어렵습니다.
+		- 작성한 코드를 브라우저가 그대로 실행하기 때문에 추가적인 연산이 발생하지 않는다는 장점이 있습니다.
+	- BEM 방법론
+		- CSS 클래스의 이름을 짓는 고민을 덜 수 있습니다.
+		- 여전히 규모가 큰 코드를 관리하기는 어렵습니다.
+	- Sass와 같은 CSS Preprocessor
+		- 여전히 CSS 클래스 이름이 충돌할 가능성이 있습니다.
+		- 파일을 분리하고 불러 올 수 있기 때문에 규모가 큰 코드를 관리하기 좋습니다.
+		- 반복되는 CSS 코드를 줄여주는 다양한 문법이 있어서 작업 효율이 좋습니다.
+	- CSS Modules
+		- 컴포넌트 단위로 나누어서 스타일링할 수 있어서 CSS 클래스 이름이 충돌하지 않습니다.
+		- 필요하다면 Sass로 CSS Modules를 사용할 수 있습니다. (create-react-app 에서는 자체적으로 [Sass와 CSS modules를 함께 사용하도록](https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/) 해 줍니다.)
+	- CSS-in-JS
+		- 컴포넌트 단위로 나누어서 스타일링할 수 있어서 CSS 클래스 이름이 충돌하지 않습니다.
+		- 클래스네임을 짓지 않아도 됩니다.
+		- 자바스크립트와 JSX로 된 컴포넌트 코드와 스타일링 코드가 한 파일에 있어서 관리하기 좋습니다.
+		- 하지만 자바스크립트를 실행해서 CSS를 만들기 때문에 CSS나 Sass에 비해서 추가적인 연산이 필요합니다. 그리고 렌더링 속도도 훨씬 느려진다는 단점이 있습니다.
+	- Tailwind CSS와 같은 Utility-first(Atomic CSS)
+		- CSS 클래스를 나누는 기준을 컴포넌트나 디자인이 아닌 작은 단위의 CSS 속성으로 두기 때문에, CSS 클래스 이름 충돌에 대한 걱정이 없습니다.
+		- 보편적으로 사용하는 CSS 클래스를 여러 컴포넌트에서 공유하기 때문에, 규모가 큰 프로젝트더라도 CSS 코드의 양이 굉장히 적다는 장점이 있습니다.
+		- CSS-in-JS와 마찬가지로 JSX로 된 컴포넌트 코드와 스타일링 코드가 한 파일에 있어서 관리하기 좋습니다.
+		- 복잡한 디자인을 적용할 때에는 CSS 클래스가 한없이 길어져서 가독성이 떨어지고 관리하기 어렵다는 단점이 있습니다.
+		- 그래서 Tailwind CSS 같은 경우 별도의 문법([@apply](https://tailwindcss.com/docs/reusing-styles#extracting-classes-with-apply))으로 추상화를 지원하기도 합니다.
+
+```tsx
+<a href="..." className="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900">...</a>
+
+```
 </details>
