@@ -99,7 +99,7 @@
 </details>
 
 <details>
-<summary>JavaScript에서 ==, ===의 차이점은? ()</summary>
+<summary>JavaScript에서 ==, ===의 차이점은? (3)</summary>
 <br>
 
 - `==` 는 느슨한 같음(loose equality)으로 두 값이 같은지 비교합니다. 이때, 두 값을 공통 형(type)으로 암묵적으로 변환합니다. 암묵적 변환은 서로 다른 타입이면 `Number` 타입으로 변환하고 최종 같음 비교는 `===` 처럼 수행됩니다.
@@ -120,57 +120,8 @@
 </details>
 
 <details>
-<summary> ()</summary>
-<br>
-
-- 
-</details>
-
-<details>
-<summary> ()</summary>
-<br>
-
-- 
-</details>
-
-<details>
-<summary> ()</summary>
-<br>
-
-- 
-</details>
-
-<details>
-<summary> ()</summary>
-<br>
-
-- 
-</details>
-
-<details>
-<summary> ()</summary>
-<br>
-
-- 
-</details>
-
-<details>
-<summary> ()</summary>
-<br>
-
-- 
-</details>
-
-<details>
-<summary> ()</summary>
-<br>
-
-- 
-</details>
-
-<details>
-<summary> ()</summary>
-<br>
-
-- 
+  <summary>()</summary>
+  <br />
+  
+  -
 </details>
