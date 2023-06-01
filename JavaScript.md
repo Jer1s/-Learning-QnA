@@ -109,6 +109,162 @@
 </details>
 
 <details>
+  <summary>연산자 우선순위에 대해 설명해주세요. (1)</summary>
+  
+  - [연산자 우선순위 - JavaScript | MDN](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+</details>
+
+<details>
+  <summary>형 변환에 대해 설명해주세요. (8(3))</summary>
+  
+  - `String()`, `Number()`, `Boolean()` 내장 함수들로 형 변환(type conversion)을 할 수 있습니다.
+  - `Number('123') // return 123`
+  - `Number('문자열') // return NaN`
+  - `Number(true) // return 1`
+  - `Number(false) // return 0`
+  - `Boolean(truthy) // return true`
+  - `Boolean(falsy) // return false`
+  - falsy 값
+    - `0`, `-0`, `0n`
+    - `""`
+    - `null`, `undefined`, `NaN`
+</details>
+
+<details>
+  <summary>자동 형 변환에 대해 설명해주세요. (3(5))</summary>
+  
+  - 산술 연산자 `+, -, *, /, %, **`
+    - 산술 연산자는 데이터를 숫자형으로 형 변환 후 연산합니다.
+    - 문자열끼리 덧셈(+) 연산을 하면 형 변한이 일어나지 않습니다.
+    - NaN은 어떤 값과 연산해도 NaN을 리턴합니다.
+  - 관계 비교 연산자 `<, <=, >, >=`
+    - 관계 비교 연산자는 데이터를 숫자형으로 형 변환 후 연산합니다.
+  - 동등 비교 연산자 `===, !==, ==, !=`
+    - [JavaScript에서 ==, ===의 차이점](https://velog.io/@jeris/JavaScript%EC%97%90%EC%84%9C%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90) 참조
+</details>
+
+<details>
+  <summary>템플릿 문자열에 대해 설명해주세요. (2(1))</summary>
+  
+  - 템플릿 문자열은 백틱을 이용해 문자열에 변수를 쓸 수 있는 syntatic sugar입니다.
+  - ex) ``` `생년월일은 ${year}년 ${month}월 ${day}일 입니다.` ```
+    - `year`, `month`, `day`는 변수이고, 함수도 넣을 수 있습니다.
+</details>
+
+<details>
+  <summary>null과 undefined를 비교해주세요. (4)</summary>
+  
+  - `null`: 의도적으로 할당한 빈 값
+  - `undefined`: 선언했으나 값이 주어지지 않을 때의 값
+  - `null == undefined // return true`
+  - `null === undefined // return false`
+</details>
+
+<details>
+  <summary>할당 연산자에 대해 설명해주세요. (3(1))</summary>
+  
+  - 할당 연산자(Assignment operators, =)는 오른쪽의 피연산자를 왼쪽의 피연산자에 할당합니다.
+  - `+=, *=, -=, /=, %=`: 복합 할당 연산자(Compund assignment operators)
+  - `x++; x--; ++x; --x`: 증가(increment), 감소(decrement) 연산자
+    - `++x; --x;` 연산은 작성된 코드의 줄을 실행할 때 값을 변화시킨 후 코드를 실행합니다.
+</details>
+
+<details>
+  <summary>return 문의 의미란? (2)</summary>
+  
+  - 값을 리턴합니다.
+  - 함수의 실행을 중단합니다.
+</details>
+
+<details>
+  <summary>옵셔널 파라미터란? (2)</summary>
+  
+  - 옵셔널 파라미터(optional parameter)란 argument가 없을 때의 값이 주어진 파라미터입니다.
+  - 가장 뒤쪽에 선언하는 것이 좋습니다.
+</details>
+
+<details>
+  <summary>변수의 scope에 대해 설명해주세요. (3(6))</summary>
+  
+  - 렉시컬 스코프(lexical scope)
+    - 식별자 유효 범위가 함수를 호출할 때 결정되는 것이 아닌, 선언할 때 결정되는 것을 의미합니다.
+    - JavaScript는 렉시컬 스코프를 따릅니다.
+  - var
+    - 함수 내에 var로 변수가 정의되면 함수 내에서만 유효한 로컬 스코프를 갖습니다.
+    - 함수 스코프(function scope)를 갖거나 전역 스코프(global scope)를 갖습니다.
+  - let, const
+    - 블록문 내에 let, const로 변수나 상수가 정의되면 블록문 내에서만 유효한 로컬 스코프를 갖습니다.
+    - 블록 스코프(block scope)를 갖거나 전역 스코프(global scope)를 갖습니다.
+</details>
+
+<details>
+<summary>제어문에 대해 설명해주세요. (20(4))</summary>
+
+- if문
+```jsx
+if (condition) {
+  [statement1]
+} [else {
+  [statement2]
+}]
+
+```
+  - `condition`: 참 또는 거짓으로 평가되는 표현식입니다,
+  - `statement1`: 조건이 참으로 평가될 경우 실행되는 문장입니다.
+  - `statement2`: 조건이 거짓으로 평가될 경우 실행되는 문장입니다.
+  - `else if (condition) {statement}` 형태로 `else if문`을 활용할 수 있습니다.
+- switch문
+```jsx
+switch(expression) {
+  case value1:
+    [statement]
+    [break;]
+  case value2:
+    [statement]
+    [break;]
+  // ...
+  case valueN:
+    [statement]
+    [break;]
+  [default:
+    [statement]
+    [break;]]
+  }
+
+```
+  - `expression`: case 값과 비교할 결과 값을 갖는 표현식입니다.
+  - `case valueN`: expression의 결과 값과 일치한다면 `break`를 만날 때까지 case 절 내부가 실행됩니다.
+  - `default`: expression의 결과 값과 일치하는 `case value`가 없다면 `default`가 실행됩니다.
+  - switch문은 암묵적 형 변환을 하지 않습니다.
+- for문
+```jsx
+  for ([initialization]; [condition]; [final-expression])
+    statement
+
+```
+  - `initialization`: 식 또는 변수를 선언합니다.
+    - 주로 카운터 변수를 초기화할 때 사용합니다.
+    - `var` 키워드로 선언한 변수는 반복문에 제한되지 않고 for문과 같은 scope를 갖습니다.
+    - `let` 키워드로 선언한 변수는 반복문의 local scope를 갖습니다.
+  - `condition`: 매 반복마다 평가할 식으로 평가 결과가 참이라면 `statement`를 실행하고 거짓이라면 for문의 바로 다음 문장으로 건너 뜁니다.
+  - `final-expression`: 매 반복 후 평가할 식입니다.
+    - 주로 카운터 변수를 증감하거나 바꿀 때 사용합니다.
+- while문
+```jsx
+while (condition)
+  statement
+  [break;]
+  [continue;]
+
+```
+  - `condition`: 참 또는 거짓으로 평가되는 표현식입니다.
+  - `statement`: 조건문이 참일 때 실행됩니다.
+  - `break`: 루프의 실행을 완전히 종료합니다.
+  - `continue`: `break`문과 달리 루프의 실행을 완전히 종료하지 않고 다시 조건으로 이동합니다.
+  - for문에서도 `break`와 `continue` 문을 쓸 수 있습니다.
+</details>
+
+<details>
   <summary>객체란? (1)</summary>
   
 ```jsx
@@ -116,6 +272,8 @@
   property_name: property_value,
   // ...
 }
+
+```
 </details>
 
 <details>
@@ -324,18 +482,6 @@ for (variable of array)
   - 변수의 재할당을 방지하여 코드의 일관성과 안정성이 올라갑니다.
   - 변수가 의미론적으로 상수라면 이름을 대문자로, 두 단어 사이는 밑줄로 구분하여 작성하고, 의미론적으로 변수라면 이름을 camelCase로 작성하여 구분 짓는 게 좋습니다.
   - const 키워드로 참조형 변수를 선언해도 주소값만 저장되기 때문의 객체 내부는 변동될 수 있습니다.
-</details>
-
-<details>
-  <summary></summary>
-  
-  - 
-</details>
-
-<details>
-  <summary></summary>
-  
-  - 
 </details>
 
 <details>
