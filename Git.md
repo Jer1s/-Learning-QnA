@@ -336,7 +336,7 @@
 </details>
 
 <details>
-  <summary>`git stash`란? (8)</summary>
+  <summary>git stash란? (8)</summary>
   
   - `git stash`: 최근 커밋 이후로 작업했던 내용을 모두 스택에 옮기고 워킹 디렉토리를 최근 커밋의 상태로 초기화 합니다.
   - `git stash list`: 스태시 스택을 살펴봅니다.
@@ -349,7 +349,7 @@
 </details>
 
 <details>
-  <summary>`git cherry-pick commit_id`란? (2)</summary>
+  <summary>git cherry-pick이란? (2)</summary>
   
   - `git cherry-pick commit_id`: 원하는 작업이 들어있는 커밋들만 가져와서 현재 브랜치에 추가합니다.
   - 다른 브랜치에 있는 커밋을 선택적으로 내 브랜치에 적용시킬 때 사용합니다.
@@ -362,8 +362,27 @@
 </details>
 
 <details>
-  <summary>`.gitignore`란? (2)</summary>
+  <summary>.gitignore란? (2)</summary>
   
   - git이 무시할 파일 목록입니다.
   - 워킹 디렉토리에서 버전 관리를 할 필요가 없거나 리모트 레포지토리에 공개할 수 없는 파일이나 폴더가 있다면 .gitignore 파일에 그 파일이나 폴더 이름을 추가하면 됩니다.
+</details>
+
+<details>
+  <summary>Branch merge 방법들에 대해 설명해주세요. (3)</summary>
+  
+  - `git merge branch_name`
+    - 일반적으로 많이 사용하는 merge 방법입니다.
+    - 커밋 이력을 모두 남길 때 사용합니다.
+    - `-ff` 옵션(fast-forward)이 기본으로 설정되어 있습니다.
+    - Github의 `Merge pull request`는 `git merge --no-ff` 옵션으로 베이스 커밋이 최신 브랜치의 커밋이어도 커밋을 남기도록 강제합니다.
+  - `git merge -squash branch_name`
+    - 분기했던 branch에 있던 커밋 내용들을 하나로 합쳐 새로운 커밋을 만듭니다.
+    - 지저분한 커밋 히스토리들을 하나로 합쳐서 기능상 의미있는 하나의 커밋만 남길 때 사용합니다.
+  - Rebase & Merge
+    - 분기했던 브랜치의 커밋을 최신 베이스 커밋으로 설정하고, merge하는 방법입니다.
+    - 결과적으로는 `git merge -ff`와 같은 형태가 됩니다.
+    - rebase를 하면 커밋들의 베이스가 변경되어 커밋 해시도 변경될 수 있습니다. 이런 경우 `git push -f` (force push)를 해야할 경우도 있습니다.
+    - merge 커밋을 남길 필요가 없는 경우 사용합니다.
+    - 커밋 그래프가 하나의 라인으로 그려져 가독성에 좋습니다.
 </details>
