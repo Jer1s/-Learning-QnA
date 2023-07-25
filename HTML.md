@@ -1,6 +1,6 @@
 <details>
 <summary>HTML이란? (4)</summary>
-<br>
+<br />
 
 - HTML(HyperText Markup Language)은 웹 페이지와 다양한 온라인 콘텐츠를 제작하는데 활용되는 표준 마크업 언어입니다.
 - 웹 개발자는 HTML을 이용하여 콘텐츠의 구조를 설계하며, 웹 브라우저가 어떻게 해당 콘텐츠를 사용자에게 보여줄지를 결정합니다.
@@ -10,7 +10,7 @@
 
 <details>
 <summary>하이퍼텍스트란? (4)</summary>
-<br>
+<br />
 
 - 하이퍼텍스트(Hypertext)는 다른 텍스트로의 링크를 포함한 텍스트를 의미하며, 이 링크는 클릭 또는 탭을 통해 접근할 수 있습니다.
 - 하이퍼텍스트의 개념은 사용자가 하이퍼링크를 통해 다른 페이지나 문서로 쉽게 이동할 수 있게 하는 World Wide Web의 중요한 구성 요소입니다.
@@ -20,7 +20,7 @@
 
 <details>
 <summary>마크업 언어란? (5)</summary>
-<br>
+<br />
 
 - 마크업 언어(Markup language)는 문서의 구조와 포맷을 정의하는데 컴퓨터에 사용되는 언어입니다.
 - 마크업 언어는 문서의 콘텐츠, 예를 들어 텍스트, 이미지, 비디오 등을 어떻게 표시할지 지정하기 위해 특별한 코드를 사용합니다.
@@ -31,7 +31,7 @@
 
 <details>
 <summary>HTML 버전의 역사 (6.10)</summary>
-<br>
+<br />
 
 - HTML(1991)
   - 최초의 HTML이 웹의 창시자인 Tim Berners-Lee에 의해 개발되었습니다.
@@ -53,7 +53,7 @@
 
 <details>
 <summary>일부 웹 브라우저에서 HTML 문서의 한글 텍스트가 깨지는 이유 (2)</summary>
-<br>
+<br />
 
 - 웹 브라우저가 인코딩을 정확히 인식하지 못하거나, 텍스트의 인코딩과 브라우저의 인코딩이 일치하지 않을 때 한글 문자가 제대로 표시되지 않을 수 있습니다.
 - HTML 문서는 대체로 UTF-8 또는 다른 문자 인코딩 방식을 사용하여 저장됩니다. 이 인코딩은 HTML 문서에 포함된 문자를 컴퓨터가 이해할 수 있는 바이너리 코드로 변환하는 역할을 합니다.
@@ -61,7 +61,7 @@
 
 <details>
 <summary>위의 문제를 해결하시오 (1)</summary>
-<br>
+<br />
 
 - HTML 문서의 `<head>` 섹션에 `charset` 속성을 추가하여 문서의 문자 인코딩을 명시적으로 설정할 수 있습니다.
   ```html
@@ -74,7 +74,7 @@
 
 <details>
 <summary>웹 브라우저 인코딩이란? (5)</summary>
-<br>
+<br />
 
 - 웹 브라우저 인코딩(Web Browser Encoding)은 웹 브라우저가 웹상에서 전송되는 텍스트 데이터를 어떻게 해석하고 표현할지를 결정하는 규칙을 말합니다.
 - 인코딩은 특정 문자 집합(Character Set)을 바이트 단위로 변환하는 과정입니다. 이 문자 집합은 컴퓨터에서 인식 및 표현 가능한 문자들의 집합으로, 각 문자는 고유한 코드 값으로 매핑되어 있습니다. 한 예로, 한글은 유니코드(Unicode)에서 U+AC00부터 U+D7AF까지의 코드 범위에 해당하는 코드 값을 가지고 있습니다.
@@ -85,7 +85,7 @@
 
 <details>
 <summary>UTF-8이란? (4)</summary>
-<br>
+<br />
 
 - UTF-8은 텍스트를 컴퓨터 시스템에서 표현하고 저장하는 데 널리 사용되는 문자 인코딩 표준입니다.
 - 이 인코딩 방식은 가변 길이를 사용하며, 각 문자를 해당하는 유니코드 코드 포인트에 따라 1바이트에서 4바이트까지의 공간에 표현할 수 있습니다.
@@ -95,7 +95,7 @@
 
 <details>
 <summary>HTML 파일의 기본 구조란? (1)</summary>
-<br>
+<br />
 
 ```html
 <!DOCTYPE html>
@@ -110,7 +110,7 @@
 
 <details>
 <summary>&lt&#33DOCTYPE html&gt이란? (6.1)</summary>
-<br>
+<br />
 
 - <\!DOCTYPE html>은 HTML5 문서 유형 선언(doctype declaration)입니다.
 - 이 선언은 HTML5에서 문서가 사용하는 버전을 명시하는 역할을 합니다.
@@ -123,7 +123,7 @@
 
 <details>
 <summary>태그(Tag)란? (2)</summary>
-<br>
+<br />
 
 - HTML에서 태그는 웹 페이지의 다양한 요소를 정의하는 데 사용되는 중요한 구성 요소입니다. 이 태그들은 꺾쇠 괄호(angle bracket)로 감싸진 키워드를 사용하여 표현됩니다.
 - 대부분의 태그는 시작 태그와 종료 태그로 구성되어 있으며, 이 두 태그 사이에 위치한 내용을 감싸서 해당 내용에 대한 정보를 제공합니다. 시작 태그는 `<tag>` 형태로 작성되며, 종료 태그는 `</tag>` 형태로 작성됩니다.
@@ -131,7 +131,7 @@
 
 <details>
 <summary>단일 태그(single tag)란? (3)</summary>
-<br>
+<br />
 
 - 빈 요소(empty element)라고도 부릅니다.
 - 종료 태그가 필요하지 않습니다.
@@ -140,7 +140,7 @@
 
 <details>
 <summary>단일 태그의 예시를 드시오. (6)</summary>
-<br>
+<br />
 
 - `<br>` 줄 바꿈을 생성하는 태그
 - `<img>` 이미지를 삽입하는 태그
@@ -152,7 +152,7 @@
 
 <details>
 <summary>태그 속성(attribute)이란? (6)</summary>
-<br>
+<br />
 
 - HTML 태그에 추가 정보를 제공하는 데 사용됩니다.
 - 속성은 일반적으로 `(attribute name) = (attribute value)`의 형식으로 작성됩니다.
@@ -170,7 +170,7 @@
 
 <details>
 <summary>태그 속성의 예시를 드시오. (6)</summary>
-<br>
+<br />
 
 - `class` 요소에 대한 CSS 클래스 이름을 지정합니다.
 - `id` 요소의 고유한 식별자를 지정합니다.
@@ -180,7 +180,7 @@
 
 <details>
 <summary>Boolean attribute의 예시를 드시오. (6)</summary>
-<br>
+<br />
 
 - `checked` 체크박스나 라디오 버튼이 사용자에 의해 선택되었는지 나타냅니다.
 - `disabled` 입력 필드나 버튼 등의 요소가 비활성화되어 있음을 나타냅니다.
@@ -192,7 +192,7 @@
 
 <details>
 <summary>사용자 정의 속성이란? (5)</summary>
-<br>
+<br />
 
 - 사용자 정의 속성(Custom attributes)는 개발자가 HTML 요소에 원하는 속성을 추가하도록 허용하는 방법입니다.
 - 이러한 속성은 `data-*` 형식으로 정의되며, 여기서 `*` 부분은 사용자가 임의로 정한 이름이 들어갑니다. 이렇게 정의한 사용자 정의 속성은 JavaScript를 이용해 요소를 조작하거나, CSS를 이용해 스타일을 적용하는 데 사용할 수 있습니다.
@@ -203,14 +203,14 @@
 
 <details>
 <summary>HTML tags는 어떤 것들이 있나요?</summary>
-<br>
+<br />
 
 - [HTML elements reference - HTML: HyperText Markup Language | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) 참조
 </details>
 
 <details>
 <summary>&ltmeta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"&gt가 의미하는 바는 무엇인가요? (3.2)</summary>
-<br>
+<br />
 
 - 이 메타 태그는 웹 페이지를 렌더링하는 데 사용되는 인터넷 익스플로러(IE)의 버전을 지정합니다.
 - `http-equiv` 속성은 HTTP 헤더 필드의 이름을 지정합니다.
@@ -222,7 +222,7 @@
 
 <details>
 <summary>&ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt가 의미하는 바는 무엇인가요? (3.2)</summary>
-<br>
+<br />
 
 - 이 메타 태그는 웹 페이지의 뷰포트를 설정하여 웹 페이지가 다양한 기기에서 어떻게 표시되는지 제어합니다. 이는 특히 모바일 기기에서 웹 페이지가 적절하게 표시되도록 하는 데 중요합니다.
 - `name` 속성은 메타데이터의 유형을 지정합니다.
@@ -233,7 +233,7 @@
 
 <details>
 <summary>&ltmeta name="robots" content="noindex"&gt가 의미하는 바는 무엇인가요? (3)</summary>
-<br>
+<br />
 
 - 이 메타 태그는 검색 엔진 크롤러에게 해당 문서를 인덱싱하지 않도록 지시하는 역할을 합니다.
 - `content` 속성의 값으로 `noindex`를 설정하면, 검색 엔진은 해당 페이지를 검색 결과에 포함시키지 않습니다.
@@ -242,7 +242,7 @@
 
 <details>
 <summary>메타 태그(Meta tag)란? (5.2)</summary>
-<br>
+<br />
 
 - 메타 태그(meta tag)는 HTML 문서의 `<head>` 섹션에 위치하는 태그로, 웹 페이지의 메타데이터(meta data)를 정의하는 데 사용됩니다. 이들은 웹 페이지가 어떻게 설명되고, 인덱싱되며, 그 외에도 다양한 속성이 어떻게 적용되는지를 지정합니다.
 - 메타데이터는 문서에 대한 부가 정보로, 웹 페이지의 제목(title), 설명(description), 작성자(author), 키워드(keywords), 문자 인코딩(charset) 등을 포함합니다. 이 정보들은 웹 브라우저, 검색 엔진 등에 의해 활용됩니다.
@@ -255,7 +255,7 @@
 
 <details>
 <summary>오픈그래프(Open Graph)란? (4.3)</summary>
-<br>
+<br />
 
 - 웹 사이트가 소셜 미디어에서 공유될 때 정보를 제공하는 메타데이터 프로토콜입니다.
 - 웹 사이트의 메타데이터를 Open Graph 프로토콜로 구성하면, 해당 웹 사이트의 콘텐츠가 소셜 미디어에서 공유될 때 해당 페이지의 제목, 설명, 이미지 등이 더욱 깔끔하게 보여질 수 있습니다.
@@ -278,7 +278,7 @@
 
 <details>
 <summary>Twitter cards란? (4)</summary>
-<br>
+<br />
 
 - 웹 사이트가 Twitter에서 공유될 때 노출되는 정보를 제공하는 메타데이터 프로토콜입니다.
 - 웹 사이트의 메타데이터를 Twitter Cards 프로토콜로 구성하면, 해당 웹 사이트의 콘텐츠가 twitter에서 공유될 때 해당 페이지의 제목, 설명, 이미지 등이 더욱 깔끔하게 보여질 수 있습니다.
@@ -300,7 +300,7 @@
 
 <details>
 <summary>구글 애널리틱스란? (3)</summary>
-<br>
+<br />
 
 - 구글 애널리틱스(Google Analytics)는 Google이 제공하는 웹 분석 서비스로, 웹사이트 및 애플리케이션의 트래픽을 추적하고 분석하는 데 사용됩니다.
 - 이 도구를 사용하면, 웹사이트나 애플리케이션의 사용자 행동, 방문자 분포, 트래픽 흐름 등 다양한 통계적 데이터를 수집하고 분석할 수 있습니다. 이렇게 수집된 데이터는 웹사이트나 애플리케이션의 성능을 평가하고, 사용자 경험을 개선하며, 마케팅 전략을 구성하는 데에 필수적인 정보를 제공합니다.
@@ -309,7 +309,7 @@
 
 <details>
 <summary>하이퍼링크(Hyperlink)란? (4)</summary>
-<br>
+<br />
 
 - 하이퍼링크(Hyperlink)는 웹 페이지에서 클릭 가능한 링크를 의미합니다.
 - 사용자가 이 링크를 클릭하면 해당 웹 페이지나 문서, 이미지, 비디오, 음악 파일 등 다른 컨텐츠로 이동할 수 있습니다.
@@ -318,7 +318,7 @@
 
 <details>
 <summary>&lta&gt 태그의 타겟 속성이란? (6.1)</summary>
-<br>
+<br />
 
 - `<a>` 태그의 타겟(target) 속성은 링크된 페이지를 어떻게 열지 지정하는 데 사용됩니다.
 - `_self` 링크된 페이지를 현재 창 또는 탭에서 엽니다(기본값).
@@ -331,7 +331,7 @@
 
 <details>
 <summary>URL이란? (2)</summary>
-<br>
+<br />
 
 - URL(Uniform Resource Locator)은 URI의 한 형태로, 인터넷에서 리소스의 위치를 나타냅니다.
 - URL은 scheme, 프로토콜, 호스트명, 포트 번호, 경로, 쿼리를 포함할 수 있습니다.
@@ -339,14 +339,14 @@
 
 <details>
 <summary>URI란? (1)</summary>
-<br>
+<br />
 
 - URI(Uniform Resource Identifier)는 인터넷에서 특정한 리소스를 나타내는 유일한 식별자입니다.
 </details>
 
 <details>
 <summary>URI의 구조는 어떻게 되나요? (1.7.18)</summary>
-<br>
+<br />
 
 - `scheme:[//[user:password@]host[:port]][/]path[?query][#fragment]`
   - `URI Scheme`
@@ -378,7 +378,7 @@
 
 <details>
 <summary>Text tag는 어떤 것이 있나요? (11)</summary>
-<br>
+<br />
 
 - `<h1>~<h6>` 제목 태그
 - `<p>` 본문
@@ -395,7 +395,7 @@
 
 <details>
 <summary>List tag에 대해 설명해주세요. (6)</summary>
-<br>
+<br />
 
 - `<ol>` 순서 있는 리스트(Ordered List)를 나타냅니다.
 - `<ul>` 순서 없는 리스트(Unordered List)를 나타냅니다.
@@ -410,7 +410,7 @@
 
 <details>
 <summary>table tag에 대해 설멍해주세요. (9)</summary>
-<br>
+<br />
 
 - `<table>` 표를 만드는 데 사용되는 태그입니다.
 - `<caption>` 표의 캡션을 정의합니다.
@@ -460,7 +460,7 @@
 
 <details>
 <summary>&lttable&gt에 사용할 수 있는 border 관련 속성(property) 두 가지는 무엇인가요? (2.4)</summary>
-<br>
+<br />
 
 - `border-collapse` 속성은 인접한 셀의 경계선을 병합할 것인지 여부를 결정합니다.
   - `collapse`(기본값) 속성은 인접한 셀의 경계선을 병합합니다. 이 때, 인접한 셀들의 경계선이 중복되지 않습니다.
@@ -472,7 +472,7 @@
 
 <details>
 <summary>img 태그란? (6)</summary>
-<br>
+<br />
 
 - 이미지를 삽입하는 태그입니다.
 - 닫는 태그가 없으며, 이미지의 소스를 지정하는 src 속성이 필수적으로 필요합니다.
@@ -487,7 +487,7 @@
 
 <details>
 <summary>video 태그란? (9)</summary>
-<br>
+<br />
 
 - HTML5에서 도입된 태그로, 동영상 콘텐츠를 삽입하는 데 사용됩니다.
 - 닫는 태그가 필요하며, 비디오의 소스를 지정하는 src 속성이 필수적으로 필요합니다.
@@ -510,7 +510,7 @@
 
 <details>
 <summary>audio 태그란? (8)</summary>
-<br>
+<br />
 
 - HTML5에서 도입된 태그 중 하나로, 웹 페이지에서 오디오 콘텐츠를 재생하는 데 사용됩니다.
 - `src` 오디오 파일의 경로를 지정합니다. 여러 개의 비디오 포맷을 지원하는 브라우저를 대비해, 두 개 이상의 소스를 지정할 수도 있습니다.
@@ -532,7 +532,7 @@
 
 <details>
 <summary>iframe 태그란? (7)</summary>
-<br>
+<br />
 
 - 웹 페이지 내에서 다른 웹 페이지나 독립적인 HTML 문서를 삽입하는 데 사용됩니다.
 - 닫는 태그가 필요하며, 삽입할 문서의 URL을 지정하는 src 속성이 필수적으로 필요합니다.
@@ -548,7 +548,7 @@
 
 <details>
 <summary>form 태그란? (3)</summary>
-<br>
+<br />
 
 - 웹 페이지에서 사용자로부터 데이터를 수집하기 위한 양식을 정의하는 데 사용됩니다.
 - `<form>` 태그는 다른 HTML 요소들을 포함할 수 있으며, 이러한 요소들은 사용자가 입력할 수 있는 입력 필드, 제출 버튼, 선택 상자, 라디오 버튼 등입니다.
@@ -557,7 +557,7 @@
 
 <details>
 <summary>form 태그의 attribute는 어떤 것이 있나요? (5)</summary>
-<br>
+<br />
 
 - `action` 폼 데이터를 전송할 URL을 지정합니다.
 - `method` HTTP 요청 방법을 지정합니다. 일반적으로 GET 또는 POST 값을 갖습니다.
@@ -568,7 +568,7 @@
 
 <details>
 <summary>input 태그란? (2)</summary>
-<br>
+<br />
 
 - 사용자가 데이터를 입력할 수 있는 입력 필드를 만드는 데 사용됩니다.
 - `<input>` 태그는 다양한 종류의 입력 필드를 만들 수 있습니다. 예를 들어, 텍스트 입력 필드, 비밀번호 입력 필드, 라디오 버튼, 체크박스, 파일 업로드 필드 등이 있습니다.
@@ -576,7 +576,7 @@
 
 <details>
 <summary>input 태그와 label 태그를 연결하는 방법은? (2)</summary>
-<br>
+<br />
 
 - input 태그의 id를 label 태그의 for 속성값으로 주면 됩니다.
 - input 태그를 label 태그 내부에 넣으면 됩니다.
@@ -584,7 +584,7 @@
 
 <details>
 <summary>input 태그의 attribute는 어떤 것이 있나요? (7)</summary>
-<br>
+<br />
 
 - `type` 입력받을 데이터의 유형을 지정합니다. 
 - `name` 입력받은 데이터의 이름을 지정합니다. 서버로 전송될 때 데이터를 식별하는 데 사용됩니다.
@@ -597,7 +597,7 @@
 
 <details>
 <summary>input type에는 어떤 것이 있나요? (10.6)</summary>
-<br>
+<br />
 
 - `text` 텍스트 입력
 - `email` 이메일 입력
@@ -619,7 +619,7 @@
 
 <details>
 <summary>&ltbutton&gt 태그의 type 속성값은 어떤 것이 있나요? (3)</summary>
-<br>
+<br />
 
 - `submit` 폼 데이터를 서버로 제출합니다. 이 버튼이 클릭되면 `<form>` 요소에서 action 속성에 지정된 URL로 데이터가 전송됩니다.
   - default event로 url에 qurey string으로 input의 name=value 값을 전달합니다.
@@ -629,7 +629,7 @@
 
 <details>
 <summary>다른 form element는 어떤 것이 있나요? (2.7.6)</summary>
-<br>
+<br />
 
 - `<select>`
   - 옵션 목록을 제공하며, 사용자가 목록에서 값을 선택할 수 있도록 합니다.
@@ -663,7 +663,7 @@
 
 <details>
 <summary>link 태그란? (4.4)</summary>
-<br>
+<br />
 
 - HTML 문서에서 다른 문서와의 연결(link)을 지정하는 데 사용됩니다.
 - 보통 스타일 시트, 아이콘, 웹 폰트 등의 외부 리소스와의 연결을 지정하는 데 사용됩니다.
@@ -684,7 +684,7 @@
 
 <details>
 <summary>&ltscript&gt 태그란? (2)</summary>
-<br>
+<br />
 
 - script 태그는 HTML 문서에 스크립트를 삽입하는 데 사용됩니다.
 - script는 보통 클라이언트 측에서 실행되며, 동적인 기능을 추가하거나 웹 페이지의 동작을 제어하는 데 사용됩니다.
@@ -692,7 +692,7 @@
 
 <details>
 <summary>&ltscript&gt 태그의 attribute는 어떤 것이 있나요? (2)</summary>
-<br>
+<br />
 
 - `src` 실행할 스크립트 파일의 URL을 지정합니다. 이 속성을 사용하면 `<script>` 요소 내부에 스크립트 코드를 작성하지 않고 외부 스크립트 파일을 불러올 수 있습니다.
 - `type` 스크립트 코드의 MIME 타입을 지정합니다. 일반적으로 "text/javascript" 값을 사용합니다. HTML5부터는 이 속성을 생략해도 기본값으로 "text/javascript"가 지정됩니다.
@@ -700,7 +700,7 @@
 
 <details>
 <summary>&ltscript&gt 태그를 작성할 때 고려해야할 사항은 무엇인가요? (4)</summary>
-<br>
+<br />
 
 - `<script>`는 종료 태그가 필요합니다.
 - `<script>` 요소를 사용하여 작성된 스크립트는 일반적으로 웹 페이지의 렌더링이 완료된 후 실행됩니다. 따라서, 스크립트에서 HTML 요소를 조작하거나 스타일을 변경하는 등의 작업을 수행하려면 HTML 문서가 모두 로드된 후에 실행되도록 해야 합니다.
@@ -710,7 +710,7 @@
 
 <details>
 <summary>&ltscript&gt를 &ltbody&gt 태그 내부 마지막에 작성하는 것이 권장되는 이유가 무엇인가요? (2)</summary>
-<br>
+<br />
 
 - 웹 페이지가 로딩되는 동안 스크립트 파일을 다운로드하는 시간이 추가되어 페이지 로딩 속도가 느려질 수 있기 때문입니다.
 - 웹 페이지 내용이 전부 렌더링 되기 전에 `<script>` 내부에서 렌더링 되지 않은 DOM 요소에 접근하려 한다면 예기치 못한 오류가 발생할 수 있기 때문입니다.
@@ -718,7 +718,7 @@
 
 <details>
 <summary>시맨틱 태그(Semantic tag)란? (3.8)</summary>
-<br>
+<br />
 
 - HTML5에서 소개된 태그 중 하나로, 웹 페이지의 콘텐츠의 의미를 설명하는 역할을 합니다.
 - 웹 페이지의 구조와 콘텐츠의 의미를 명확하게 나타낼 수 있어 검색 엔진이나 스크린 리더 등이 웹 페이지를 더 잘 이해하고 처리할 수 있습니다.
@@ -735,7 +735,7 @@
 
 <details>
 <summary>시맨틱 태그 사용의 이점은 무엇인가요? (5)</summary>
-<br>
+<br />
 
 - 의미 전달의 명확화: Semantic tag는 콘텐츠의 의미와 구조를 명확하게 전달할 수 있습니다. 이는 검색 엔진이나 스크린 리더 등이 웹 페이지를 더 잘 이해하고 처리할 수 있도록 돕습니다.
 - 검색 엔진 최적화(Search Engine Optimization, SEO): Semantic tag를 사용하면 검색 엔진이 페이지의 구조와 콘텐츠를 더 잘 인식할 수 있습니다. 따라서 검색 결과에서 상위에 노출될 가능성이 높아집니다.
