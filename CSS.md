@@ -33,8 +33,8 @@
 <summary>CSS 코드를 작성하는 방법 3가지 (3.10)</summary>
 <br />
 
-- 내부 스타일 시트 (Internal Style Sheet)
-	- 내부 스타일 시트(Internal Style Sheet)는 HTML 문서 내의 `<style>` 태그를 사용하여 CSS 코드를 작성하는 방법입니다.
+- 내부 스타일 시트
+  - 내부 스타일 시트(Internal Style Sheet)는 HTML 문서 내의 `<style>` 태그를 사용하여 CSS 코드를 작성하는 방법입니다.
 	- 이 방법은 한 페이지 내에서만 스타일을 적용할 수 있습니다.
 	- 예시
   ```html
