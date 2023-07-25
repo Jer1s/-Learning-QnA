@@ -166,8 +166,8 @@
 <br>
 
 - HTML 여러 요소에 대한 스타일을 그룹으로 지정할 수 있게 해주는 식별자입니다.
-- ID와 달리 여러 요소에 적용될 수 있습니다.
-- ID와 달리 각 요소에 대해 다른 클래스를 지정할 수 있습니다.
+- id와 달리 여러 요소에 적용될 수 있습니다.
+- id와 달리 각 요소에 대해 다른 클래스를 지정할 수 있습니다.
 - class name 앞에 `.` 기호를 붙여 선택자로 사용됩니다.
 </details>
 
@@ -197,16 +197,16 @@
 </details>
 
 <details>
-<summary>line-height는 어떤 속성인가요? (4)</summary>
+<summary>line-height는 어떤 속성인가요? (3)</summary>
 <br>
 
 - 텍스트 요소의 줄 간격을 조정하는 데 사용됩니다.
 - 기본값은 normal로, 이 경우 브라우저는 글꼴 크기에 따라 줄 간격을 자동으로 조정합니다.
-- 다른 값으로는 길이 값(px, em 등), 상대 값(%, unitless number), 그리고 숫자 값이 있습니다. 숫자 값은 글꼴 크기에 대한 배수를 나타냅니다.
+- 다른 값으로는 길이 값(px, em 등), 상대 값(%, unitless number), unitless number는 글꼴 크기에 대한 배수를 나타냅니다.
 </details>
 
 <details>
-<summary>요소의 배경 이미지는 어떻게 다루나요? (4)</summary>
+<summary>요소의 배경 이미지는 어떻게 다루나요? (4.9)</summary>
 <br>
 
 - `background-image`
@@ -221,39 +221,45 @@
 	- top, bottom, left, right, center 등의 값으로 설정하거나, x y 형식으로 좌표값을 직접 지정할 수 있습니다.
 - `background-size`
 	- 배경 이미지의 크기를 지정합니다.
-	- auto(기본값), contain, cover, 50% 50%와 같은 값으로 설정할 수 있으며, width height 형식으로 크기를 직접 지정할 수도 있습니다.
+  - auto(기본값), contain, cover, width height 형식으로 크기를 직접 지정할 수도 있습니다.
 </details>
 
 <details>
-<summary>linear-gradient()란? (6)</summary>
+<summary>linear-gradient()란? (7.3.2)</summary>
 <br>
 
-- 배경 그라데이션(gradient)을 생성하기 위한 함수 중 하나로, 시작 색상과 끝 색상을 지정하여 그 사이에 일정한 색상 변화를 만들어냅니다.
-- `linear-gradient([<angle> | to <side-or-corner>], <color-stop-list>)`
-- `<angle>`은 그라데이션의 각도를 지정합니다.
-- `<side-or-corner>`은 그라데이션의 방향을 지정하는 키워드입니다. to right 또는 to left top과 같은 방향도 지정할 수 있습니다.
-- `<color-stop-list>`는 그라데이션의 색상과 위치를 지정하는 리스트입니다. 각각의 색상은 CSS 색상값으로 지정하며, 위치는 0~100% 사이의 값을 가집니다. 여러 개의 색상과 위치를 지정할 경우 쉼표(,)로 구분하여 지정할 수 있습니다.
+- CSS의 linear-gradient() 함수는 웹 페이지의 요소에 선형 그라데이션 배경을 생성하는 데 사용됩니다.
+- 선형 그라데이션은 두 개 이상의 색상이 일정한 간격으로 변화하는 배경 효과를 만듭니다.
+- `linear-gradient()` 함수의 문법은 다음과 같습니다.
+  - `linear-gradient([<angle> | to <side-or-corner>], <color-stop-list>)`
+- `<angle>`은 그라데이션 라인의 각도를 지정합니다. 값은 각도 또는 rad, grad, turn 단위로 지정할 수 있습니다.
+- `to <side-or-corner>`는 그라데이션 라인의 방향을 지정합니다. 값은 top, right, bottom, left, top left 등으로 지정할 수 있습니다.
+- `<color-stop-list>`는 쉼표로 구분된 색상 중단점의 목록입니다. 각 색상 중단점은 색상 값과 선택적으로 위치를 지정할 수 있습니다. 위치는 퍼센트 또는 길이 단위로 지정할 수 있습니다.
 - 예시
-	- `background: linear-gradient(to bottom, red, yellow, green);`
-	- 위의 코드에서, linear-gradient() 함수는 to bottom 방향으로 그라데이션을 설정하고 있습니다. red, yellow, green 순서로 색상을 지정하였고, 위치는 각각 0%, 50%, 100%로 지정되었습니다. 따라서 .box 요소의 배경은 빨간색에서 노란색으로, 그리고 초록색으로 일정한 색상 변화를 보일 것입니다.
+  - `background: linear-gradient(to bottom, red, yellow, green);`
+    - 이 코드는 45도 각도로 빨간색에서 노란색, 그리고 초록색으로 변화하는 선형 그라데이션 배경을 생성합니다.
+  - `background: linear-gradient(to right, red 20%, yellow 50%, green 80%);`
+    - 이 코드는 오른쪽으로 진행하면서 빨간색(20% 지점), 노란색(50% 지점), 그리고 초록색(80% 지점)으로 변화하는 선형 그라데이션 배경을 생성합니다.
+
 </details>
 
 <details>
-<summary>box-shadow란? (3)</summary>
+<summary>box-shadow란? (3.8.2)</summary>
 <br>
 
-- 요소의 그림자 효과를 지정할 때 사용됩니다.
-- box-shadow 속성의 값은 다음과 같이 지정됩니다.
-	- `box-shadow: h-shadow v-shadow blur spread color inset;`
-	- `h-shadow` 그림자의 가로 위치
-	- `v-shadow` 세로 위치
-	- `blur` 흐림 정도
-	- `spread` 그림자의 크기
-	- `color` 그림자 색상
-	- `inset` 그림자가 요소 안쪽에 위치하는지 외부에 위치하는지 여부
+- CSS의 `box-shadow` 속성은 HTML 요소에 하나 이상의 그림자를 추가하는 데 사용됩니다.
+- `box-shadow` 속성의 값은 다음과 같습니다.
+  - `box-shadow: offset-x offset-y blur-radius spread-radius color inset;`
+  - `offset-x offset-y` 그림자가 그려지는 위치를 지정합니다.
+  - `blur-radius` 그림자의 흐림 정도를 지정합니다. 값이 클수록 그림자는 더욱 흐릿하게 보입니다.
+  - `spread-radius` 그림자가 퍼지는 정도를 지정합니다. 양수를 지정하면 그림자가 요소 바깥으로 확장되고, 음수를 지정하면 그림자가 요소 내부로 축소됩니다.
+  - `color` 그림자의 색상을 지정합니다.
+  - `inset` 그림자를 요소의 내부에 그리도록 합니다. 이 키워드를 지정하지 않으면 그림자는 요소의 바깥에 그려집니다.
 - 예시
-	- `box-shadow: 2px 2px 4px #888888;`
-	- 위 코드에서 요소에 왼쪽으로 2px, 아래쪽으로 2px 이동한 위치에 흐린 정도가 4px이고, 색상이 #888888인 그림자 효과를 추가한다는 뜻입니다.
+  - `box-shadow: 10px 5px 5px black;`
+    - 이 코드는 요소에 가로로 10px, 세로로 5px 이동한 위치에 흐림 정도가 5px이고 색상이 검은색인 그림자를 추가합니다.
+  - `box-shadow: inset 0 0 10px #000000;`
+    - 이 코드는 요소 내부에 흐림 정도가 10px이고 색상이 검은색인 그림자를 추가합니다.
 </details>
 
 <details>
@@ -265,20 +271,19 @@
 </details>
 
 <details>
-<summary>박스 모델(Box model)이란? (3)</summary>
+<summary>박스 모델(Box model)이란? (2.4)</summary>
 <br>
 
-- CSS에서 요소가 차지하는 공간을 나타내는 모델입니다.
-- 각각의 요소는 콘텐츠 영역, 패딩 영역, 테두리 영역, 그리고 마진 영역으로 구성되며, 이러한 영역들이 모두 합쳐져서 요소가 차지하는 전체 공간을 형성합니다.
-- Box-model을 구성하는 영역들과 관련된 용어
-  - 콘텐츠 영역 (Content area): 텍스트, 이미지 등 요소가 실제로 표시되는 부분입니다.
-  - 패딩 영역 (Padding area): 콘텐츠 영역 주위의 여백을 말하며, 패딩 값이 있을 경우 해당 요소의 내부 여백을 설정합니다.
-  - 테두리 영역 (Border area): 콘텐츠 영역과 패딩 영역 사이의 경계선을 말하며, 테두리 스타일, 두께, 색상 등을 설정할 수 있습니다.
-  - 마진 영역 (Margin area): 테두리 영역 주위의 여백을 말하며, 마진 값이 있을 경우 해당 요소의 외부 여백을 설정합니다.
+- CSS 박스 모델(Box Model)은 HTML 문서의 각 요소를 감싸는 박스로, 이를 이해하는 것은 웹 페이지 레이아웃을 제어하는 데 중요한 기초입니다.
+- 박스 모델은 Content, Padding, Border, Margin으로 구성되어 있습니다.
+  - Content: 요소의 실제 내용이 위치하는 영역입니다. 내용의 너비와 높이는 width, height 속성으로 조절할 수 있습니다.
+  - Padding: Content 영역과 Border 영역 사이의 여백 영역입니다. 이 영역은 padding 속성으로 조절할 수 있습니다.
+  - Border: Padding과 Margin 사이의 영역으로, 요소의 테두리를 나타냅니다. border 속성을 사용하여 조절할 수 있습니다.
+  - Margin: Border와 다른 요소 사이의 공간으로, margin 속성을 사용하여 조절할 수 있습니다.
 </details>
 
 <details>
-<summary>padding과 margin 표기법을 설명해주세요 (5)</summary>
+<summary>padding과 margin 표기법을 설명해주세요 (5.1)</summary>
 <br>
 
 - `margin: [size]` 상하좌우
@@ -286,19 +291,7 @@
 - `margin: [size] [size] [size]` 상/좌우/하
 - `margin: [size] [size] [size] [size]` 상/우/하/좌
 - `width: [size]; margin: [size] auto` 자동으로 채우기
-  - 너비가 정해져 있어야 자동으로 채울 수 있다.
-</details>
-
-<details>
-<summary>padding과 margin 표기법을 설명해주세요 (5)</summary>
-<br>
-
-- `margin: [size]` 상하좌우
-- `margin: [size] [size]` 상하/좌우
-- `margin: [size] [size] [size]` 상/좌우/하
-- `margin: [size] [size] [size] [size]` 상/우/하/좌
-- `width: [size]; margin: [size] auto` 자동으로 채우기
-  - 너비가 정해져 있어야 자동으로 채울 수 있다.
+  - 너비가 정해져 있어야 좌우 margin을 auto로 설정할 수 있습니다.
 </details>
 
 <details>
@@ -331,7 +324,7 @@ border-radius: 50%;
 </details>
 
 <details>
-<summary>box-sizing 속성이란? (3)</summary>
+<summary>box-sizing 속성이란? (3.2)</summary>
 <br>
 
 - CSS 속성 중 하나로, 요소의 크기를 계산하는 방법을 지정합니다.
@@ -342,19 +335,19 @@ border-radius: 50%;
 </details>
 
 <details>
-<summary>overflow란? (2)</summary>
+<summary>overflow란? (2.4)</summary>
 <br>
 
 - 요소의 내용이 지정된 크기를 초과할 때 처리 방법을 지정하는 속성입니다.
 - 다음과 같은 값 중 하나를 가질 수 있습니다.
-  - `visible` 기본값으로, 초과한 부분을 그대로 표시합니다.
-  - `hidden` 초과한 부분을 잘라내고, 표시하지 않습니다.
-  - `scroll` 초과한 부분에 스크롤바를 표시하여, 스크롤을 이용해서 보여줍니다.
+  - `visible` 기본값으로, 컨텐츠가 넘쳐도 그대로 보여집니다.
+  - `hidden` 넘치는 컨텐츠를 잘라내어 보이지 않게 합니다.
+  - `scroll` 항상 스크롤바를 표시합니다.
   - `auto` 필요한 경우에만 스크롤바를 표시합니다.
 </details>
 
 <details>
-<summary>가로 스크롤을 만드는 방법은? (3)</summary>
+<summary>가로 스크롤을 만드는 방법을 설명해주세요. (3)</summary>
 <br>
 
 - `overflow-x` 속성을 auto로 하여 가로 스크롤바를 표시합니다. 이때, `overflow-y` 속성은 `hidden` 값을 지정하여 세로 스크롤바를 표시하지 않도록 설정해야 합니다.
@@ -366,21 +359,19 @@ border-radius: 50%;
   overflow-y: hidden;
   white-space: nowrap;
   }
+
   ```
 </details>
 
 <details>
-<summary>마진 상쇄(margin collapse)란? (4)</summary>
+<summary>마진 상쇄란? (4.4)</summary>
 <br>
 
-- 인접한 블록 요소의 마진 값이 병합되는 현상을 말합니다.
+- CSS 박스 모델에서 마진 상쇄(margin collapse)는 인접한 두 개의 수직 마진 중에서 큰 쪽 값으로 결정되는 현상을 말합니다.
 - 이 현상은 다음과 같은 상황에서 발생합니다.
   - 인접한 블록 요소의 상/하단 마진 값이 모두 존재할 경우
   - 부모 요소와 첫 번째 자식 요소 또는 마지막 자식 요소 사이의 마진 값이 존재할 경우
-- 마진 병합은 다음과 같은 규칙에 따라 처리됩니다.
-  - 인접한 블록 요소의 마진 값 중 더 큰 값을 사용합니다.
-  - 부모 요소와 첫 번째 자식 요소, 마지막 자식 요소 사이의 마진 값 중 더 큰 값을 사용합니다.
-  - 부모 요소와 첫 번째 자식 요소, 마지막 자식 요소 사이에 다른 요소가 존재한다면, 이러한 마진 병합 현상이 발생하지 않습니다.
+- 마진 상쇄는 두 마진 중 큰 값으로 결정되며, 음수 마진도 계산에 포함됩니다. 음수 마진이 포함되는 경우 상쇄된 마진은 두 마진의 합으로 계산됩니다.
 - 마진 병합은 다음과 같이 해결합니다.
   - 인접한 블록 요소의 상/하단 마진 값을 각각 0으로 설정합니다.
   - 부모 요소와 첫 번째 자식 요소, 마지막 자식 요소 사이에 빈 요소를 추가합니다.
@@ -440,9 +431,9 @@ border-radius: 50%;
 
 - 해당 요소를 새로운 줄이 아닌, 텍스트 흐름 내에서 표시하는 속성입니다.
 - 제약 사항
-  - 너비와 높이: 요소는 내용물에 맞게 자동으로 너비와 높이가 결정됩니다. 따라서, 너비와 높이를 직접 설정할 수 없습니다.
-  - 패딩과 마진: 요소는 수평 방향의 패딩과 마진은 설정할 수 있지만, 수직 방향의 패딩과 마진은 설정할 수 없습니다.
-  - 줄바꿈: 요소는 자동으로 줄바꿈이 되지 않습니다. 따라서, 요소가 너무 길어지면 부모 요소를 벗어나게 됩니다.
+  - 너비와 높이: 내용물에 맞게 자동으로 너비와 높이가 결정됩니다. 따라서, 너비와 높이를 직접 설정할 수 없습니다.
+  - 패딩과 마진: 수평 방향의 패딩과 마진은 설정할 수 있지만, 수직 방향의 패딩과 마진은 설정할 수 없습니다.
+  - 줄바꿈: 자동으로 줄바꿈이 되지 않습니다. 따라서, 요소가 너무 길어지면 부모 요소를 벗어나게 됩니다.
 </details>
 
 <details>
@@ -477,18 +468,7 @@ border-radius: 50%;
 
 - `table` 테이블 요소를 표시하며, 요소의 너비를 테이블의 전체 너비에 맞게 설정되게 해주는 속성입니다.
 - `table-row` 테이블 행 요소를 표시하며, 요소의 너비를 테이블의 전체 너비에 맞게 설정되게 해주는 속성입니다.
-- `table-cell 테이블 셀 요소를 표시하며, 요소의 너비와 높이를 직접 설정 가능하게 해주는 속성입니다.
-</details>
-
-<details>
-<summary>display: inline-block이란? (5)</summary>
-<br>
-
-- 요소를 문장 내에서 표시하고, 요소의 너비와 높이를 직접 설정 가능하게 해주는 속성입니다.
-- 인라인처럼 줄바꿈이 일어나지 않습니다.
-- 인라인처럼 컨텐츠의 너비만큼 너비를 차지합니다.
-- 블록처럼 세로 여백을 쓸 수 있습니다.
-- 블록처럼 너비나 높이를 지정할 수 있습니다.
+- `table-cell` 테이블 셀 요소를 표시하며, 요소의 너비와 높이를 직접 설정 가능하게 해주는 속성입니다.
 </details>
 
 <details>
@@ -500,7 +480,7 @@ border-radius: 50%;
 </details>
 
 <details>
-<summary>Flexbox 정렬 (6)</summary>
+<summary>Flexbox 정렬 방법에 대해 설명해주세요. (6.3)</summary>
 <br>
 
 - Main Axis: 배치 방향
@@ -516,60 +496,62 @@ border-radius: 50%;
 </details>
 
 <details>
-<summary>Flexbox 간격</summary>
+<summary>Flexbox 간격에 대해 설명해주세요. (2) </summary>
 <br>
 
 - `gap: {row-gap} {column-gap}`
-- gap 속성값은 flex-direction의 영향을 받지 않는다.	
+- `gap` 속성값은 flex-direction의 영향을 받지 않습니다.	
 </details>
 
 <details>
-<summary>Flexbox 요소 꽉 채우기 (5)</summary>
+<summary>Flexbox 요소를 활용해 공간을 꽉 채우는 방법에 대해 설명해주세요. (5.10)</summary>
 <br>
 
 - flex-grow
 	- default: 0
-	- 형제 요소들의 flex-grow 값의 비율에 따라 남은 여백을 분배하여 각 요소의 너비/높이를 늘려준다.
-	- 1 값을 주면 빈 공간을 채울 수 있다
+	- flex-grow 속성은 flex 아이템이 flex 컨테이너 내의 남은 공간을 얼마나 차지할 것인지 결정합니다.
+	- 만약 모든 flex 아이템의 flex-grow 속성 값이 1이라면, 모든 아이템은 남은 공간을 균등하게 분배받게 됩니다.
 - flex-shrink
 	- default: 1
-	- 형제 요소들의 flex-shrink 값의 비율에 따라 overflow가 일어난 너비/높이를 분배하여 각 요소의 너비/높이를 줄여준다.
-	- 0 값을 주면 요소를 원하는 위치에 고정할 수 있다
+	- flex-shrink 속성은 flex 컨테이너의 크기가 줄어들었을 때, flex 아이템이 얼마나 줄어들 것인지를 결정합니다.
+	- flex 아이템의 flex-shrink 속성 값을 0으로 설정하면 요소를 원하는 위치에 고정할 수 있습니다.
 - flex-basis
 	- default: auto
-	- flex 요소의 기본 사이즈를 지정한다.
-	- width와 사용하는 단위가 같다.
-	- 기본값인 auto로 지정된 경우 컨텐츠 사이즈에 맞춰서 나타나고, 0px/0% 값을 주면 부모 컨테이너를 기준으로 크기가 정해진다.
-- `flex: {flex-grow} {flex-shrink} {flex-basis}` 형태로 쓸 수 있다
-- `display: inline-flex`를 활용해 인라인 안에서 플렉스박스를 만들 수 있다
+	- flex-basis 속성은 flex 아이템의 초기 크기를 결정합니다.
+	- width와 사용하는 단위가 같습니다.
+	- 만약 flex-basis를 기본값인 auto로 설정하면 컨텐츠 사이즈에 맞춰서 나타나고, 0으로 설정하면 아이템의 초기 크기는 0이며, flex-grow 속성에 따라 공간을 분배받게 됩니다.
+- `flex: {flex-grow} {flex-shrink} {flex-basis}` 형태로 쓸 수 있습니다.
+- `display: inline-flex`를 활용해 인라인 안에서 플렉스박스를 만들 수 있습니다.
 </details>
 
 <details>
-<summary>grid란? (2)</summary>
+<summary>grid란? (3)</summary>
 <br>
 
-- 자식 요소를 행(row)과 열(column)로 구성된 2차원 레이아웃 메소드입니다.
+- Grid는 CSS3의 레이아웃 기능 중 하나로, 요소를 2차원(행과 열)의 격자 형태로 배열하는 데 사용됩니다.
+- Flexbox가 1차원의 레이아웃을 위한 것이라면, Grid는 2차원의 복잡한 레이아웃을 다룰 수 있습니다.
+- Grid를 사용하면 미디어 쿼리를 사용하지 않고도 반응형 디자인을 쉽게 구현할 수 있습니다.
 </details>
 
 <details>
-<summary>grid 나누는 방법 (2)</summary>
+<summary>grid의 구조를 나누는 방법을 설명해주세요. (1.3)</summary>
 <br>
 
 - `grid-template-columns`과 `grid-template-rows` 속성을 사용하여 행과 열의 크기를 정의하고, `grid-template-areas` 속성을 사용하여 각 영역을 이름으로 정의합니다.
 	- `grid-template-columns: {width1} {width2} ...`
-   	- `grid-template-rows: {height1} {height2} ...`
-   	- `grid-template: {height1} {height2} ... / {width1} {width2} ...`
+	- `grid-template-rows: {height1} {height2} ...`
+	- `grid-template: {height1} {height2} ... / {width1} {width2} ...`
 </details>
 
 <details>
-<summary>grid 크기와 함수들 (7)</summary>
+<summary>grid 크기와 함수들에 대해 설명해주세요. (5.5)</summary>
 <br>
 
-- grid-auto-rows/grid-auto-columns 속성으로 row/column 크기를 자동 지정할 수 있다
-- grid-row/grid-column 속성값으로 그리드라인의 번호를 입력해 요소를 원하는 셀 집합에 배치할 수 있다
-	- span n 속성값도 쓸 수 있다
-- grid item에 grid-area라는 이름을 붙이고 grid container에 grid-template-areas 속성을 이용해 이름으로 배치할 수 있다
-	- 해당 위치를 비우고 싶으면 마침표(.)를 쓰면 된다
+- `grid-auto-rows`, `grid-auto-columns` 속성으로 행과 열의 크기를 자동으로 설정할 수 있습니다.
+- `grid-row`, `grid-column` 속성 값으로 그리드 라인의 번호를 입력해 요소를 원하는 셀 집합에 배치할 수 있습니다.
+	- `span n` 속성 값도 쓸 수 있습니다.
+- grid item에 `grid-area`라는 이름을 붙이고 grid container에 `grid-template-areas` 속성을 이용해 이름으로 배치할 수 있습니다.
+	- 해당 위치를 비우고 싶으면 마침표`.`를 쓰면 됩니다.
 - size에 fr(fraction) 값을 넣으면 요소 간 상대적인 크기로 지정할 수 있다
 	- size에 minmax(min, max) 함수를 활용할 수 있다
 	- minmax에서 최댓값에만 fr 값을 쓸 수 있다
@@ -578,21 +560,21 @@ border-radius: 50%;
 </details>
 
 <details>
-<summary>선택자 목록(Selector list)란? (1)</summary>
+<summary>선택자 목록이란? (1)</summary>
 <br>
 
-- CSS에서 하나 이상의 선택자를 콤마로 구분하여 연결한 것
+- 선택자 목록(Selector list)은 여러 개의 선택자를 콤마(,)로 구분하여 하나의 규칙을 적용하는 방법입니다.
 </details>
 
 <details>
 <summary>선택자를 붙여쓰면 어떻게 되나요? (1)</summary>
 <br>
 
-- 해당하는 모든 선택자를 가진 요소들을 선택한다
+- 선택자를 붙여 쓰면, 여러 조건을 모두 만족하는 요소를 선택합니다.
 </details>
 
 <details>
-<summary>자식, 자손 요소를 선택하는 방법은? (2)</summary>
+<summary>자식, 자손 요소를 선택하는 방법에 대해 설명해주세요. (2)</summary>
 <br>
 
 - 자식 요소: `parent-selector > child-selector`
@@ -600,10 +582,12 @@ border-radius: 50%;
 </details>
 
 <details>
-<summary>가상 클래스(Pseudo class)란? (1)</summary>
+<summary>가상 클래스란? (1)</summary>
 <br>
 
-- 선택자의 특정 상태를 정의하는 데 사용되는 클래스
+- 가상 클래스(Pseudo class)는 CSS 선택자의 특별한 상태를 지정하기 위해 사용되는 키워드입니다.
+- 가상 클래스는 콜론(:)으로 시작하며, 선택자의 이름 뒤에 위치합니다.
+- 가상 클래스를 이용하면, 문서의 특정 부분(예: 첫 번째 줄, 첫 번째 자식 등)이나 사용자와의 상호작용(예: 방문한 링크, 마우스 오버 상태 등)에 따른 요소의 상태를 스타일링할 수 있습니다.
 </details>
 
 <details>
@@ -635,7 +619,7 @@ border-radius: 50%;
 <br>
 
 - 여러 개의 스타일 규칙이 있을 때, 캐스케이드 우선순위에 따라 최종 스타일을 결정하는 과정을 의미합니다.
-- 여기서 "cascading"은 "폭포처럼 순서대로 내려가는"이라는 의미로 사용됩니다.
+- 여기서 `cascading`은 `폭포처럼 순서대로 내려가는`이라는 의미로 사용됩니다.
 </details>
 
 <details>
