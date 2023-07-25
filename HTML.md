@@ -311,25 +311,22 @@
 <summary>하이퍼링크(Hyperlink)란? (4)</summary>
 <br>
 
-- 웹 페이지에서 클릭 가능한 링크를 의미합니다.
-- 이 링크는 클릭하면 해당 웹 페이지나 문서, 이미지, 비디오, 음악 파일 등 다른 컨텐츠로 이동할 수 있습니다.
-- HTML에서 클릭 가능한 텍스트를 만들기 위해서는 `<a>` 태그를 사용합니다. 
-- 예시
-  - `<a href="path">`
-  - 절대 경로(absolute path) 또는 상대 경로(relative path)로 경로를 표시한다.
+- 하이퍼링크(Hyperlink)는 웹 페이지에서 클릭 가능한 링크를 의미합니다.
+- 사용자가 이 링크를 클릭하면 해당 웹 페이지나 문서, 이미지, 비디오, 음악 파일 등 다른 컨텐츠로 이동할 수 있습니다.
+- HTML에서 클릭 가능한 텍스트를 만들기 위해서는 `<a>` 태그를 사용합니다.
 </details>
 
 <details>
-<summary>&lta&gt 태그의 타겟 속성(target attribute)이란? (6)</summary>
+<summary>&lta&gt 태그의 타겟 속성이란? (6.1)</summary>
 <br>
 
-- target 속성은 링크된 페이지를 어떻게 열지 지정하는 데 사용됩니다.
+- `<a>` 태그의 타겟(target) 속성은 링크된 페이지를 어떻게 열지 지정하는 데 사용됩니다.
 - `_self` 링크된 페이지를 현재 창 또는 탭에서 엽니다(기본값).
 - `_blank` 링크된 페이지를 새 창이나 탭에서 엽니다.
 - `_parent` 현재 프레임의 상위 프레임에서 링크된 페이지를 엽니다.
 - `_top` 현재 모든 프레임을 새로운 창 또는 탭으로 대체하고, 링크된 페이지를 엽니다.
 - `framename` 링크된 페이지가 지정된 이름을 가진 프레임 또는 iframe에 로드됩니다.
-  - framename은 검색 엔진 최적화(SEO)에 좋지 않은 영향을 미칠 수 있고, 일부 브라우저에서는 더 이상 지원되지 않을 수 있습니다.
+  - 하지만 frame은 검색 엔진 최적화(SEO)에 좋지 않은 영향을 미칠 수 있고, 일부 브라우저에서는 더 이상 지원되지 않을 수 있습니다. 그러므로 최신 웹 개발에서는 `<iframe>`보다는 다른 방식을 사용하는 것이 좋습니다.
 </details>
 
 <details>
@@ -348,31 +345,35 @@
 </details>
 
 <details>
-<summary>URI의 구조는 어떻게 되나요? (6)</summary>
+<summary>URI의 구조는 어떻게 되나요? (1.7.18)</summary>
 <br>
 
 - `scheme:[//[user:password@]host[:port]][/]path[?query][#fragment]`
   - `URI Scheme`
     - URI를 구분하는 스키마(프로토콜)를 나타냅니다.
     - 예를 들어, `http`, `https`, `ftp`, `mailto`, `tel` 등이 있습니다.
+    - 각 스키마는 특정 프로토콜을 사용하여 리소스에 접근하는 방법을 정의합니다.
+    - 예를 들어, "http://"는 웹 서버에 접근하는 프로토콜을 나타냅니다.
     - IANA의 [URI Scheme list](https://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml) 참조
   - `user:password@`
     - 선택적으로 사용되며, 인증 정보를 나타냅니다.
   - `host`
     - 리소스를 호스팅하는 호스트 이름을 나타냅니다.
-    - 예를 들어, `www.example.com`과 같은 도메인 이름을 사용할 수 있습니다.
+    - 예를 들어, "www.example.com"과 같은 도메인 이름을 사용할 수 있습니다.
   - `port`
-    - 선택적으로 사용되며, 리소스에 액세스하는 데 사용되는 포트 번호를 나타냅니다.
-    - 예를 들어, "80"이나 "443"과 같은 포트 번호를 사용할 수 있습니다.
+    - 선택적으로 사용되며, 리소스에 접근하는 데 사용되는 포트 번호를 나타냅니다.
+    - 각 프로토콜은 기본 포트를 가지고 있으며, 명시적으로 다른 포트를 사용할 때에만 지정됩니다. 예를 들어, "80"은 HTTP의 기본 포트이고, "443"은 HTTPS의 기본 포트입니다.
   - `path`
     - 리소스의 경로를 나타냅니다.
+    - 서버 내부의 파일 경로 또는 RESTful API 엔드포인트 등이 될 수 있습니다.
     - 예를 들어, "/index.html"과 같은 경로를 사용할 수 있습니다.
   - `query`
     - 선택적으로 사용되며, 리소스에 대한 추가적인 정보를 전달하는 데 사용됩니다.
-    - 예를 들어, "key=value"와 같은 쿼리 문자열을 사용할 수 있습니다.
+    - 주로 웹 서버에 파라미터를 전달하는데 사용되며, "key=value"와 같은 형식으로 작성됩니다.
   - `fragment`
     - 선택적으로 사용되며, 리소스의 특정 부분을 나타내는 앵커를 나타냅니다.
-    - 예를 들어, "section1"과 같은 앵커를 사용할 수 있습니다.
+    - 웹 페이지에서 특정 섹션 또는 위치로 바로 이동할 때 사용됩니다.
+    - 예를 들어, "#section1"과 같이 사용합니다.
 </details>
 
 <details>
@@ -403,7 +404,7 @@
    - `1`, `a`, `A`, `i`, `I` 등
 - `<ul>` type attribute
    - `disc`, `circle`, `square` 등
-- `<ol>`, `<ul>`에 `list-style` property를 활용할 수 있다.
+- `<ol>`, `<ul>`에 `list-style` property를 활용할 수 있습니다.
   - `list-style: list-style-type list-style-position list-style-image`
 </details>
 
@@ -458,15 +459,15 @@
 </details>
 
 <details>
-<summary>&lttable&gt에 사용할 수 있는 border 관련 속성(property) 두 가지는 무엇인가요? (2)</summary>
+<summary>&lttable&gt에 사용할 수 있는 border 관련 속성(property) 두 가지는 무엇인가요? (2.4)</summary>
 <br>
 
-- `border-collapse` 인접한 셀의 경계선을 병합할 것인지 여부를 결정합니다. 
-  - `collapse` 인접한 셀의 경계선을 병합합니다. 이때 인접한 셀들의 경계선이 중복되지 않습니다. (기본값)
-  - `separate` 인접한 셀의 경계선을 병합하지 않습니다. 이때 인접한 셀들의 경계선이 중복됩니다.
-- `border-spacing` 인접한 셀 간의 간격을 설정합니다.
-  - border-collapse 속성의 값이 separate인 경우에만 적용됩니다.
-  - 이 속성의 값은 길이 또는 백분율로 지정할 수 있습니다.
+- `border-collapse` 속성은 인접한 셀의 경계선을 병합할 것인지 여부를 결정합니다.
+  - `collapse`(기본값) 속성은 인접한 셀의 경계선을 병합합니다. 이 때, 인접한 셀들의 경계선이 중복되지 않습니다.
+  - `separate` 속성은 인접한 셀의 경계선을 병합하지 않습니다. 이 때, 인접한 셀들의 경계선이 중복됩니다.
+- `border-spacing` 속성은 인접한 셀 간의 간격을 설정합니다.
+  - `border-collapse` 속성의 값이 separate인 경우에만 적용됩니다.
+  - 이 속성의 값은 길이 또는 백분율로 지정할 수 있습니다. 양수 값으로 지정하여 인접한 셀 간의 간격을 늘리고, 음수 값으로 지정하여 간격을 줄일 수도 있습니다.
 </details>
 
 <details>
@@ -595,9 +596,8 @@
 </details>
 
 <details>
-<summary>input type에는 어떤 것이 있나요? (10)</summary>
+<summary>input type에는 어떤 것이 있나요? (10.6)</summary>
 <br>
-
 
 - `text` 텍스트 입력
 - `email` 이메일 입력
@@ -628,40 +628,41 @@
 </details>
 
 <details>
-<summary>다른 form element는 어떤 것이 있나요? (2)</summary>
+<summary>다른 form element는 어떤 것이 있나요? (2.7.6)</summary>
 <br>
 
 - `<select>`
   - 옵션 목록을 제공하며, 사용자가 목록에서 값을 선택할 수 있도록 합니다.
   - 이 요소는 다음과 같은 속성을 가질 수 있습니다
     - `name` 요소의 이름(Name)을 지정합니다. 폼 데이터의 이름으로 사용됩니다.
-	- `multiple` 여러 옵션을 선택할 수 있도록 합니다.
-	- `size` 목록에서 표시되는 옵션의 수를 지정합니다.
+		- `multiple` 여러 옵션을 선택할 수 있도록 합니다.
+		- `size` 목록에서 표시되는 옵션의 수를 지정합니다.
   - 내부에 `value` 속성을 갖는 `<option>` 태그를 넣어서 구현합니다.
   - 예시
-    ```html
+	```html
 	<select name="fruit">
-      <option value="apple">사과</option>
-      <option value="banana">바나나</option>
-      <option value="orange">오렌지</option>
-    </select>
+		<option value="apple">사과</option>
+		<option value="banana">바나나</option>
+		<option value="orange">오렌지</option>
+	</select>
+
 	```
 - `<textarea>`
   - 여러 줄의 텍스트를 입력할 수 있는 텍스트 영역을 제공합니다.
   - 이 요소는 다음과 같은 속성을 가질 수 있습니다
     - `name` 요소의 이름(Name)을 지정합니다. 폼 데이터의 이름으로 사용됩니다.
-	- `rows` 텍스트 영역에 보여지는 줄의 수를 지정합니다.
-	- `cols` 텍스트 영역에 보여지는 칸의 수를 지정합니다.
+		- `rows` 텍스트 영역에 보여지는 줄의 수를 지정합니다.
+    - `cols` 텍스트 영역에 보여지는 칸의 수를 지정합니다.
   - 예시
-  	```html
-    <textarea name="message" rows="4" cols="40">
-    여러 줄의 텍스트를 입력할 수 있습니다.
-    </textarea>
-    ```
+	```html
+	<textarea name="message" rows="4" cols="40">
+		여러 줄의 텍스트를 입력할 수 있습니다.
+	</textarea>
+	```
 </details>
 
 <details>
-<summary>link 태그란? (4)</summary>
+<summary>link 태그란? (4.4)</summary>
 <br>
 
 - HTML 문서에서 다른 문서와의 연결(link)을 지정하는 데 사용됩니다.
@@ -685,8 +686,8 @@
 <summary>&ltscript&gt 태그란? (2)</summary>
 <br>
 
--  요소는 HTML 문서에 스크립트를 삽입하는 데 사용됩니다.
-- 스크립트는 보통 클라이언트 측에서 실행되며, 동적인 기능을 추가하거나 웹 페이지의 동작을 제어하는 데 사용됩니다.
+- script 태그는 HTML 문서에 스크립트를 삽입하는 데 사용됩니다.
+- script는 보통 클라이언트 측에서 실행되며, 동적인 기능을 추가하거나 웹 페이지의 동작을 제어하는 데 사용됩니다.
 </details>
 
 <details>
@@ -716,12 +717,12 @@
 </details>
 
 <details>
-<summary>시맨틱 태그(Semantic tag)란? (3)</summary>
+<summary>시맨틱 태그(Semantic tag)란? (3.8)</summary>
 <br>
 
 - HTML5에서 소개된 태그 중 하나로, 웹 페이지의 콘텐츠의 의미를 설명하는 역할을 합니다.
 - 웹 페이지의 구조와 콘텐츠의 의미를 명확하게 나타낼 수 있어 검색 엔진이나 스크린 리더 등이 웹 페이지를 더 잘 이해하고 처리할 수 있습니다.
-- `semantic tag` list
+- 예시
    - `<header>` 도입부에 해당하는 콘텐츠
    - `<nav>` HTML 문서 사이를 탐색할 수 있는 링크의 집합
    - `<main>` HTML 문서 내에 한 번만 사용할 수 있는 주요 콘텐츠
@@ -729,7 +730,7 @@
    - `<article>` 독립적인 하나의 콘텐츠
    - `<section>` 전체적인 내용과 관련이 있는 콘텐츠
    - `<aside>` 부가 정보나 광고 등이 있는 콘텐츠
-   - `<figure>` image와 image caption이 있는 콘텐츠로 `<figcaption>`을 자식 요소로 쓰곤 한다 
+   - `<figure>` image와 image caption이 있는 콘텐츠로 `<figcaption>`을 자식 요소로 쓰곤 합니다.
 </details>
 
 <details>
@@ -741,12 +742,4 @@
 - 웹 접근성(Web Accessibility = A11y) 향상: Semantic tag를 사용하면 스크린 리더 등의 보조 기술을 사용하는 사용자들도 웹 페이지를 더 쉽게 이해하고 사용할 수 있습니다. 이는 웹 접근성을 높이는 데에 큰 도움이 됩니다.
 - 코드 유지 보수성 향상: Semantic tag를 사용하면 코드의 가독성과 유지 보수성이 향상됩니다. 의미 있는 태그를 사용하면 다른 개발자들도 코드를 더 쉽게 이해하고 수정할 수 있습니다.
 - 미래 호환성 보장: Semantic tag를 사용하면 새로운 웹 기술이 등장해도 이전에 작성한 코드가 더욱 유연하게 대처할 수 있습니다. Semantic tag를 사용하면 콘텐츠와 구조를 명확하게 전달할 수 있기 때문에, 새로운 기술이 등장해도 이전 코드를 수정하지 않고도 호환성을 유지할 수 있습니다.
-</details>
-
-
-<details>
-<summary></summary>
-<br>
-
-- 
 </details>
