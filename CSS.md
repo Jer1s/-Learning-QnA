@@ -623,7 +623,7 @@ border-radius: 50%;
 </details>
 
 <details>
-<summary>캐스케이드 우선순위(Cascade precedence)를 설명하시오 (4)</summary>
+<summary>캐스케이드 우선순위(Cascade precedence)에 대해 설명해주세요. (4.16.3)</summary>
 <br>
 
 1. Origin and importance
@@ -636,7 +636,7 @@ border-radius: 50%;
   - `1-7` author(developer)
   - `1-8` user
   - `1-9` user-agent (browser)
-  - `!important`와 `inline style definition`은 스타일 디버깅을 어렵게 만든다.
+  - `!important`와 `inline style definition`은 스타일 디버깅을 어렵게 만듭니다.
 2. 명시도(Specificity)
   - `2-1` 아이디(IDs)
   - `2-2` 클래스(Classes), 속성(attributes), 가상클래스(pseudo-classes)
@@ -660,9 +660,8 @@ border-radius: 50%;
 - top, right, bottom, left, inset 속성으로 구체적인 위치를 지정할 수 있습니다.
 </details>
 
-
 <details>
-<summary>Position property의 종류 (5)</summary>
+<summary>Position property의 종류에 대해 설명해주세요. (5.7)</summary>
 <br>
 
 - static(default): 일반적인 문서 흐름에 따라 배치
@@ -681,14 +680,14 @@ border-radius: 50%;
 
 
 <details>
-<summary>z-index란? (1)</summary>
+<summary>z-index란? (1.2)</summary>
 <br>
 
-- z-index: positioning된 요소, 그 자손과 flex items의 z축 순서를 지정한다
-  - 정수 값을 사용한다
-  - 숫자가 클 수록 앞으로 나온다
+- `z-index`는 CSS 속성 중 하나로, positioning(위치 지정)된 요소, 그 자손과 flex items의 z축(수직 방향) 순서를 지정합니다.
+  - `z-index` 값은 정수 값을 사용하며, 숫자가 클수록 요소가 앞으로 나타납니다.
+이 속성은 일반적으로 요소의 쌓임 순서를 조절하여 겹쳐진 요소들 중 어떤 요소를 사용자에게 노출할지 결정할 때 유용하게 사용됩니다.
+  - `z-index`를 설정하려면 해당 요소의 position 속성이 static이 아닌 값으로 설정되어야 합니다.
 </details>
-
 
 <details>
 <summary>쌓임 맥락 이란? (1)</summary>
