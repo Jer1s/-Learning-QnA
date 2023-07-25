@@ -15,18 +15,18 @@
 <br />
 
 - CSS Level 1(1996)
-  - CSS의 첫 번째 공식 버전으로, W3C(World Wide Web Consortium)에 의해 발표되었습니다.
-  - 이 버전은 웹 페이지의 텍스트 속성과 배경색 등 기본적인 스타일링 요소를 제어하는 기능을 제공했습니다.
+	- CSS의 첫 번째 공식 버전으로, W3C(World Wide Web Consortium)에 의해 발표되었습니다.
+	- 이 버전은 웹 페이지의 텍스트 속성과 배경색 등 기본적인 스타일링 요소를 제어하는 기능을 제공했습니다.
 - CSS Level 2(1998)
-  - CSS의 두 번째 버전으로, 위치 지정, z-index, 미디어 타입 등 웹 페이지 디자인에 대한 더욱 고급 기능을 도입했습니다.
-  - 선택자의 기능이 확장되어 더욱 다양한 HTML 요소를 대상으로 스타일을 적용할 수 있게 되었습니다.
+	- CSS의 두 번째 버전으로, 위치 지정, z-index, 미디어 타입 등 웹 페이지 디자인에 대한 더욱 고급 기능을 도입했습니다.
+	- 선택자의 기능이 확장되어 더욱 다양한 HTML 요소를 대상으로 스타일을 적용할 수 있게 되었습니다.
 - CSS Level 2.1(2004)
-  - CSS Level 2를 개정하고 업데이트된 버전입니다.
-  - 일부 버그 수정과 함께, 이전 버전에서 추가된 기능의 호환성 문제를 해결하기 위한 변경 사항이 포함되었습니다.
+	- CSS Level 2를 개정하고 업데이트된 버전입니다.
+	- 일부 버그 수정과 함께, 이전 버전에서 추가된 기능의 호환성 문제를 해결하기 위한 변경 사항이 포함되었습니다.
 - CSS Level 3(2011)
-  - CSS Level 3는 여러 모듈로 분리되어 개발되었으며, 각 모듈은 특정 기능에 대한 정의를 제공합니다.
- - 새로운 기능과 선택자가 추가되었고, 애니메이션, 플렉스박스, 그리드 레이아웃, 그림자, 반응형 웹 디자인을 위한 미디어 쿼리 등의 고급 디자인 기능이 도입되었습니다.
-  - 웹페이지의 스타일링에 대한 제어력을 크게 향상시켰으며, 현재 웹 개발에 널리 사용되는 버전입니다.
+	- CSS Level 3는 여러 모듈로 분리되어 개발되었으며, 각 모듈은 특정 기능에 대한 정의를 제공합니다.
+	- 새로운 기능과 선택자가 추가되었고, 애니메이션, 플렉스박스, 그리드 레이아웃, 그림자, 반응형 웹 디자인을 위한 미디어 쿼리 등의 고급 디자인 기능이 도입되었습니다.
+	- 웹페이지의 스타일링에 대한 제어력을 크게 향상시켰으며, 현재 웹 개발에 널리 사용되는 버전입니다.
 </details>
 
 <details>
@@ -63,7 +63,7 @@
     </body>
   </html>
 
-  ```
+	```
 - 외부 스타일 시트
 	- 외부 스타일 시트(External Style Sheet)는 CSS 코드를 별도의 `.css` 파일로 분리하고, HTML 문서에서 이를 불러오는 방법입니다.
 	- 외부 스타일 시트를 사용하면 같은 스타일 규칙을 여러 HTML 페이지에 쉽게 적용할 수 있으며, 유지 관리 및 코드 재사용성이 용이합니다.
@@ -116,7 +116,7 @@
 - 보통 부모 객체의 width와의 상대적 크기를 지정합니다.
 - width, height, margin, padding, font-size처럼 다양한 속성에서 쓸 수 있습니다.
 - 예시
-  ```html
+	```html
   <div style="background-color:navy;">
     <div style="width:50%; background-color: black;">
       <div style="width:50%; margin-left:20%; background-color:chartreuse;">
@@ -127,7 +127,7 @@
       </div>
     </div>
   </div>
-  ```
+ 	```
 - margin-left(right) 값에 백분율을 쓰더라도 부모 객체의 width를 기준으로 한다는 것을 알 수 있습니다.
 </details>
 
@@ -148,7 +148,7 @@
   
 - CSS 문서에서 사용되는 구문입니다.
 - 각 선언은 선택자(selector)와 선언부(declaration block)로 구성됩니다.
-  - `selector {property: value;}`
+	- `selector {property: value;}`
 </details>
 
 <details>
@@ -210,18 +210,18 @@
 <br>
 
 - `background-image`
-  - 요소의 배경 이미지를 설정합니다.
-  - 이미지는 URL 또는 linear-gradient()와 같은 CSS gradient 함수로 지정할 수 있습니다.
-  - 여러 개의 이미지를 사용할 경우 쉼표(,)로 구분하여 지정할 수 있습니다.
+	- 요소의 배경 이미지를 설정합니다.
+	- 이미지는 URL 또는 linear-gradient()와 같은 CSS gradient 함수로 지정할 수 있습니다.
+	- 여러 개의 이미지를 사용할 경우 쉼표(,)로 구분하여 지정할 수 있습니다.
 - `background-repeat`
-  - 배경 이미지가 반복되는 방식을 지정합니다.
-  - repeat(기본값), repeat-x, repeat-y, no-repeat 등의 값으로 설정할 수 있습니다.
+	- 배경 이미지가 반복되는 방식을 지정합니다.
+	- repeat(기본값), repeat-x, repeat-y, no-repeat 등의 값으로 설정할 수 있습니다.
 - `background-position`
-  - 배경 이미지가 위치하는 위치를 지정합니다.
-  - top, bottom, left, right, center 등의 값으로 설정하거나, x y 형식으로 좌표값을 직접 지정할 수 있습니다.
+	- 배경 이미지가 위치하는 위치를 지정합니다.
+	- top, bottom, left, right, center 등의 값으로 설정하거나, x y 형식으로 좌표값을 직접 지정할 수 있습니다.
 - `background-size`
-  - 배경 이미지의 크기를 지정합니다.
-  - auto(기본값), contain, cover, 50% 50%와 같은 값으로 설정할 수 있으며, width height 형식으로 크기를 직접 지정할 수도 있습니다.
+	- 배경 이미지의 크기를 지정합니다.
+	- auto(기본값), contain, cover, 50% 50%와 같은 값으로 설정할 수 있으며, width height 형식으로 크기를 직접 지정할 수도 있습니다.
 </details>
 
 <details>
@@ -234,8 +234,8 @@
 - `<side-or-corner>`은 그라데이션의 방향을 지정하는 키워드입니다. to right 또는 to left top과 같은 방향도 지정할 수 있습니다.
 - `<color-stop-list>`는 그라데이션의 색상과 위치를 지정하는 리스트입니다. 각각의 색상은 CSS 색상값으로 지정하며, 위치는 0~100% 사이의 값을 가집니다. 여러 개의 색상과 위치를 지정할 경우 쉼표(,)로 구분하여 지정할 수 있습니다.
 - 예시
-  - `background: linear-gradient(to bottom, red, yellow, green);`
-  - 위의 코드에서, linear-gradient() 함수는 to bottom 방향으로 그라데이션을 설정하고 있습니다. red, yellow, green 순서로 색상을 지정하였고, 위치는 각각 0%, 50%, 100%로 지정되었습니다. 따라서 .box 요소의 배경은 빨간색에서 노란색으로, 그리고 초록색으로 일정한 색상 변화를 보일 것입니다.
+	- `background: linear-gradient(to bottom, red, yellow, green);`
+	- 위의 코드에서, linear-gradient() 함수는 to bottom 방향으로 그라데이션을 설정하고 있습니다. red, yellow, green 순서로 색상을 지정하였고, 위치는 각각 0%, 50%, 100%로 지정되었습니다. 따라서 .box 요소의 배경은 빨간색에서 노란색으로, 그리고 초록색으로 일정한 색상 변화를 보일 것입니다.
 </details>
 
 <details>
@@ -244,16 +244,16 @@
 
 - 요소의 그림자 효과를 지정할 때 사용됩니다.
 - box-shadow 속성의 값은 다음과 같이 지정됩니다.
-  - `box-shadow: h-shadow v-shadow blur spread color inset;`
-  - `h-shadow` 그림자의 가로 위치
-  - `v-shadow` 세로 위치
-  - `blur` 흐림 정도
-  - `spread` 그림자의 크기
-  - `color` 그림자 색상
-  - `inset` 그림자가 요소 안쪽에 위치하는지 외부에 위치하는지 여부
+	- `box-shadow: h-shadow v-shadow blur spread color inset;`
+	- `h-shadow` 그림자의 가로 위치
+	- `v-shadow` 세로 위치
+	- `blur` 흐림 정도
+	- `spread` 그림자의 크기
+	- `color` 그림자 색상
+	- `inset` 그림자가 요소 안쪽에 위치하는지 외부에 위치하는지 여부
 - 예시
-  - `box-shadow: 2px 2px 4px #888888;`
-  - 위 코드에서 요소에 왼쪽으로 2px, 아래쪽으로 2px 이동한 위치에 흐린 정도가 4px이고, 색상이 #888888인 그림자 효과를 추가한다는 뜻입니다.
+	- `box-shadow: 2px 2px 4px #888888;`
+	- 위 코드에서 요소에 왼쪽으로 2px, 아래쪽으로 2px 이동한 위치에 흐린 정도가 4px이고, 색상이 #888888인 그림자 효과를 추가한다는 뜻입니다.
 </details>
 
 <details>
