@@ -122,42 +122,42 @@
 </details>
 
 <details>
-<summary>태그(Tag)란? (2.1)</summary>
+<summary>태그(Tag)란? (2)</summary>
 <br>
 
-- HTML에서 태그는 꺾쇠 기호(angle bracket)를 사용하는 문법입니다.
-- 일반적으로 시작 태그와 종료 태그로 내용을 감쌉니다.
-  - 시작 태그는 `<tag>` 형태로 쓰고 종료 태그는 `</tag>` 형태로 씁니다.
+- HTML에서 태그는 웹 페이지의 다양한 요소를 정의하는 데 사용되는 중요한 구성 요소입니다. 이 태그들은 꺾쇠 괄호(angle bracket)로 감싸진 키워드를 사용하여 표현됩니다.
+- 대부분의 태그는 시작 태그와 종료 태그로 구성되어 있으며, 이 두 태그 사이에 위치한 내용을 감싸서 해당 내용에 대한 정보를 제공합니다. 시작 태그는 `<tag>` 형태로 작성되며, 종료 태그는 `</tag>` 형태로 작성됩니다.
 </details>
 
 <details>
-<summary>단일 태그(single tag)란? (4)</summary>
+<summary>단일 태그(single tag)란? (3)</summary>
 <br>
 
-- 종료 태그가 필요하지 않습니다.
-- 예시
-  - `<br>` 줄 바꿈 태그
-  - `<img>` 이미지 태그
-  - `<input>` 입력 필드 태그
-  - `<meta>` 문서 정보 태그
-  - `<link>` 외부 리소스 연결 태그
-  - `<hr>` 수평선 태그
 - 빈 요소(empty element)라고도 부릅니다.
-- 태그 마지막에 슬래시(/) 기호를 넣어서 단일 태그라는 표시를 할 수도 있습니다. (이전 버전의 HTML 문법입니다.)
+- 종료 태그가 필요하지 않습니다.
+- 태그 마지막에 슬래시(`/`) 기호를 넣어서 단일 태그라는 표시를 할 수도 있습니다. (이전 버전의 HTML 문법입니다.)
 </details>
 
 <details>
-<summary>태그 속성(attribute)란? (6)</summary>
+<summary>단일 태그의 예시를 드시오. (6)</summary>
+<br>
+
+- `<br>` 줄 바꿈을 생성하는 태그
+- `<img>` 이미지를 삽입하는 태그
+- `<input>` 사용자 입력 필드를 생성하는 태그
+- `<meta>` 웹 페이지의 메타데이터를 정의하는 태그
+- `<link>` 현재 문서와 외부 리소스를 연결하는 태그
+- `<hr>` 수평선을 그리는 태그
+</details>
+
+<details>
+<summary>태그 속성(attribute)이란? (6)</summary>
 <br>
 
 - HTML 태그에 추가 정보를 제공하는 데 사용됩니다.
-- 속성은 일반적으로 "속성명(attribute name)=속성값(attribute value)"의 형식으로 작성됩니다.
-- 속성은 대소문자를 구분하지 않으며, 보통 소문자로 작성됩니다.
+- 속성은 일반적으로 `(attribute name) = (attribute value)`의 형식으로 작성됩니다.
+- HTML에서 속성 이름은 대소문자를 구분하지 않으나, 일관성과 가독성을 위해 대부분 소문자로 작성됩니다.
 - 예시
-  - `class` 요소에 대한 CSS 클래스 이름을 지정합니다.
-  - `id` 요소의 고유한 식별자를 지정합니다.
-  - `style` 요소에 대한 인라인 CSS 스타일을 지정합니다.
-  - `title` 요소에 대한 추가 정보(툴팁)를 제공합니다.
 - 일부 속성은 Boolean 속성으로, 해당 속성의 존재 여부만으로 참/거짓을 판단합니다.
 - Boolean 속성 예시
   - `checked` 체크박스나 라디오 버튼이 선택되어 있는지 여부를 나타냅니다.
@@ -168,16 +168,37 @@
   - `muted` 미디어 요소가 자동으로 음소거되도록 지정합니다.
 </details>
 
-
 <details>
-<summary>사용자 정의 속성(Custom attribute)이란? (5)</summary>
+<summary>태그 속성의 예시를 드시오. (6)</summary>
 <br>
 
-- 사용자 정의 속성은 HTML 요소에 사용자가 원하는 속성을 추가할 수 있는 방법입니다.
-- 사용자 정의 속성은 `data-*` 형식으로 정의됩니다. 여기서 `*` 부분은 사용자가 원하는 이름을 사용할 수 있습니다.
-- `data-`를 붙이지 않아도 작동하지만, 사용자 정의 속성이 표준 속성으로 편입될 경우 예기치 못한 오류를 발생시킬 수 있기 때문에 data-를 붙이는 것이 좋습니다.
-- W3C에서 규정한 HTML 규약에 따라 작성되어야 합니다.
-- 모든 브라우저가 사용자 정의 속성을 지원하는 것은 아니므로, 브라우저 호환성에 주의해야 합니다.
+- `class` 요소에 대한 CSS 클래스 이름을 지정합니다.
+- `id` 요소의 고유한 식별자를 지정합니다.
+- `style` 요소에 대한 인라인 CSS 스타일을 지정합니다.
+- `title` 요소에 대한 추가 정보(툴팁)를 제공합니다.
+</details>
+
+<details>
+<summary>Boolean attribute의 예시를 드시오. (6)</summary>
+<br>
+
+- `checked` 체크박스나 라디오 버튼이 사용자에 의해 선택되었는지 나타냅니다.
+- `disabled` 입력 필드나 버튼 등의 요소가 비활성화되어 있음을 나타냅니다.
+- `readonly` 입력 필드가 사용자에 의해 수정될 수 없는 읽기 전용 상태임을 나타냅니다.
+- `required` 입력 필드가 사용자로부터 반드시 값을 입력받아야 하는 필수 입력 필드임을 나타냅니다.
+- `hidden` 요소가 웹 페이지에서 숨겨져 있음을 나타냅니다.
+- `muted` 미디어 요소(`<video>`, `<audio>`)가 자동으로 음소거되도록 지정합니다.
+</details>
+
+<details>
+<summary>사용자 정의 속성이란? (5)</summary>
+<br>
+
+- 사용자 정의 속성(Custom attributes)는 개발자가 HTML 요소에 원하는 속성을 추가하도록 허용하는 방법입니다.
+- 이러한 속성은 `data-*` 형식으로 정의되며, 여기서 `*` 부분은 사용자가 임의로 정한 이름이 들어갑니다. 이렇게 정의한 사용자 정의 속성은 JavaScript를 이용해 요소를 조작하거나, CSS를 이용해 스타일을 적용하는 데 사용할 수 있습니다.
+- `data-` 접두사를 사용하면, 개발자가 자유롭게 이름을 지정할 수 있는 반면, 표준 속성과 충돌하지 않습니다. 이 접두사를 사용하지 않고 속성을 정의하면, 나중에 표준 HTML 속성에 같은 이름이 추가되었을 때 예기치 못한 결과를 초래할 수 있습니다.
+- 사용자 정의 속성은 W3C에서 규정한 HTML 규약에 따라 작성되어야 합니다. 그렇지 않으면, 문서가 유효하지 않다고 판단될 수 있습니다.
+- 사용자 정의 속성은 대부분의 현대 브라우저에서 지원되지만, 오래된 브라우저나 일부 특정 브라우저에서는 지원되지 않을 수 있습니다. 따라서 사용자 정의 속성을 사용할 때는 브라우저 호환성에 주의해야 합니다.
 </details>
 
 <details>
@@ -188,26 +209,26 @@
 </details>
 
 <details>
-<summary>&ltmeta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"&gt가 의미하는 바는 무엇인가요? (5)</summary>
+<summary>&ltmeta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"&gt가 의미하는 바는 무엇인가요? (3.2)</summary>
 <br>
 
-- 웹 페이지를 렌더링하는 데 사용되는 인터넷 익스플로러(IE) 버전을 지정하는 데 사용됩니다.
-- `http-equiv` 사용할 HTTP 응답 헤더를 지정합니다.
-- `content` IE 버전을 지정합니다. 
-  - `edge` 브라우저가 사용자의 컴퓨터에 설치된 최신 IE 버전을 사용하도록 지시합니다.
-  - `chrome=1` Google Chrome Frame이 설치된 경우 해당 플러그인을 사용하여 웹 페이지를 렌더링하도록 합니다.
+- 이 메타 태그는 웹 페이지를 렌더링하는 데 사용되는 인터넷 익스플로러(IE)의 버전을 지정합니다.
+- `http-equiv` 속성은 HTTP 헤더 필드의 이름을 지정합니다.
+- `content` 속성은 해당 HTTP 헤더 필드의 값을 지정합니다.
+  - `edge` 값은 브라우저가 사용자의 컴퓨터에 설치된 최신 IE 버전을 사용하도록 지시합니다.
+  - `chrome=1` 값은 Google Chrome Frame이 설치된 경우 해당 플러그인을 사용하여 웹 페이지를 렌더링하도록 지시합니다.
+
 </details>
 
 <details>
-<summary>&ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt가 의미하는 바는 무엇인가요? (5)</summary>
+<summary>&ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt가 의미하는 바는 무엇인가요? (3.2)</summary>
 <br>
 
-- 이 메타 태그는 웹 페이지의 뷰포트(viewport)를 정의하여 다른 기기에서 웹 페이지가 어떻게 표시되는지 제어합니다.
-- 모바일 기기에서 웹 페이지가 다른 화면 크기에서 올바르게 표시되도록 하는 데 특히 중요합니다.
-- `name` 메타데이터 유형을 지정합니다.
-- `content` 해당 메타데이터의 값을 지정합니다.
-  - `width=device-width` 뷰포트의 너비를 기기의 너비로 설정합니다.
-  - `initial-scale=1.0` 초기 줌 레벨을 1.0으로 설정합니다.
+- 이 메타 태그는 웹 페이지의 뷰포트를 설정하여 웹 페이지가 다양한 기기에서 어떻게 표시되는지 제어합니다. 이는 특히 모바일 기기에서 웹 페이지가 적절하게 표시되도록 하는 데 중요합니다.
+- `name` 속성은 메타데이터의 유형을 지정합니다.
+- `content` 속성은 해당 메타데이터의 값을 지정합니다.
+  - `width=device-width` 값은 뷰포트의 너비를 현재 기기의 화면 너비로 설정합니다.
+  - `initial-scale=1.0` 값은 초기 화면의 줌 레벨을 1.0으로 설정합니다, 이는 웹 페이지가 처음 로드될 때 100%의 화면 크기로 표시되도록 합니다.
 </details>
 
 <details>
@@ -220,19 +241,20 @@
 </details>
 
 <details>
-<summary>메타 태그(Meta tag)란? (4)</summary>
+<summary>메타 태그(Meta tag)란? (5.2)</summary>
 <br>
 
-- 메타 태그(meta tag)는 HTML 문서의 `<head>` 태그 내에 작성되는 태그로, 웹 페이지의 메타데이터(meta data)를 정의하는 데 사용됩니다.
-- 메타데이터는 문서에 대한 부가 정보를 제공하는 데이터를 의미합니다. 예를 들어, 웹 페이지의 제목(title), 설명(description), 작성자(author), 키워드(keywords), 문자 인코딩(charset) 등이 메타데이터에 해당합니다.
-- 메타 태그는 검색 엔진 최적화(SEO)를 위해 사용될 수도 있습니다. 검색 엔진은 메타 태그를 분석하여 웹 페이지의 내용과 일치하는 검색어를 찾아 검색 결과에 반영합니다.
+- 메타 태그(meta tag)는 HTML 문서의 `<head>` 섹션에 위치하는 태그로, 웹 페이지의 메타데이터(meta data)를 정의하는 데 사용됩니다. 이들은 웹 페이지가 어떻게 설명되고, 인덱싱되며, 그 외에도 다양한 속성이 어떻게 적용되는지를 지정합니다.
+- 메타데이터는 문서에 대한 부가 정보로, 웹 페이지의 제목(title), 설명(description), 작성자(author), 키워드(keywords), 문자 인코딩(charset) 등을 포함합니다. 이 정보들은 웹 브라우저, 검색 엔진 등에 의해 활용됩니다.
+- 메타 태그는 검색 엔진 최적화(SEO)에 중요한 역할을 수행합니다. 검색 엔진은 메타 태그에 포함된 정보를 분석하여 웹 페이지의 내용을 이해하고, 그에 따라 검색 결과를 생성합니다.
 - 예시
-  - `<meta name="description" content="웹 페이지 설명">` 웹 페이지의 설명을 나타내는 메타 태그입니다.
-  - `<meta http-equiv="refresh" content="5;url=https://example.com">` 5초 후에 `https://example.com`로 이동하는 메타 태그입니다.
+  - `<meta name="description" content="웹 페이지 설명">` 이 메타 태그는 웹 페이지의 요약 설명을 제공합니다. 이 설명은 검색 엔진 결과 페이지(SERP)에서 보통 페이지 미리보기로 표시됩니다.
+  - `<meta http-equiv="refresh" content="5;url=https://example.com">` 이 메타 태그는 웹 페이지가 로드된 후 5초 후에 사용자를 `https://example.com`로 리다이렉트합니다.
+- 메타 태그는 웹 브라우저가 웹 페이지를 적절히 해석하고 표시하는 데 도움이 되며, 웹 개발자가 특정 동작을 제어하거나 문서에 대한 정보를 제공하는 데 사용합니다.
 </details>
 
 <details>
-<summary>오픈그래프(Open Graph)란? (4)</summary>
+<summary>오픈그래프(Open Graph)란? (4.3)</summary>
 <br>
 
 - 웹 사이트가 소셜 미디어에서 공유될 때 정보를 제공하는 메타데이터 프로토콜입니다.
@@ -240,20 +262,19 @@
 - 예시
   ```html
   <html>
-  <head>
-    <meta property="og:title" content="페이지 제목">
-    <meat property="og:url" content="페이지 주소">
-    <meta property="og:image" content="이미지 URL">
-    <meta propery="og:type" content="페이지 타입(ex. website)">
-    <meta property="og:description" content="페이지 설명">
-  </head>
+    <head>
+      <meta property="og:title" content="페이지 제목">
+      <meat property="og:url" content="페이지 주소">
+      <meta property="og:image" content="이미지 URL">
+      <meta propery="og:type" content="페이지 타입(ex. website)">
+      <meta property="og:description" content="페이지 설명">
+    </head>
   </html>
   ```
 - Facebook Object Debugger로 디버깅할 수 있습니다.
   - [Facebook Object Debugger](https://developers.facebook.com/tools/debug/)
   - [Open Graph protocol](https://ogp.me/)
 </details>
-
 
 <details>
 <summary>Twitter cards란? (4)</summary>
@@ -264,13 +285,13 @@
 - 예시
   ```html
   <html>
-  <head>
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@사이트명">
-    <meta name="twitter:title" content="제목">
-    <meta name="twitter:description" content="설명">
-    <meta name="twitter:image" content="이미지 URL">
-  </head>
+    <head>
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:site" content="@사이트명">
+      <meta name="twitter:title" content="제목">
+      <meta name="twitter:description" content="설명">
+      <meta name="twitter:image" content="이미지 URL">
+    </head>
   </html>
   ```
 - Twitter cards validator로 디버깅할 수 있습니다.
@@ -278,11 +299,12 @@
 </details>
 
 <details>
-<summary>구글 애널리틱스(Google Analytics란? (4)</summary>
+<summary>구글 애널리틱스란? (3)</summary>
 <br>
 
-- 구글이 제공하는 웹 분석 도구로, 웹 사이트 방문자들의 행동 및 트래픽을 추적하고 분석하여 웹 사이트의 성과를 파악할 수 있도록 도와줍니다.
-- Google Analytics를 사용하면 웹 사이트 방문자들의 정보를 수집하고, 이를 분석하여 사용자가 웹 사이트에서 어떤 행동을 하는지, 어디서 왔는지, 어떤 장치나 브라우저를 사용하는지 등을 파악할 수 있습니다. 이를 통해 웹 사이트의 성과를 평가하고, 사용자 경험을 개선하거나 마케팅 전략을 수립할 수 있습니다.
+- 구글 애널리틱스(Google Analytics)는 Google이 제공하는 웹 분석 서비스로, 웹사이트 및 애플리케이션의 트래픽을 추적하고 분석하는 데 사용됩니다.
+- 이 도구를 사용하면, 웹사이트나 애플리케이션의 사용자 행동, 방문자 분포, 트래픽 흐름 등 다양한 통계적 데이터를 수집하고 분석할 수 있습니다. 이렇게 수집된 데이터는 웹사이트나 애플리케이션의 성능을 평가하고, 사용자 경험을 개선하며, 마케팅 전략을 구성하는 데에 필수적인 정보를 제공합니다.
+- Google Analytics를 사용하려면, Google Analytics 트래킹 코드를 웹사이트나 애플리케이션에 삽입해야 합니다. 이 코드는 방문자의 행동을 추적하고 해당 정보를 Google Analytics에 전송하는 역할을 합니다.
 </details>
 
 <details>
