@@ -153,7 +153,7 @@
 
 <details>
 <summary>id란? (4)</summary>
-<br>
+<br />
 
 - HTML 요소에 대한 고유한 식별자입니다.
 - 문서 내에서 단 하나의 요소에만 지정할 수 있습니다.
@@ -163,7 +163,7 @@
 
 <details>
 <summary>class란? (4)</summary>
-<br>
+<br />
 
 - HTML 여러 요소에 대한 스타일을 그룹으로 지정할 수 있게 해주는 식별자입니다.
 - id와 달리 여러 요소에 적용될 수 있습니다.
@@ -173,7 +173,7 @@
 
 <details>
 <summary>CSS에서 색상 단위는 어떤 것이 있나요? (7)</summary>
-<br>
+<br />
 
 - 키워드 (Keyword): red, blue, green, black, white 등과 같은 색상 이름을 사용할 수 있습니다.
 - 16진수 (Hexadecimal): #을 사용하여 색상을 표현합니다. 예를 들어, #000000은 검정색이며, #FFFFFF은 흰색입니다.
@@ -186,7 +186,7 @@
 
 <details>
 <summary>CSS에서 크기 단위는 어떤 것이 있나요? (8)</summary>
-<br>
+<br />
 
 - 픽셀(px) : 절대 크기 단위로, 고정된 크기 값을 지정할 때 사용됩니다.
 - 백분율(%) : 상대 크기 단위로, 부모 요소의 크기에 대한 백분율 값을 사용하여 크기를 지정할 때 사용됩니다.
@@ -198,7 +198,7 @@
 
 <details>
 <summary>line-height는 어떤 속성인가요? (3)</summary>
-<br>
+<br />
 
 - 텍스트 요소의 줄 간격을 조정하는 데 사용됩니다.
 - 기본값은 normal로, 이 경우 브라우저는 글꼴 크기에 따라 줄 간격을 자동으로 조정합니다.
@@ -207,7 +207,7 @@
 
 <details>
 <summary>요소의 배경 이미지는 어떻게 다루나요? (4.9)</summary>
-<br>
+<br />
 
 - `background-image`
 	- 요소의 배경 이미지를 설정합니다.
@@ -226,7 +226,7 @@
 
 <details>
 <summary>linear-gradient()란? (7.3.2)</summary>
-<br>
+<br />
 
 - CSS의 linear-gradient() 함수는 웹 페이지의 요소에 선형 그라데이션 배경을 생성하는 데 사용됩니다.
 - 선형 그라데이션은 두 개 이상의 색상이 일정한 간격으로 변화하는 배경 효과를 만듭니다.
@@ -245,7 +245,7 @@
 
 <details>
 <summary>box-shadow란? (3.8.2)</summary>
-<br>
+<br />
 
 - CSS의 `box-shadow` 속성은 HTML 요소에 하나 이상의 그림자를 추가하는 데 사용됩니다.
 - `box-shadow` 속성의 값은 다음과 같습니다.
@@ -264,7 +264,7 @@
 
 <details>
 <summary>opacity란? (2)</summary>
-<br>
+<br />
 
 - CSS 속성 중 하나로, 해당 요소의 투명도를 지정하는 데 사용됩니다.
 - opacity 속성은 0부터 1 사이의 값을 가지며, 값이 작을수록 요소가 불투명해지고, 값이 클수록 요소가 투명해집니다.
@@ -272,7 +272,7 @@
 
 <details>
 <summary>박스 모델(Box model)이란? (2.4)</summary>
-<br>
+<br />
 
 - CSS 박스 모델(Box Model)은 HTML 문서의 각 요소를 감싸는 박스로, 이를 이해하는 것은 웹 페이지 레이아웃을 제어하는 데 중요한 기초입니다.
 - 박스 모델은 Content, Padding, Border, Margin으로 구성되어 있습니다.
@@ -284,7 +284,7 @@
 
 <details>
 <summary>padding과 margin 표기법을 설명해주세요 (5.1)</summary>
-<br>
+<br />
 
 - `margin: [size]` 상하좌우
 - `margin: [size] [size]` 상하/좌우
@@ -296,7 +296,7 @@
 
 <details>
 <summary>border와 border-radius 표기법을 설명해주세요 (7)</summary>
-<br>
+<br />
 
 ```css
 /* 모든 속성 값 지정 */
@@ -325,7 +325,7 @@ border-radius: 50%;
 
 <details>
 <summary>box-sizing 속성이란? (3.2)</summary>
-<br>
+<br />
 
 - CSS 속성 중 하나로, 요소의 크기를 계산하는 방법을 지정합니다.
 - `box-sizing` 속성은 다음과 같은 값들을 사용할 수 있습니다.
@@ -336,7 +336,7 @@ border-radius: 50%;
 
 <details>
 <summary>overflow란? (2.4)</summary>
-<br>
+<br />
 
 - 요소의 내용이 지정된 크기를 초과할 때 처리 방법을 지정하는 속성입니다.
 - 다음과 같은 값 중 하나를 가질 수 있습니다.
@@ -348,7 +348,7 @@ border-radius: 50%;
 
 <details>
 <summary>가로 스크롤을 만드는 방법을 설명해주세요. (3)</summary>
-<br>
+<br />
 
 - `overflow-x` 속성을 auto로 하여 가로 스크롤바를 표시합니다. 이때, `overflow-y` 속성은 `hidden` 값을 지정하여 세로 스크롤바를 표시하지 않도록 설정해야 합니다.
 - `white-space` 속성을 `nowrap` 값으로 설정하여 요소 내의 텍스트가 줄바꿈 없이 한 줄에 표시되도록 합니다. 이때, 요소의 너비를 초과하는 경우 자동으로 가로 스크롤이 생성됩니다.
@@ -365,7 +365,7 @@ border-radius: 50%;
 
 <details>
 <summary>마진 상쇄란? (4.4)</summary>
-<br>
+<br />
 
 - CSS 박스 모델에서 마진 상쇄(margin collapse)는 인접한 두 개의 수직 마진 중에서 큰 쪽 값으로 결정되는 현상을 말합니다.
 - 이 현상은 다음과 같은 상황에서 발생합니다.
@@ -379,7 +379,7 @@ border-radius: 50%;
 
 <details>
 <summary>display 속성값은 어떤 것이 있나요? (11)</summary>
-<br>
+<br />
 
 - none
 - block
@@ -396,7 +396,7 @@ border-radius: 50%;
 
 <details>
 <summary>display: none이란? (2)</summary>
-<br>
+<br />
 
 - 해당 요소는 HTML 문서의 구조에서는 존재하지만, 실제 화면에는 표시되지 않습니다.
 - 요소가 차지하는 공간도 없어지므로, 주로 불필요한 요소를 감추거나, JavaScript를 사용하여 동적으로 요소를 추가/제거할 때 유용합니다.
@@ -404,7 +404,7 @@ border-radius: 50%;
 
 <details>
 <summary>display: block이란? (3)</summary>
-<br>
+<br />
 
 - 해당 요소를 새로운 줄에서 표시하고, 요소의 너비를 부모 요소의 전체 너비로 설정하는 속성입니다.
 - 위에서 아래로 배치됩니다.
@@ -413,7 +413,7 @@ border-radius: 50%;
 
 <details>
 <summary>display: block인 HTML 태그는 어떤 것이 있나요? (8)</summary>
-<br>
+<br />
 
 - 블록 레벨 컨테이너 요소: `<div>`
 - 문단 요소: `<p>`
@@ -427,7 +427,7 @@ border-radius: 50%;
 
 <details>
 <summary>display: inline이란? (2)</summary>
-<br>
+<br />
 
 - 해당 요소를 새로운 줄이 아닌, 텍스트 흐름 내에서 표시하는 속성입니다.
 - 제약 사항
@@ -438,7 +438,7 @@ border-radius: 50%;
 
 <details>
 <summary>display: inline인 HTML 태그는 어떤 것이 있나요? (9)</summary>
-<br>
+<br />
 
 - `span` 인라인 레벨 컨테이너 태그
 - `a` 하이퍼링크를 생성하는 태그
@@ -453,7 +453,7 @@ border-radius: 50%;
 
 <details>
 <summary>display: inline-block이란? (5)</summary>
-<br>
+<br />
 
 - 요소를 문장 내에서 표시하고, 요소의 너비와 높이를 직접 설정 가능하게 해주는 속성입니다.
 - 인라인처럼 줄바꿈이 일어나지 않습니다.
@@ -464,7 +464,7 @@ border-radius: 50%;
 
 <details>
 <summary>display: table, talbe-row, table-cell이란? (3)</summary>
-<br>
+<br />
 
 - `table` 테이블 요소를 표시하며, 요소의 너비를 테이블의 전체 너비에 맞게 설정되게 해주는 속성입니다.
 - `table-row` 테이블 행 요소를 표시하며, 요소의 너비를 테이블의 전체 너비에 맞게 설정되게 해주는 속성입니다.
@@ -473,7 +473,7 @@ border-radius: 50%;
 
 <details>
 <summary>Flexbox란? (2)</summary>
-<br>
+<br />
 
 - Flexbox는 CSS3에서 새롭게 도입된 레이아웃 방식 중 하나로, 요소들을 유연하게 배치할 수 있는 기능을 제공합니다.
 - Flexbox는 부모 요소(flex container)와 자식 요소(flex item)로 구성되며, display: flex 속성을 부모 요소에 적용하여 활성화합니다.
@@ -481,7 +481,7 @@ border-radius: 50%;
 
 <details>
 <summary>Flexbox 정렬 방법에 대해 설명해주세요. (6.3)</summary>
-<br>
+<br />
 
 - Main Axis: 배치 방향
 - Cross Axis: 배치 방향에 수직인 방향
@@ -497,7 +497,7 @@ border-radius: 50%;
 
 <details>
 <summary>Flexbox 간격에 대해 설명해주세요. (2) </summary>
-<br>
+<br />
 
 - `gap: {row-gap} {column-gap}`
 - `gap` 속성값은 flex-direction의 영향을 받지 않습니다.	
@@ -505,7 +505,7 @@ border-radius: 50%;
 
 <details>
 <summary>Flexbox 요소를 활용해 공간을 꽉 채우는 방법에 대해 설명해주세요. (5.10)</summary>
-<br>
+<br />
 
 - flex-grow
 	- default: 0
@@ -526,7 +526,7 @@ border-radius: 50%;
 
 <details>
 <summary>grid란? (3)</summary>
-<br>
+<br />
 
 - Grid는 CSS3의 레이아웃 기능 중 하나로, 요소를 2차원(행과 열)의 격자 형태로 배열하는 데 사용됩니다.
 - Flexbox가 1차원의 레이아웃을 위한 것이라면, Grid는 2차원의 복잡한 레이아웃을 다룰 수 있습니다.
@@ -535,7 +535,7 @@ border-radius: 50%;
 
 <details>
 <summary>grid의 구조를 나누는 방법을 설명해주세요. (1.3)</summary>
-<br>
+<br />
 
 - `grid-template-columns`과 `grid-template-rows` 속성을 사용하여 행과 열의 크기를 정의하고, `grid-template-areas` 속성을 사용하여 각 영역을 이름으로 정의합니다.
 	- `grid-template-columns: {width1} {width2} ...`
@@ -545,7 +545,7 @@ border-radius: 50%;
 
 <details>
 <summary>grid 크기와 함수들에 대해 설명해주세요. (5.5)</summary>
-<br>
+<br />
 
 - `grid-auto-rows`, `grid-auto-columns` 속성으로 행과 열의 크기를 자동으로 설정할 수 있습니다.
 - `grid-row`, `grid-column` 속성 값으로 그리드 라인의 번호를 입력해 요소를 원하는 셀 집합에 배치할 수 있습니다.
@@ -561,21 +561,21 @@ border-radius: 50%;
 
 <details>
 <summary>선택자 목록이란? (1)</summary>
-<br>
+<br />
 
 - 선택자 목록(Selector list)은 여러 개의 선택자를 콤마(,)로 구분하여 하나의 규칙을 적용하는 방법입니다.
 </details>
 
 <details>
 <summary>선택자를 붙여쓰면 어떻게 되나요? (1)</summary>
-<br>
+<br />
 
 - 선택자를 붙여 쓰면, 여러 조건을 모두 만족하는 요소를 선택합니다.
 </details>
 
 <details>
 <summary>자식, 자손 요소를 선택하는 방법에 대해 설명해주세요. (2)</summary>
-<br>
+<br />
 
 - 자식 요소: `parent-selector > child-selector`
 - 자손 요소: `parent-selector descendant-selector`
@@ -583,7 +583,7 @@ border-radius: 50%;
 
 <details>
 <summary>가상 클래스란? (1)</summary>
-<br>
+<br />
 
 - 가상 클래스(Pseudo class)는 CSS 선택자의 특별한 상태를 지정하기 위해 사용되는 키워드입니다.
 - 가상 클래스는 콜론(:)으로 시작하며, 선택자의 이름 뒤에 위치합니다.
@@ -592,7 +592,7 @@ border-radius: 50%;
 
 <details>
 <summary>가상 클래스에 어떤 것들이 있나요? (18)</summary>
-<br>
+<br />
 
 - `:link` 링크에 연결된 페이지를 방문하지 않은 상태
 - `:visited` 링크에 연결된 페이지를 방문한 상태
@@ -616,7 +616,7 @@ border-radius: 50%;
 
 <details>
 <summary>CSS의 Cascading이란? (2)</summary>
-<br>
+<br />
 
 - 여러 개의 스타일 규칙이 있을 때, 캐스케이드 우선순위에 따라 최종 스타일을 결정하는 과정을 의미합니다.
 - 여기서 `cascading`은 `폭포처럼 순서대로 내려가는`이라는 의미로 사용됩니다.
@@ -624,7 +624,7 @@ border-radius: 50%;
 
 <details>
 <summary>캐스케이드 우선순위(Cascade precedence)에 대해 설명해주세요. (4.16.3)</summary>
-<br>
+<br />
 
 1. Origin and importance
   - `1-1` CSS transitions
@@ -654,7 +654,7 @@ border-radius: 50%;
 
 <details>
 <summary>Position property란? (2)</summary>
-<br>
+<br />
 
 - 요소의 포지션 방법을 명시하는 속성입니다.
 - top, right, bottom, left, inset 속성으로 구체적인 위치를 지정할 수 있습니다.
@@ -662,7 +662,7 @@ border-radius: 50%;
 
 <details>
 <summary>Position property의 종류에 대해 설명해주세요. (5.7)</summary>
-<br>
+<br />
 
 - static(default): 일반적인 문서 흐름에 따라 배치
   - top, right, bottom, left, z-index 속성이 아무런 영향도 주지 않는다
@@ -681,7 +681,7 @@ border-radius: 50%;
 
 <details>
 <summary>z-index란? (1.2)</summary>
-<br>
+<br />
 
 - `z-index`는 CSS 속성 중 하나로, positioning(위치 지정)된 요소, 그 자손과 flex items의 z축(수직 방향) 순서를 지정합니다.
   - `z-index` 값은 정수 값을 사용하며, 숫자가 클수록 요소가 앞으로 나타납니다.
@@ -691,7 +691,7 @@ border-radius: 50%;
 
 <details>
 <summary>쌓임 맥락 이란? (1)</summary>
-<br>
+<br />
 
 - 쌓임 맥락(stacking context)은 가상의 Z축을 사용한 HTML 요소의 3차원 개념화입니다. Z축은 사용자 기준이며, 사용자는 뷰포트 혹은 웹페이지를 바라보고 있을 것으로 가정합니다. 각각의 HTML 요소는 자신의 속성에 따른 우선순위를 사용해 3차원 공간을 차지합니다.
 </details>
@@ -699,7 +699,7 @@ border-radius: 50%;
 
 <details>
 <summary>쌓임 맥락을 생성하는 요소에는 어떤 것들이 있나요? (16)</summary>
-<br>
+<br />
 
 - 문서의 루트 요소 (`<html>`)
 - `position`이 `absolute` 또는 `relative`이고, `z-index`가 `auto`가 아닌 요소
@@ -723,7 +723,7 @@ border-radius: 50%;
 
 <details>
 <summary>쌓임 맥락은 어떤 특징이 있나요? (4)</summary>
-<br>
+<br />
 
 - 하나의 쌓임 맥락은 부모 쌓임 맥락 안에서 통째로 하나의 단위로 간주됩니다.
 - 쌓임 맥락이 다른 쌓임 맥락을 포함할 수 있고, 함께 계층 구조를 이룹니다.
