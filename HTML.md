@@ -69,6 +69,7 @@
     <meta charset="UTF-8">
     <title>문서 제목</title>
   </head>
+
   ```
 </details>
 
@@ -105,6 +106,7 @@
   <body>
   </body>
 </html>
+
 ```
 </details>
 
@@ -482,6 +484,7 @@
 - 예시
   ```html
   <img src="이미지 경로" alt="대체 텍스트" width="100" height="100">
+
   ```
 </details>
 
@@ -505,6 +508,7 @@
     <track label="한국어 자막" kind="subtitles" srclang="ko" src="자막 파일 경로.vtt">
     <track label="영어 자막" kind="subtitles" srclang="en" src="자막 파일 경로.vtt">
   </video>
+
   ```
 </details>
 
@@ -527,6 +531,7 @@
     <source src="audio.wav" type="audio/wav">
     Your browser does not support the audio element.
   </audio>
+
   ```
 </details>
 
@@ -543,6 +548,7 @@
 - 예시
   ```html
   <iframe src="https://www.example.com" width="500" height="500"></iframe>
+
   ```
 </details>
 
@@ -679,6 +685,7 @@
     <link rel="stylesheet" type="text/css" href="fonts.css">
     <link rel="icon" type="image/png" href="favicon.png">
   </head>
+
   ```
 </details>
 
